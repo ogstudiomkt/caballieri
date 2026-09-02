@@ -19,7 +19,7 @@ if errorlevel 1 (
   echo No habia cambios nuevos que subir ^(o ya estaban guardados^).
 )
 
-git push
+git push origin main
 
 echo.
 echo ============================================
