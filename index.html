@@ -31,7 +31,10 @@
         <a class="transition hover:text-[#c64e2a]" href="#tarifas">Tarifas</a>
         <a class="transition hover:text-[#c64e2a]" href="#reservar">Contacto</a>
       </nav>
-      <div class="flex shrink-0 items-center gap-2">
+      <button id="menu-open" type="button" aria-label="Abrir menú" class="grid size-11 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:bg-[#102b52]/5 lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
+        </button>
+        <div class="hidden shrink-0 items-center gap-2 lg:flex">
         <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram" class="grid size-11 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:border-transparent hover:bg-gradient-to-tr hover:from-[#f4c464] hover:to-[#c64e2a] hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
         </a>
@@ -42,11 +45,43 @@
     </div>
   </header>
 
+  <!-- ===== MENÚ MÓVIL (desplegable animado) ===== -->
+  <div id="mobile-menu" class="hidden fixed inset-0 z-[80] lg:hidden">
+    <div data-overlay class="overlay absolute inset-0 bg-[#081b32]/60 backdrop-blur-sm"></div>
+    <aside class="panel absolute right-0 top-0 flex h-full w-[82%] max-w-sm flex-col bg-white shadow-2xl">
+      <div class="flex items-center justify-between border-b border-[#102b52]/10 px-5 py-4">
+        <img src="images/caballieri-logo.png" alt="Cabañas Caballieri" class="h-10 w-auto object-contain">
+        <button id="menu-close" type="button" aria-label="Cerrar menú" class="grid size-10 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] hover:bg-[#102b52]/5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        </button>
+      </div>
+      <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-5 text-[#102b52]">
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html">Inicio</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="cabanas.html">Cabañas</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="historia.html">Historia</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="#servicios">Servicios</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="entorno.html">Entorno</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="como-llegar.html">Cómo llegar</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="galeria.html">Galería</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="#tour360">Recorrido 360°</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="#tarifas">Tarifas</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="#reservar">Contacto</a>
+      </nav>
+      <div class="flex items-center gap-2 border-t border-[#102b52]/10 p-4">
+        <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram" class="grid size-12 shrink-0 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:border-transparent hover:bg-gradient-to-tr hover:from-[#f4c464] hover:to-[#c64e2a] hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+        </a>
+        <a href="#reservar" class="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-[#102b52] px-5 text-sm font-semibold text-white transition hover:bg-[#c64e2a]">Consultar disponibilidad</a>
+      </div>
+    </aside>
+  </div>
+
+
   <!-- ================= HERO ================= -->
-  <section id="inicio" class="relative flex min-h-[860px] items-end pt-24 lg:min-h-[900px]">
+  <section id="inicio" class="relative flex min-h-[600px] items-end pt-24 sm:min-h-[760px] lg:min-h-[900px]">
     <img src="images/hero.jpg" alt="Cabañas de piedra integradas a la ladera de Pisco Elqui" class="object-cover kenburns" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
     <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,30,55,0.9)_0%,rgba(8,30,55,0.5)_47%,rgba(8,30,55,0.08)_78%),linear-gradient(0deg,rgba(8,30,55,0.8)_0%,transparent_45%)]"></div>
-    <div class="relative z-10 mx-auto w-full max-w-7xl px-5 pb-40 sm:px-8 lg:pb-44">
+    <div class="relative z-10 mx-auto w-full max-w-7xl px-5 pb-16 sm:px-8 sm:pb-24 lg:pb-40">
       <div class="max-w-3xl text-white">
         <p class="mb-6 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.28em] text-[#f4c464]">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -66,11 +101,12 @@
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Buscador flotante -->
-    <div class="absolute inset-x-0 bottom-0 z-20 translate-y-1/2 px-4 sm:px-8">
-      <div class="mx-auto max-w-7xl rounded-[1.75rem] border border-white/70 bg-white p-4 shadow-[0_24px_80px_rgba(11,33,54,0.2)] sm:p-6">
-        <form class="grid gap-3 lg:grid-cols-[1fr_1fr_0.75fr_0.85fr_auto] lg:items-end" data-reserva>
+  <!-- Buscador flotante (se superpone al hero) -->
+  <div class="relative z-30 mx-auto -mt-10 max-w-7xl px-4 sm:-mt-14 sm:px-8 lg:-mt-24">
+    <div class="rounded-[1.75rem] border border-white/70 bg-white p-4 shadow-[0_24px_80px_rgba(11,33,54,0.2)] sm:p-6">
+        <form class="grid gap-3 sm:grid-cols-2 lg:grid-cols-[1fr_1fr_0.75fr_0.85fr_auto] lg:items-end" data-reserva>
           <label class="block">
             <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
@@ -107,7 +143,7 @@
               <option value="Piedra">Piedra</option>
             </select>
           </div>
-          <div class="lg:pb-0">
+          <div class="sm:col-span-2 lg:col-span-1 lg:pb-0">
             <button class="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all h-12 w-full rounded-xl bg-[#c64e2a] px-6 text-white hover:bg-[#102b52]" type="submit">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
               Consultar por WhatsApp
@@ -116,10 +152,9 @@
         </form>
       </div>
     </div>
-  </section>
 
   <!-- ================= CABAÑAS ================= -->
-  <section id="cabana" class="px-5 pb-24 pt-40 sm:px-8 lg:pb-32 lg:pt-48">
+  <section id="cabana" class="px-5 pb-24 pt-16 sm:px-8 lg:pb-32 lg:pt-24">
     <div class="mx-auto max-w-7xl">
       <div class="grid items-end gap-8 lg:grid-cols-[1.1fr_0.9fr]">
         <div class="reveal">
@@ -317,7 +352,7 @@
 
   <!-- ================= VIDEO ================= -->
   <section id="video" class="bg-[#0d2544] px-5 py-20 sm:px-8 lg:py-24">
-    <div class="mx-auto max-w-6xl">
+    <div class="mx-auto max-w-3xl">
       <div class="reveal mx-auto mb-10 max-w-3xl text-center">
         <p class="eyebrow text-[#f4c464]">En movimiento</p>
         <h2 class="font-display text-4xl leading-tight text-white sm:text-5xl">Un recorrido por Caballieri.</h2>
@@ -325,6 +360,21 @@
       <!-- Contenedor responsivo 16:9 con el video de Vimeo -->
       <div class="reveal relative w-full overflow-hidden rounded-[2rem] shadow-[0_30px_80px_rgba(0,0,0,0.4)]" style="padding-top:56.25%">
         <iframe src="https://player.vimeo.com/video/308768932?title=0&byline=0&portrait=0" class="absolute inset-0 h-full w-full" style="border:0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Cabañas Caballieri · Pisco Elqui"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RECORRIDO 360 ================= -->
+  <section id="tour360" class="bg-[#102b52] px-5 py-20 sm:px-8 lg:py-24">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal mx-auto mb-10 max-w-3xl text-center">
+        <p class="eyebrow text-[#f4c464]">Recorrido virtual</p>
+        <h2 class="font-display text-4xl leading-tight text-white sm:text-5xl">Explora en 360°.</h2>
+        <p class="mt-4 text-white/70">Muévete por el complejo como si estuvieras ahí. Arrastra para mirar alrededor y usa el botón de pantalla completa para sumergirte.</p>
+      </div>
+      <!-- Tour 360 de Kuula (responsivo) -->
+      <div class="reveal relative w-full overflow-hidden rounded-[2rem] shadow-[0_30px_80px_rgba(0,0,0,0.4)]" style="padding-top:60%">
+        <iframe class="absolute inset-0 h-full w-full" style="border:0" src="https://kuula.co/share/collection/7q0yb?logo=1&info=0&fs=1&vr=0&zoom=1&sd=1&gyro=0&initload=0&autorotate=0.08&thumbs=1&inst=es" allow="xr-spatial-tracking; gyroscope; accelerometer; fullscreen" allowfullscreen scrolling="no" title="Recorrido 360° Cabañas Caballieri"></iframe>
       </div>
     </div>
   </section>
@@ -573,6 +623,42 @@
     </div>
   </section>
 
+  <!-- ================= RESEÑAS ================= -->
+  <section id="resenas" class="bg-[#f1ede4] px-5 py-20 sm:px-8 lg:py-24">
+    <div class="mx-auto max-w-4xl text-center">
+      <div class="reveal">
+        <p class="eyebrow">Lo que dicen nuestros huéspedes</p>
+        <h2 class="section-title">Reseñas.</h2>
+        <div class="mt-6 inline-flex items-center gap-5 rounded-2xl border border-[#102b52]/10 bg-white px-6 py-4 shadow-[0_8px_24px_rgba(18,39,63,0.06)]">
+          <div class="text-left">
+            <p class="font-display text-4xl leading-none text-[#102b52]">4,9</p>
+            <div class="mt-1 text-base leading-none tracking-[0.15em] text-[#e3aa36]">★★★★★</div>
+          </div>
+          <div class="h-11 w-px bg-[#102b52]/10"></div>
+          <div class="text-left">
+            <p class="text-sm font-semibold text-[#102b52]">+250 comentarios</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Caba%C3%B1as%20Caballieri%20Pisco%20Elqui" target="_blank" rel="noreferrer" class="mt-1 inline-flex items-center gap-1.5 text-sm font-semibold text-[#2b9298] transition hover:underline">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="size-4" aria-hidden="true"><path fill="#4285F4" d="M23.5 12.3c0-.8-.1-1.6-.2-2.3H12v4.5h6.5c-.3 1.5-1.1 2.7-2.4 3.6v3h3.9c2.3-2.1 3.5-5.2 3.5-8.8z"/><path fill="#34A853" d="M12 24c3.2 0 5.9-1.1 7.9-2.9l-3.9-3c-1.1.7-2.4 1.1-4 1.1-3.1 0-5.7-2.1-6.6-4.9H1.4v3.1C3.4 21.3 7.4 24 12 24z"/><path fill="#FBBC05" d="M5.4 14.3c-.2-.7-.4-1.5-.4-2.3s.1-1.6.4-2.3V6.6H1.4C.5 8.2 0 10 0 12s.5 3.8 1.4 5.4l4-3.1z"/><path fill="#EA4335" d="M12 4.8c1.8 0 3.3.6 4.6 1.8l3.4-3.4C17.9 1.2 15.2 0 12 0 7.4 0 3.4 2.7 1.4 6.6l4 3.1C6.3 6.9 8.9 4.8 12 4.8z"/></svg>
+              Ver reseñas en Google
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carrusel de reseñas (auto-rotación). Edita la lista REVIEWS más abajo. -->
+      <div class="reveal relative mt-12 min-h-[240px] sm:min-h-[200px]">
+        <figure id="rev-quote" class="mx-auto max-w-3xl transition-opacity duration-500">
+          <div class="text-2xl tracking-[0.3em] text-[#e3aa36]">★★★★★</div>
+          <blockquote id="rev-text" class="mt-5 font-display text-2xl leading-9 text-[#102b52] sm:text-3xl sm:leading-10">—</blockquote>
+          <figcaption class="mt-6">
+            <span id="rev-author" class="text-sm font-bold uppercase tracking-[0.16em] text-[#c64e2a]">—</span>
+          </figcaption>
+        </figure>
+        <div id="rev-dots" class="mt-8 flex justify-center gap-2"></div>
+      </div>
+    </div>
+  </section>
+
   <!-- ================= RESERVAR ================= -->
   <section id="reservar" class="relative bg-[#0d2544] px-5 py-24 text-white sm:px-8 lg:py-32">
     <div class="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_10%,#2b9298_0,transparent_30%),radial-gradient(circle_at_90%_90%,#e1a737_0,transparent_28%)]"></div>
@@ -645,51 +731,85 @@
     </div>
   </section>
 
-  <!-- ================= CLIMA EN TIEMPO REAL ================= -->
-  <!-- Datos en vivo desde Open-Meteo (sin API key). Coordenadas de Pisco Elqui. -->
-  <section id="clima" class="bg-[#0b1f39] px-5 py-16 text-white sm:px-8">
-    <div class="mx-auto max-w-7xl">
-      <div class="reveal mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <p class="eyebrow text-[#f4c464]">El tiempo hoy</p>
-          <h2 class="font-display text-4xl leading-tight sm:text-5xl">Clima en Pisco Elqui</h2>
-        </div>
-        <p class="text-sm text-white/55">Actualizado en tiempo real · Valle de Elqui, Chile</p>
+  <!-- ================= CONTACTO / SUGERENCIAS / RECLAMOS ================= -->
+  <section id="contacto-form" class="bg-white px-5 py-20 sm:px-8 lg:py-24">
+    <div class="mx-auto max-w-3xl">
+      <div class="reveal text-center">
+        <p class="eyebrow">Escríbenos</p>
+        <h2 class="section-title">¿Consulta, sugerencia o reclamo?</h2>
+        <p class="mt-5 text-lg leading-8 text-[#526273]">Cuéntanos lo que necesites y te responderemos a la brevedad.</p>
       </div>
 
-      <div id="weather" class="reveal grid gap-4 lg:grid-cols-[1.1fr_1.5fr]">
-        <!-- Estado actual -->
-        <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-7 backdrop-blur">
-          <div class="flex items-center justify-between">
-            <p class="text-sm font-bold uppercase tracking-[0.16em] text-white/60">Ahora</p>
-            <span id="wx-emoji" class="text-4xl">⛅</span>
-          </div>
-          <p class="mt-4 font-display text-6xl leading-none"><span id="wx-temp">—</span>°</p>
-          <p id="wx-desc" class="mt-2 text-lg text-white/75">Cargando…</p>
-          <div class="mt-6 grid grid-cols-2 gap-4 border-t border-white/10 pt-5 text-sm text-white/70">
-            <p class="flex items-center gap-2">Sensación <span id="wx-feel" class="font-semibold text-white">—°</span></p>
-            <p class="flex items-center gap-2">Humedad <span id="wx-hum" class="font-semibold text-white">—%</span></p>
-            <p class="flex items-center gap-2">Viento <span id="wx-wind" class="font-semibold text-white">— km/h</span></p>
-            <p class="flex items-center gap-2">UV <span id="wx-uv" class="font-semibold text-white">—</span></p>
-          </div>
+      <form class="reveal mt-10 grid gap-4 rounded-[2rem] border border-[#102b52]/10 bg-[#faf8f3] p-6 shadow-[0_10px_30px_rgba(18,39,63,0.05)] sm:p-8" data-contacto>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <label class="block">
+            <span class="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">Motivo</span>
+            <select data-motivo class="field" aria-label="Motivo del mensaje">
+              <option value="Consulta">Consulta</option>
+              <option value="Sugerencia">Sugerencia</option>
+              <option value="Reclamo">Reclamo</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </label>
+          <label class="block">
+            <span class="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">Nombre</span>
+            <input data-nombre type="text" required placeholder="Tu nombre" class="h-12 w-full rounded-xl border border-[#102b52]/15 bg-white px-3 text-base text-[#102b52] outline-none transition focus:border-[#2b9298] focus:ring-2 focus:ring-[#2b9298]/15">
+          </label>
         </div>
-        <!-- Pronóstico 3 días -->
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <div id="wx-d0" class="flex flex-col justify-between rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
-            <p class="text-sm font-bold uppercase tracking-[0.14em] text-[#f4c464]">—</p>
-            <span class="my-3 text-4xl">⛅</span>
-            <p class="text-white/75"><span class="wx-max font-display text-2xl text-white">—°</span> <span class="wx-min text-white/50">—°</span></p>
-          </div>
-          <div id="wx-d1" class="flex flex-col justify-between rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
-            <p class="text-sm font-bold uppercase tracking-[0.14em] text-[#f4c464]">—</p>
-            <span class="my-3 text-4xl">⛅</span>
-            <p class="text-white/75"><span class="wx-max font-display text-2xl text-white">—°</span> <span class="wx-min text-white/50">—°</span></p>
-          </div>
-          <div id="wx-d2" class="flex flex-col justify-between rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
-            <p class="text-sm font-bold uppercase tracking-[0.14em] text-[#f4c464]">—</p>
-            <span class="my-3 text-4xl">⛅</span>
-            <p class="text-white/75"><span class="wx-max font-display text-2xl text-white">—°</span> <span class="wx-min text-white/50">—°</span></p>
-          </div>
+        <label class="block">
+          <span class="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">Email o teléfono</span>
+          <input data-email type="text" placeholder="Para responderte" class="h-12 w-full rounded-xl border border-[#102b52]/15 bg-white px-3 text-base text-[#102b52] outline-none transition focus:border-[#2b9298] focus:ring-2 focus:ring-[#2b9298]/15">
+        </label>
+        <label class="block">
+          <span class="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">Mensaje</span>
+          <textarea data-mensaje rows="4" required placeholder="Escribe tu mensaje…" class="w-full rounded-xl border border-[#102b52]/15 bg-white px-3 py-3 text-base text-[#102b52] outline-none transition focus:border-[#2b9298] focus:ring-2 focus:ring-[#2b9298]/15"></textarea>
+        </label>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <button type="submit" class="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-xl bg-[#c64e2a] px-6 text-sm font-semibold text-white transition hover:bg-[#102b52]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+            Enviar por WhatsApp
+          </button>
+          <button type="button" data-email-btn class="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-xl border border-[#102b52]/15 bg-white px-6 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52] hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+            Enviar por correo
+          </button>
+        </div>
+        <p class="text-center text-xs text-[#9aa7b3]">O escríbenos directamente a ccaballieri@gmail.com</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= CLIMA EN TIEMPO REAL ================= -->
+  <!-- Datos en vivo desde Open-Meteo (sin API key). Coordenadas de Pisco Elqui. -->
+  <section id="clima" class="bg-[#0b1f39] px-5 py-6 text-white sm:px-8">
+    <div id="weather" class="reveal mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-x-8 gap-y-4 sm:justify-between">
+      <!-- Hoy (destacado) -->
+      <div class="flex items-center gap-4">
+        <span id="wx-emoji" class="text-4xl leading-none">⛅</span>
+        <div>
+          <p class="text-[11px] font-bold uppercase tracking-[0.18em] text-white/50">Hoy en Pisco Elqui</p>
+          <p class="flex items-baseline gap-2 leading-none">
+            <span class="font-display text-4xl"><span id="wx-temp">—</span>°</span>
+            <span id="wx-desc" class="text-sm text-white/70">Cargando…</span>
+          </p>
+        </div>
+      </div>
+      <!-- Métricas mini -->
+      <div class="flex items-center gap-5 text-xs text-white/60">
+        <span>Humedad <span id="wx-hum" class="font-semibold text-white">—%</span></span>
+        <span>Viento <span id="wx-wind" class="font-semibold text-white">— km/h</span></span>
+      </div>
+      <!-- Pronóstico mini (2 días) -->
+      <div class="flex items-center gap-2">
+        <div id="wx-d1" class="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-1.5">
+          <span class="wx-day text-[11px] font-bold uppercase tracking-wide text-[#f4c464]">—</span>
+          <span class="wx-ico text-lg leading-none">⛅</span>
+          <span class="text-xs"><span class="wx-max font-semibold text-white">—°</span> <span class="wx-min text-white/45">—°</span></span>
+        </div>
+        <div id="wx-d2" class="flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-1.5">
+          <span class="wx-day text-[11px] font-bold uppercase tracking-wide text-[#f4c464]">—</span>
+          <span class="wx-ico text-lg leading-none">⛅</span>
+          <span class="text-xs"><span class="wx-max font-semibold text-white">—°</span> <span class="wx-min text-white/45">—°</span></span>
         </div>
       </div>
     </div>
@@ -704,7 +824,6 @@
         <a class="hover:text-white" href="#servicios">Servicios</a>
         <a class="hover:text-white" href="galeria.html">Galería</a>
         <a class="hover:text-white" href="#tarifas">Tarifas</a>
-        <a class="hover:text-white" href="https://www.caballieri.cl/index.php/contacto.html" target="_blank" rel="noreferrer">Formulario oficial</a>
       </div>
       <div class="flex gap-3">
         <a class="grid size-11 place-items-center rounded-full border border-white/15 hover:border-white hover:text-white" href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram">
@@ -819,24 +938,61 @@
       document.getElementById("wx-emoji").textContent = emoji;
       document.getElementById("wx-temp").textContent = Math.round(c.temperature_2m);
       document.getElementById("wx-desc").textContent = desc;
-      document.getElementById("wx-feel").textContent = Math.round(c.apparent_temperature) + "°";
       document.getElementById("wx-hum").textContent = c.relative_humidity_2m + "%";
       document.getElementById("wx-wind").textContent = Math.round(c.wind_speed_10m) + " km/h";
-      document.getElementById("wx-uv").textContent = day.uv_index_max[0] != null ? Math.round(day.uv_index_max[0]) : "—";
 
-      for (let i = 0; i < 3; i++) {
+      // Pronóstico mini: mañana (índice 1) y pasado (índice 2)
+      [1, 2].forEach(function (i) {
         const card = document.getElementById("wx-d" + i);
-        if (!card) continue;
+        if (!card) return;
         const [de] = info(day.weather_code[i]);
-        card.querySelector("p").textContent = i === 0 ? "Hoy" : dayName(day.time[i]);
-        card.querySelector("span").textContent = de;
+        card.querySelector(".wx-day").textContent = dayName(day.time[i]);
+        card.querySelector(".wx-ico").textContent = de;
         card.querySelector(".wx-max").textContent = Math.round(day.temperature_2m_max[i]) + "°";
         card.querySelector(".wx-min").textContent = Math.round(day.temperature_2m_min[i]) + "°";
-      }
+      });
     }).catch(function () {
       document.getElementById("wx-desc").textContent = "No se pudo cargar el clima ahora.";
     });
   })();
+
+  // ===== Carrusel de reseñas (auto-rotación) =====
+  // 👉 Reemplaza estos ejemplos por tus comentarios reales de Booking.
+  (function () {
+    const REVIEWS = [
+      { t: "Un lugar hermoso, todo muy bien pensado y donde cada detalle importa. Nos quedamos en la cabaña Agua y el depto Piedra, ambos muy cómodos y con vistas increíbles al Valle. Desayuno muy rico y contundente. Muy buena atención de Claudia, Cata y todo el personal. Volvería sin dudas.", a: "Bárbara Carmi · Google" },
+      { t: "Muy buen trato, comunicación y disposición. El lugar es muy bello y tranquilo, con espacios para descansar y desconectarse. La cabaña era muy cómoda, bien equipada y decorada. Cerca hay lugares para comer y destilerías para tours, a los que se puede llegar a pie.", a: "Valery Becker · Google" },
+      { t: "¡Maravilloso lugar! Quedé encantada. Me alojé en la cabaña Aire y es un sueño; la atención de todos y de la dueña fue muy amable y preocupada. Higiene impecable, cabaña totalmente equipada, vistas increíbles desde las terrazas y acceso gratuito a las bicis. 100% recomendado.", a: "Catalina Tolosa · Google" },
+      { t: "Nos sentimos increíblemente cómodos. Claudia y su equipo cumplieron todos nuestros deseos y crearon un ambiente relajado. El lugar está lleno de pequeñas sorpresas de diseño. Nuestra Cabaña Cuarzo fue excepcional: acostados en la cama se podía ver el cielo estrellado.", a: "Markus Müller · Google" }
+    ];
+    const text = document.getElementById("rev-text");
+    const author = document.getElementById("rev-author");
+    const dots = document.getElementById("rev-dots");
+    const quote = document.getElementById("rev-quote");
+    if (!text || !dots || !quote) return;
+    let idx = 0, timer;
+    REVIEWS.forEach(function (_, i) {
+      const b = document.createElement("button");
+      b.setAttribute("aria-label", "Reseña " + (i + 1));
+      b.addEventListener("click", function () { go(i); reset(); });
+      dots.appendChild(b);
+    });
+    function render() {
+      quote.style.opacity = 0;
+      setTimeout(function () {
+        text.textContent = "“" + REVIEWS[idx].t + "”";
+        author.textContent = REVIEWS[idx].a;
+        Array.prototype.forEach.call(dots.children, function (d, i) {
+          d.className = "h-2.5 rounded-full transition-all " + (i === idx ? "w-6 bg-[#c64e2a]" : "w-2.5 bg-[#102b52]/20");
+        });
+        quote.style.opacity = 1;
+      }, 250);
+    }
+    function go(i) { idx = (i + REVIEWS.length) % REVIEWS.length; render(); }
+    function reset() { clearInterval(timer); timer = setInterval(function () { go(idx + 1); }, 6000); }
+    render(); reset();
+  })();
 </script>
+<script src="assets/site.js"></script>
 </body>
 </html>

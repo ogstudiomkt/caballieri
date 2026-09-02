@@ -31,4 +31,29 @@
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
   }
+
+  // Menú móvil deslizable
+  var menu = document.getElementById("mobile-menu");
+  var openBtn = document.getElementById("menu-open");
+  var closeBtn = document.getElementById("menu-close");
+  if (menu && openBtn) {
+    var openMenu = function () {
+      menu.classList.remove("hidden");
+      setTimeout(function () { menu.classList.add("is-open"); }, 10);
+      document.body.style.overflow = "hidden";
+    };
+    var closeMenu = function () {
+      menu.classList.remove("is-open");
+      document.body.style.overflow = "";
+      setTimeout(function () { menu.classList.add("hidden"); }, 320);
+    };
+    openBtn.addEventListener("click", openMenu);
+    if (closeBtn) closeBtn.addEventListener("click", closeMenu);
+    var overlay = menu.querySelector("[data-overlay]");
+    if (overlay) overlay.addEventListener("click", closeMenu);
+    menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", closeMenu); });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && !menu.classList.contains("hidden")) closeMenu();
+    });
+  }
 })();
