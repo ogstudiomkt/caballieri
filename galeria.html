@@ -28,24 +28,25 @@
         <img src="images/caballieri-logo.png" alt="Cabañas Caballieri" width="360" height="180" class="h-12 w-auto object-contain sm:h-14">
       </a>
       <nav aria-label="Navegación principal" class="hidden items-center gap-5 text-sm font-semibold text-[#243d58] lg:flex">
-        <a class="transition hover:text-[#c64e2a]" href="cabanas.html">Cabañas</a>
-        <a class="transition hover:text-[#c64e2a]" href="historia.html">Historia</a>
-        <a class="transition hover:text-[#c64e2a]" href="index.html#servicios">Servicios</a>
-        <a class="transition hover:text-[#c64e2a]" href="entorno.html">Entorno</a>
-        <a class="transition hover:text-[#c64e2a]" href="como-llegar.html">Cómo llegar</a>
-        <a class="transition hover:text-[#c64e2a]" href="galeria.html">Galería</a>
-        <a class="transition hover:text-[#c64e2a]" href="index.html#tarifas">Tarifas</a>
-        <a class="transition hover:text-[#c64e2a]" href="index.html#reservar">Contacto</a>
+        <a class="transition hover:text-[#c64e2a]" href="cabanas.html" data-i18n="nav.cabanas">Cabañas</a>
+        <a class="transition hover:text-[#c64e2a]" href="historia.html" data-i18n="nav.historia">Historia</a>
+        <a class="transition hover:text-[#c64e2a]" href="index.html#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a class="transition hover:text-[#c64e2a]" href="entorno.html" data-i18n="nav.entorno">Entorno</a>
+        <a class="transition hover:text-[#c64e2a]" href="como-llegar.html" data-i18n="nav.comollegar">Cómo llegar</a>
+        <a class="transition hover:text-[#c64e2a]" href="galeria.html" data-i18n="nav.galeria">Galería</a>
+        <a class="transition hover:text-[#c64e2a]" href="index.html#tarifas" data-i18n="nav.tarifas">Tarifas</a>
+        <a class="transition hover:text-[#c64e2a]" href="index.html#reservar" data-i18n="nav.contacto">Contacto</a>
       </nav>
       <button id="menu-open" type="button" aria-label="Abrir menú" class="grid size-11 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:bg-[#102b52]/5 lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
         </button>
         <div class="hidden shrink-0 items-center gap-2 lg:flex">
+        <div class="lang-switch flex items-center rounded-full border border-[#102b52]/15 p-0.5"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="de">DE</button></div>
         <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram" class="grid size-11 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:border-transparent hover:bg-gradient-to-tr hover:from-[#f4c464] hover:to-[#c64e2a] hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
         </a>
         <a href="index.html#reservar" class="inline-flex items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all h-11 rounded-full bg-[#102b52] px-5 text-white hover:bg-[#c64e2a]">
-          Consultar <span class="hidden sm:inline">disponibilidad</span>
+          <span data-i18n="btn.consultarDisp">Consultar disponibilidad</span>
         </a>
       </div>
     </div>
@@ -61,23 +62,24 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
         </button>
       </div>
+      <div class="lang-switch flex items-center justify-center gap-1 border-b border-[#102b52]/10 px-4 py-3"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="de">DE</button></div>
       <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-5 text-[#102b52]">
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html">Inicio</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="cabanas.html">Cabañas</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="historia.html">Historia</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#servicios">Servicios</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="entorno.html">Entorno</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="como-llegar.html">Cómo llegar</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="galeria.html">Galería</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#tour360">Recorrido 360°</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#tarifas">Tarifas</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#reservar">Contacto</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html" data-i18n="nav.inicio">Inicio</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="cabanas.html" data-i18n="nav.cabanas">Cabañas</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="historia.html" data-i18n="nav.historia">Historia</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="entorno.html" data-i18n="nav.entorno">Entorno</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="como-llegar.html" data-i18n="nav.comollegar">Cómo llegar</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="galeria.html" data-i18n="nav.galeria">Galería</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#tour360" data-i18n="nav.tour360">Recorrido 360°</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#tarifas" data-i18n="nav.tarifas">Tarifas</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#reservar" data-i18n="nav.contacto">Contacto</a>
       </nav>
       <div class="flex items-center gap-2 border-t border-[#102b52]/10 p-4">
         <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram" class="grid size-12 shrink-0 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:border-transparent hover:bg-gradient-to-tr hover:from-[#f4c464] hover:to-[#c64e2a] hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
         </a>
-        <a href="index.html#reservar" class="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-[#102b52] px-5 text-sm font-semibold text-white transition hover:bg-[#c64e2a]">Consultar disponibilidad</a>
+        <a href="index.html#reservar" class="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-[#102b52] px-5 text-sm font-semibold text-white transition hover:bg-[#c64e2a]" data-i18n="btn.consultarDisp">Consultar disponibilidad</a>
       </div>
     </aside>
   </div>
@@ -88,19 +90,19 @@
     <div class="mx-auto max-w-7xl">
       <a href="index.html" class="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-[#526273] transition hover:text-[#c64e2a]">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
-        Volver al inicio
+        <span data-i18n="common.volver">Volver al inicio</span>
       </a>
-      <p class="eyebrow">Galería</p>
-      <h1 class="section-title max-w-4xl">Fotos e impresiones de nuestro lugar.</h1>
-      <p class="mt-6 max-w-2xl text-lg leading-8 text-[#526273]">La piscina de mosaico azul cobalto, los jardines, las noches estrelladas del Valle de Elqui y los detalles que hacen único a cada rincón.</p>
+      <p class="eyebrow" data-i18n="gl.eyebrow">Galería</p>
+      <h1 class="section-title max-w-4xl" data-i18n="gl.h1">Fotos e impresiones de nuestro lugar.</h1>
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-[#526273]" data-i18n="gl.intro">La piscina de mosaico azul cobalto, los jardines, las noches estrelladas del Valle de Elqui y los detalles que hacen único a cada rincón.</p>
 
       <!-- Filtros -->
       <div id="filters" class="mt-8 flex flex-wrap gap-2">
-        <button data-filter="todas" class="filter-btn rounded-full bg-[#102b52] px-5 py-2 text-sm font-semibold text-white transition">Todas</button>
-        <button data-filter="piscina" class="filter-btn rounded-full border border-[#102b52]/15 bg-white px-5 py-2 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52]/5">Piscina</button>
-        <button data-filter="jardines" class="filter-btn rounded-full border border-[#102b52]/15 bg-white px-5 py-2 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52]/5">Jardines</button>
-        <button data-filter="noche" class="filter-btn rounded-full border border-[#102b52]/15 bg-white px-5 py-2 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52]/5">Noche</button>
-        <button data-filter="lugar" class="filter-btn rounded-full border border-[#102b52]/15 bg-white px-5 py-2 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52]/5">Detalles</button>
+        <button data-filter="todas" class="filter-btn rounded-full bg-[#102b52] px-5 py-2 text-sm font-semibold text-white transition" data-i18n="gl.f0">Todas</button>
+        <button data-filter="piscina" class="filter-btn rounded-full border border-[#102b52]/15 bg-white px-5 py-2 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52]/5" data-i18n="gl.f1">Piscina</button>
+        <button data-filter="jardines" class="filter-btn rounded-full border border-[#102b52]/15 bg-white px-5 py-2 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52]/5" data-i18n="gl.f2">Jardines</button>
+        <button data-filter="noche" class="filter-btn rounded-full border border-[#102b52]/15 bg-white px-5 py-2 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52]/5" data-i18n="gl.f3">Noche</button>
+        <button data-filter="lugar" class="filter-btn rounded-full border border-[#102b52]/15 bg-white px-5 py-2 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52]/5" data-i18n="gl.f4">Detalles</button>
       </div>
     </div>
   </section>
@@ -132,11 +134,11 @@
     <div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 border-b border-white/10 pb-10 lg:flex-row lg:items-center">
       <img src="images/caballieri-logo.png" alt="Cabañas Caballieri" width="360" height="180" class="h-20 w-auto rounded-xl bg-white object-contain p-1">
       <div class="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold">
-        <a class="hover:text-white" href="cabanas.html">Cabañas</a>
-        <a class="hover:text-white" href="historia.html">Historia</a>
-        <a class="hover:text-white" href="entorno.html">Entorno</a>
-        <a class="hover:text-white" href="como-llegar.html">Cómo llegar</a>
-        <a class="hover:text-white" href="galeria.html">Galería</a>
+        <a class="hover:text-white" href="cabanas.html" data-i18n="nav.cabanas">Cabañas</a>
+        <a class="hover:text-white" href="historia.html" data-i18n="nav.historia">Historia</a>
+        <a class="hover:text-white" href="entorno.html" data-i18n="nav.entorno">Entorno</a>
+        <a class="hover:text-white" href="como-llegar.html" data-i18n="nav.comollegar">Cómo llegar</a>
+        <a class="hover:text-white" href="galeria.html" data-i18n="nav.galeria">Galería</a>
       </div>
       <div class="flex gap-3">
         <a class="grid size-11 place-items-center rounded-full border border-white/15 hover:border-white hover:text-white" href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram">
@@ -152,7 +154,7 @@
     </div>
     <div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 pt-7 text-xs sm:flex-row">
       <p>© 2026 Cabañas Caballieri · Pisco Elqui, Chile</p>
-      <p>Estadía mínima: 2 noches · Máximo 2 huéspedes por unidad</p>
+      <p data-i18n="foot.min">Estadía mínima: 2 noches · Máximo 2 huéspedes por unidad</p>
     </div>
   </footer>
 
@@ -161,6 +163,13 @@
   </a>
 </main>
 
+<script>
+  window.I18N = {
+    es: { "gl.eyebrow":"Galería","gl.h1":"Fotos e impresiones de nuestro lugar.","gl.intro":"La piscina de mosaico azul cobalto, los jardines, las noches estrelladas del Valle de Elqui y los detalles que hacen único a cada rincón.","gl.f0":"Todas","gl.f1":"Piscina","gl.f2":"Jardines","gl.f3":"Noche","gl.f4":"Detalles" },
+    en: { "gl.eyebrow":"Gallery","gl.h1":"Photos and impressions of our place.","gl.intro":"The cobalt-blue mosaic pool, the gardens, the starry nights of the Elqui Valley and the details that make every corner unique.","gl.f0":"All","gl.f1":"Pool","gl.f2":"Gardens","gl.f3":"Night","gl.f4":"Details" },
+    de: { "gl.eyebrow":"Galerie","gl.h1":"Fotos und Eindrücke unseres Ortes.","gl.intro":"Der Pool mit kobaltblauem Mosaik, die Gärten, die Sternennächte des Elqui-Tals und die Details, die jeden Winkel einzigartig machen.","gl.f0":"Alle","gl.f1":"Pool","gl.f2":"Gärten","gl.f3":"Nacht","gl.f4":"Details" }
+  };
+</script>
 <script src="assets/site.js"></script>
 <script>
   // ===== Datos de la galería (edita esta lista para agregar/quitar fotos) =====
@@ -194,7 +203,17 @@
     { f: "estatua-03",  cat: "lugar",    alt: "Escultura del jardín" },
     { f: "estatua-04",  cat: "lugar",    alt: "Escultura del jardín" },
     { f: "estatua-05",  cat: "lugar",    alt: "Escultura del jardín" },
-    { f: "estatua-06",  cat: "lugar",    alt: "Escultura del jardín" }
+    { f: "estatua-06",  cat: "lugar",    alt: "Escultura del jardín" },
+    { f: "sm-01", cat: "lugar", alt: "Cabañas Caballieri" },
+    { f: "sm-02", cat: "lugar", alt: "Cabañas Caballieri" },
+    { f: "sm-03", cat: "lugar", alt: "Cabañas Caballieri" },
+    { f: "sm-04", cat: "lugar", alt: "Cabañas Caballieri" },
+    { f: "sm-05", cat: "lugar", alt: "Cabañas Caballieri" },
+    { f: "sm-06", cat: "lugar", alt: "Cabañas Caballieri" },
+    { f: "sm-07", cat: "lugar", alt: "Cabañas Caballieri" },
+    { f: "sm-08", cat: "lugar", alt: "Cabañas Caballieri" },
+    { f: "sm-09", cat: "lugar", alt: "Cabañas Caballieri" },
+    { f: "sm-10", cat: "lugar", alt: "Cabañas Caballieri" }
   ];
   const SRC = (p) => "images/galeria/" + p.f + ".jpg";
 

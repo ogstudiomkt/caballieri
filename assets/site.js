@@ -56,4 +56,60 @@
       if (e.key === "Escape" && !menu.classList.contains("hidden")) closeMenu();
     });
   }
+
+  // ===== Selector de idioma (ES / EN / DE) =====
+  // Textos compartidos (menú, pie, botones). Los textos propios de cada
+  // página se definen en esa página como window.I18N = { es:{}, en:{}, de:{} }.
+  var I18N_SHARED = {
+    es: {
+      "nav.inicio": "Inicio", "nav.cabanas": "Cabañas", "nav.historia": "Historia",
+      "nav.servicios": "Servicios", "nav.entorno": "Entorno", "nav.comollegar": "Cómo llegar",
+      "nav.galeria": "Galería", "nav.tour360": "Recorrido 360°", "nav.tarifas": "Tarifas", "nav.contacto": "Contacto",
+      "btn.consultar": "Consultar", "btn.disp": "disponibilidad", "btn.consultarDisp": "Consultar disponibilidad",
+      "common.volver": "Volver al inicio", "common.tempAlta": "Temporada alta", "common.tempBaja": "Temporada baja",
+      "foot.min": "Estadía mínima: 2 noches · Máximo 2 huéspedes por unidad"
+    },
+    en: {
+      "nav.inicio": "Home", "nav.cabanas": "Cabins", "nav.historia": "Story",
+      "nav.servicios": "Amenities", "nav.entorno": "Surroundings", "nav.comollegar": "Getting here",
+      "nav.galeria": "Gallery", "nav.tour360": "360° Tour", "nav.tarifas": "Rates", "nav.contacto": "Contact",
+      "btn.consultar": "Check", "btn.disp": "availability", "btn.consultarDisp": "Check availability",
+      "common.volver": "Back to home", "common.tempAlta": "High season", "common.tempBaja": "Low season",
+      "foot.min": "Minimum stay: 2 nights · Max 2 guests per unit"
+    },
+    de: {
+      "nav.inicio": "Start", "nav.cabanas": "Hütten", "nav.historia": "Geschichte",
+      "nav.servicios": "Ausstattung", "nav.entorno": "Umgebung", "nav.comollegar": "Anreise",
+      "nav.galeria": "Galerie", "nav.tour360": "360°-Rundgang", "nav.tarifas": "Preise", "nav.contacto": "Kontakt",
+      "btn.consultar": "Anfragen", "btn.disp": "Verfügbarkeit", "btn.consultarDisp": "Verfügbarkeit anfragen",
+      "common.volver": "Zurück zur Startseite", "common.tempAlta": "Hochsaison", "common.tempBaja": "Nebensaison",
+      "foot.min": "Mindestaufenthalt: 2 Nächte · Max. 2 Gäste pro Einheit"
+    }
+  };
+
+  function applyLang(lang) {
+    if (!I18N_SHARED[lang]) lang = "es";
+    var page = (window.I18N && window.I18N[lang]) || {};
+    var dict = Object.assign({}, I18N_SHARED[lang], page);
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var v = dict[el.getAttribute("data-i18n")];
+      if (v != null) el.textContent = v;
+    });
+    document.querySelectorAll("[data-i18n-ph]").forEach(function (el) {
+      var v = dict[el.getAttribute("data-i18n-ph")];
+      if (v != null) el.setAttribute("placeholder", v);
+    });
+    document.documentElement.lang = lang;
+    try { localStorage.setItem("lang", lang); } catch (e) {}
+    document.querySelectorAll("[data-lang]").forEach(function (b) {
+      b.classList.toggle("lang-active", b.getAttribute("data-lang") === lang);
+    });
+  }
+
+  var saved = "es";
+  try { saved = localStorage.getItem("lang") || "es"; } catch (e) {}
+  document.querySelectorAll("[data-lang]").forEach(function (b) {
+    b.addEventListener("click", function () { applyLang(b.getAttribute("data-lang")); });
+  });
+  applyLang(saved);
 })();

@@ -18,24 +18,25 @@
         <img src="images/caballieri-logo.png" alt="Cabañas Caballieri" width="360" height="180" class="h-12 w-auto object-contain sm:h-14">
       </a>
       <nav aria-label="Navegación principal" class="hidden items-center gap-5 text-sm font-semibold text-[#243d58] lg:flex">
-        <a class="text-[#c64e2a]" href="cabanas.html">Cabañas</a>
-        <a class="transition hover:text-[#c64e2a]" href="historia.html">Historia</a>
-        <a class="transition hover:text-[#c64e2a]" href="index.html#servicios">Servicios</a>
-        <a class="transition hover:text-[#c64e2a]" href="entorno.html">Entorno</a>
-        <a class="transition hover:text-[#c64e2a]" href="como-llegar.html">Cómo llegar</a>
-        <a class="transition hover:text-[#c64e2a]" href="galeria.html">Galería</a>
-        <a class="transition hover:text-[#c64e2a]" href="index.html#tarifas">Tarifas</a>
-        <a class="transition hover:text-[#c64e2a]" href="index.html#reservar">Contacto</a>
+        <a class="text-[#c64e2a]" href="cabanas.html" data-i18n="nav.cabanas">Cabañas</a>
+        <a class="transition hover:text-[#c64e2a]" href="historia.html" data-i18n="nav.historia">Historia</a>
+        <a class="transition hover:text-[#c64e2a]" href="index.html#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a class="transition hover:text-[#c64e2a]" href="entorno.html" data-i18n="nav.entorno">Entorno</a>
+        <a class="transition hover:text-[#c64e2a]" href="como-llegar.html" data-i18n="nav.comollegar">Cómo llegar</a>
+        <a class="transition hover:text-[#c64e2a]" href="galeria.html" data-i18n="nav.galeria">Galería</a>
+        <a class="transition hover:text-[#c64e2a]" href="index.html#tarifas" data-i18n="nav.tarifas">Tarifas</a>
+        <a class="transition hover:text-[#c64e2a]" href="index.html#reservar" data-i18n="nav.contacto">Contacto</a>
       </nav>
       <button id="menu-open" type="button" aria-label="Abrir menú" class="grid size-11 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:bg-[#102b52]/5 lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
         </button>
         <div class="hidden shrink-0 items-center gap-2 lg:flex">
+        <div class="lang-switch flex items-center rounded-full border border-[#102b52]/15 p-0.5"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="de">DE</button></div>
         <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram" class="grid size-11 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:border-transparent hover:bg-gradient-to-tr hover:from-[#f4c464] hover:to-[#c64e2a] hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
         </a>
         <a href="index.html#reservar" class="inline-flex items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all h-11 rounded-full bg-[#102b52] px-5 text-white hover:bg-[#c64e2a]">
-          Consultar <span class="hidden sm:inline">disponibilidad</span>
+          <span data-i18n="btn.consultarDisp"><span data-i18n="cb.condCta">Consultar disponibilidad</span></span>
         </a>
       </div>
     </div>
@@ -51,23 +52,24 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
         </button>
       </div>
+      <div class="lang-switch flex items-center justify-center gap-1 border-b border-[#102b52]/10 px-4 py-3"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="de">DE</button></div>
       <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-5 text-[#102b52]">
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html">Inicio</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="cabanas.html">Cabañas</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="historia.html">Historia</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#servicios">Servicios</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="entorno.html">Entorno</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="como-llegar.html">Cómo llegar</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="galeria.html">Galería</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#tour360">Recorrido 360°</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#tarifas">Tarifas</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#reservar">Contacto</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html" data-i18n="nav.inicio">Inicio</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="cabanas.html" data-i18n="nav.cabanas">Cabañas</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="historia.html" data-i18n="nav.historia">Historia</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="entorno.html" data-i18n="nav.entorno">Entorno</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="como-llegar.html" data-i18n="nav.comollegar">Cómo llegar</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="galeria.html" data-i18n="nav.galeria">Galería</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#tour360" data-i18n="nav.tour360">Recorrido 360°</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#tarifas" data-i18n="nav.tarifas">Tarifas</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#reservar" data-i18n="nav.contacto">Contacto</a>
       </nav>
       <div class="flex items-center gap-2 border-t border-[#102b52]/10 p-4">
         <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram" class="grid size-12 shrink-0 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:border-transparent hover:bg-gradient-to-tr hover:from-[#f4c464] hover:to-[#c64e2a] hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
         </a>
-        <a href="index.html#reservar" class="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-[#102b52] px-5 text-sm font-semibold text-white transition hover:bg-[#c64e2a]">Consultar disponibilidad</a>
+        <a href="index.html#reservar" class="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-[#102b52] px-5 text-sm font-semibold text-white transition hover:bg-[#c64e2a]" data-i18n="btn.consultarDisp">Consultar disponibilidad</a>
       </div>
     </aside>
   </div>
@@ -78,11 +80,11 @@
     <div class="mx-auto max-w-7xl">
       <a href="index.html" class="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-[#526273] transition hover:text-[#c64e2a]">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
-        Volver al inicio
+        <span data-i18n="common.volver">Volver al inicio</span>
       </a>
-      <p class="eyebrow">Alojamiento con identidad</p>
-      <h1 class="section-title max-w-4xl">Cinco cabañas y un departamento, únicos entre sí.</h1>
-      <p class="mt-6 max-w-2xl text-lg leading-8 text-[#526273]">Cada unidad recibe a solo dos personas, con cocina equipada, climatización, ropa de cama de primera calidad y salida a los jardines. Construidas con materiales y artesanos locales.</p>
+      <p class="eyebrow" data-i18n="cb.eyebrow">Alojamiento con identidad</p>
+      <h1 class="section-title max-w-4xl" data-i18n="cb.h1">Cinco cabañas y un departamento, únicos entre sí.</h1>
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-[#526273]" data-i18n="cb.intro">Cada unidad recibe a solo dos personas, con cocina equipada, climatización, ropa de cama de primera calidad y salida a los jardines. Construidas con materiales y artesanos locales.</p>
     </div>
   </section>
 
@@ -95,28 +97,36 @@
         <div class="grid lg:grid-cols-[1fr_1.3fr]">
           <div class="relative min-h-[240px] p-8" style="background:linear-gradient(135deg,#e8a9a0,#d98a80)">
             <div class="flex items-center justify-between text-white">
-              <span class="rounded-full bg-black/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]">Cabaña · 2 personas</span>
+              <span class="rounded-full bg-black/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]" data-i18n="cb.badgeCab">Cabaña · 2 personas</span>
               <span class="font-display text-5xl text-white/40">01</span>
             </div>
             <h2 class="mt-16 font-display text-5xl text-white">Cuarzo</h2>
-            <p class="mt-2 font-semibold text-white/90">Especial para enamorados</p>
+            <p class="mt-2 font-semibold text-white/90" data-i18n="cb.tag.cuarzo">Especial para enamorados</p>
           </div>
           <div class="p-8 sm:p-10">
-            <p class="leading-8 text-[#4a5a6b]">Nuestra cabaña más especial: diseñada para contemplar los cielos más limpios del mundo a toda hora. Sus techos en forma de domos permiten ver estrellas fugaces, la Vía Láctea y el amanecer en todo su esplendor. Sus muros están hechos por completo de cuarzo blanco y rosado, que transmiten la mejor energía.</p>
+            <p class="leading-8 text-[#4a5a6b]" data-i18n="cb.desc.cuarzo">Nuestra cabaña más especial: diseñada para contemplar los cielos más limpios del mundo a toda hora. Sus techos en forma de domos permiten ver estrellas fugaces, la Vía Láctea y el amanecer en todo su esplendor. Sus muros están hechos por completo de cuarzo blanco y rosado, que transmiten la mejor energía.</p>
             <div class="mt-6 grid gap-6 sm:grid-cols-[1.5fr_1fr]">
               <div>
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]">Equipamiento</p>
-                <p class="mt-2 text-sm leading-7 text-[#5a6978]">Cama matrimonial · ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso) · aire acondicionado · cocina completa · baño amplio (toallas 600 grs, secador) · citófono · TV · comedor y living · calefacción a leña · ventilador · caja fuerte · terraza con parrilla · reposeras y salida directa a la piscina.</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]" data-i18n="cb.equip">Equipamiento</p>
+                <p class="mt-2 text-sm leading-7 text-[#5a6978]" data-i18n="cb.eq.cuarzo">Cama matrimonial · ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso) · aire acondicionado · cocina completa · baño amplio (toallas 600 grs, secador) · citófono · TV · comedor y living · calefacción a leña · ventilador · caja fuerte · terraza con parrilla · reposeras y salida directa a la piscina.</p>
               </div>
               <div class="rounded-2xl bg-[#f8f6f1] p-5">
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]">Valores / noche</p>
-                <p class="mt-3 text-sm text-[#5a6978]">Temporada alta</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]" data-i18n="cb.valores">Valores / noche</p>
+                <p class="mt-3 text-sm text-[#5a6978]" data-i18n="common.tempAlta">Temporada alta</p>
                 <p class="font-display text-2xl text-[#102b52]">$140.000</p>
-                <p class="mt-2 text-sm text-[#5a6978]">Temporada baja</p>
+                <p class="mt-2 text-sm text-[#5a6978]" data-i18n="common.tempBaja">Temporada baja</p>
                 <p class="font-display text-2xl text-[#c64e2a]">$120.000</p>
               </div>
             </div>
-            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20por%20la%20caba%C3%B1a%20Cuarzo" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 text-sm font-medium h-11 rounded-full bg-[#c64e2a] px-6 text-white transition hover:bg-[#102b52]">Consultar Cuarzo por WhatsApp</a>
+            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20por%20la%20caba%C3%B1a%20Cuarzo" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 text-sm font-medium h-11 rounded-full bg-[#c64e2a] px-6 text-white transition hover:bg-[#102b52]" data-i18n="cb.btn.cuarzo">Consultar Cuarzo por WhatsApp</a>
+            <div data-gallery class="mt-6 grid grid-cols-3 gap-2 sm:grid-cols-6">
+              <img src="images/cabanas/cuarzo/1.jpg" alt="Cuarzo foto 1" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/cuarzo/2.jpg" alt="Cuarzo foto 2" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/cuarzo/3.jpg" alt="Cuarzo foto 3" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/cuarzo/4.jpg" alt="Cuarzo foto 4" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/cuarzo/5.jpg" alt="Cuarzo foto 5" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/cuarzo/6.jpg" alt="Cuarzo foto 6" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+            </div>
           </div>
         </div>
       </article>
@@ -126,28 +136,36 @@
         <div class="grid lg:grid-cols-[1fr_1.3fr]">
           <div class="relative min-h-[240px] p-8" style="background:linear-gradient(135deg,#9fc9dd,#7fb4cf)">
             <div class="flex items-center justify-between text-white">
-              <span class="rounded-full bg-black/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]">Cabaña · 2 personas</span>
+              <span class="rounded-full bg-black/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]" data-i18n="cb.badgeCab">Cabaña · 2 personas</span>
               <span class="font-display text-5xl text-white/40">02</span>
             </div>
             <h2 class="mt-16 font-display text-5xl text-white">Aire</h2>
-            <p class="mt-2 font-semibold text-white/90">Luz, sol y la mejor vista</p>
+            <p class="mt-2 font-semibold text-white/90" data-i18n="cb.tag.aire">Luz, sol y la mejor vista</p>
           </div>
           <div class="p-8 sm:p-10">
-            <p class="leading-8 text-[#4a5a6b]">Nueva, llena de luz y sol. Se encuentra en el punto más alto, en el 6.º nivel, con una vista hermosa a la piscina, el jardín y todo el valle. Tiene muros de piedra y un techo con forma de cuatro pirámides transparentes. Disfruta de una gran terraza con comedor exterior y reposeras.</p>
+            <p class="leading-8 text-[#4a5a6b]" data-i18n="cb.desc.aire">Nueva, llena de luz y sol. Se encuentra en el punto más alto, en el 6.º nivel, con una vista hermosa a la piscina, el jardín y todo el valle. Tiene muros de piedra y un techo con forma de cuatro pirámides transparentes. Disfruta de una gran terraza con comedor exterior y reposeras.</p>
             <div class="mt-6 grid gap-6 sm:grid-cols-[1.5fr_1fr]">
               <div>
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]">Equipamiento</p>
-                <p class="mt-2 text-sm leading-7 text-[#5a6978]">Cama king · ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso) · aire acondicionado · cocina completa · baño amplio (toallas 600 grs, secador) · living-comedor · citófono · TV · calefacción · ventilador · terraza con parrilla, comedor exterior y reposeras.</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]" data-i18n="cb.equip">Equipamiento</p>
+                <p class="mt-2 text-sm leading-7 text-[#5a6978]" data-i18n="cb.eq.aire">Cama king · ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso) · aire acondicionado · cocina completa · baño amplio (toallas 600 grs, secador) · living-comedor · citófono · TV · calefacción · ventilador · terraza con parrilla, comedor exterior y reposeras.</p>
               </div>
               <div class="rounded-2xl bg-[#f8f6f1] p-5">
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]">Valores / noche</p>
-                <p class="mt-3 text-sm text-[#5a6978]">Temporada alta</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]" data-i18n="cb.valores">Valores / noche</p>
+                <p class="mt-3 text-sm text-[#5a6978]" data-i18n="common.tempAlta">Temporada alta</p>
                 <p class="font-display text-2xl text-[#102b52]">$140.000</p>
-                <p class="mt-2 text-sm text-[#5a6978]">Temporada baja</p>
+                <p class="mt-2 text-sm text-[#5a6978]" data-i18n="common.tempBaja">Temporada baja</p>
                 <p class="font-display text-2xl text-[#c64e2a]">$120.000</p>
               </div>
             </div>
-            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20por%20la%20caba%C3%B1a%20Aire" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 text-sm font-medium h-11 rounded-full bg-[#c64e2a] px-6 text-white transition hover:bg-[#102b52]">Consultar Aire por WhatsApp</a>
+            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20por%20la%20caba%C3%B1a%20Aire" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 text-sm font-medium h-11 rounded-full bg-[#c64e2a] px-6 text-white transition hover:bg-[#102b52]" data-i18n="cb.btn.aire">Consultar Aire por WhatsApp</a>
+            <div data-gallery class="mt-6 grid grid-cols-3 gap-2 sm:grid-cols-6">
+              <img src="images/cabanas/aire/1.jpg" alt="Aire foto 1" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/aire/2.jpg" alt="Aire foto 2" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/aire/3.jpg" alt="Aire foto 3" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/aire/4.jpg" alt="Aire foto 4" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/aire/5.jpg" alt="Aire foto 5" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/aire/6.jpg" alt="Aire foto 6" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+            </div>
           </div>
         </div>
       </article>
@@ -157,28 +175,36 @@
         <div class="grid lg:grid-cols-[1fr_1.3fr]">
           <div class="relative min-h-[240px] p-8" style="background:linear-gradient(135deg,#c9542d,#a8401f)">
             <div class="flex items-center justify-between text-white">
-              <span class="rounded-full bg-black/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]">Cabaña · 2 personas</span>
+              <span class="rounded-full bg-black/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]" data-i18n="cb.badgeCab">Cabaña · 2 personas</span>
               <span class="font-display text-5xl text-white/40">03</span>
             </div>
             <h2 class="mt-16 font-display text-5xl text-white">Fuego</h2>
-            <p class="mt-2 font-semibold text-white/90">Fuerza, vida y renacer</p>
+            <p class="mt-2 font-semibold text-white/90" data-i18n="cb.tag.fuego">Fuerza, vida y renacer</p>
           </div>
           <div class="p-8 sm:p-10">
-            <p class="leading-8 text-[#4a5a6b]">Nueva y moderna, una mezcla perfecta de piedra, fierro, cuarzo blanco y finos materiales que representan la fuerza del fuego. La cabaña y todos sus muebles fueron diseñados y hechos a mano por artesanos de la zona. Sus techos curvos siguen la suavidad de las montañas, que al atardecer se encienden en colores naranjos y rojos.</p>
+            <p class="leading-8 text-[#4a5a6b]" data-i18n="cb.desc.fuego">Nueva y moderna, una mezcla perfecta de piedra, fierro, cuarzo blanco y finos materiales que representan la fuerza del fuego. La cabaña y todos sus muebles fueron diseñados y hechos a mano por artesanos de la zona. Sus techos curvos siguen la suavidad de las montañas, que al atardecer se encienden en colores naranjos y rojos.</p>
             <div class="mt-6 grid gap-6 sm:grid-cols-[1.5fr_1fr]">
               <div>
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]">Equipamiento</p>
-                <p class="mt-2 text-sm leading-7 text-[#5a6978]">Cama king · ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso) · aire acondicionado · cocina completa · baño amplio (toallas 600 grs, secador) · citófono · TV · comedor y living · ventilador · caja fuerte · terraza con parrilla · muros de piedra y cuarzo blanco · vista al valle, piscina y jardines.</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]" data-i18n="cb.equip">Equipamiento</p>
+                <p class="mt-2 text-sm leading-7 text-[#5a6978]" data-i18n="cb.eq.fuego">Cama king · ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso) · aire acondicionado · cocina completa · baño amplio (toallas 600 grs, secador) · citófono · TV · comedor y living · ventilador · caja fuerte · terraza con parrilla · muros de piedra y cuarzo blanco · vista al valle, piscina y jardines.</p>
               </div>
               <div class="rounded-2xl bg-[#f8f6f1] p-5">
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]">Valores / noche</p>
-                <p class="mt-3 text-sm text-[#5a6978]">Temporada alta</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]" data-i18n="cb.valores">Valores / noche</p>
+                <p class="mt-3 text-sm text-[#5a6978]" data-i18n="common.tempAlta">Temporada alta</p>
                 <p class="font-display text-2xl text-[#102b52]">$100.000</p>
-                <p class="mt-2 text-sm text-[#5a6978]">Temporada baja</p>
+                <p class="mt-2 text-sm text-[#5a6978]" data-i18n="common.tempBaja">Temporada baja</p>
                 <p class="font-display text-2xl text-[#c64e2a]">$90.000</p>
               </div>
             </div>
-            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20por%20la%20caba%C3%B1a%20Fuego" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 text-sm font-medium h-11 rounded-full bg-[#c64e2a] px-6 text-white transition hover:bg-[#102b52]">Consultar Fuego por WhatsApp</a>
+            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20por%20la%20caba%C3%B1a%20Fuego" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 text-sm font-medium h-11 rounded-full bg-[#c64e2a] px-6 text-white transition hover:bg-[#102b52]" data-i18n="cb.btn.fuego">Consultar Fuego por WhatsApp</a>
+            <div data-gallery class="mt-6 grid grid-cols-3 gap-2 sm:grid-cols-6">
+              <img src="images/cabanas/fuego/1.jpg" alt="Fuego foto 1" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/fuego/2.jpg" alt="Fuego foto 2" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/fuego/3.jpg" alt="Fuego foto 3" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/fuego/4.jpg" alt="Fuego foto 4" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/fuego/5.jpg" alt="Fuego foto 5" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/fuego/6.jpg" alt="Fuego foto 6" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+            </div>
           </div>
         </div>
       </article>
@@ -188,28 +214,36 @@
         <div class="grid lg:grid-cols-[1fr_1.3fr]">
           <div class="relative min-h-[240px] p-8" style="background:linear-gradient(135deg,#c79330,#a87a20)">
             <div class="flex items-center justify-between text-white">
-              <span class="rounded-full bg-black/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]">Cabaña · 2 personas</span>
+              <span class="rounded-full bg-black/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]" data-i18n="cb.badgeCab">Cabaña · 2 personas</span>
               <span class="font-display text-5xl text-white/40">04</span>
             </div>
             <h2 class="mt-16 font-display text-5xl text-white">Cobre</h2>
-            <p class="mt-2 font-semibold text-white/90">Amplia, con detalles en cobre</p>
+            <p class="mt-2 font-semibold text-white/90" data-i18n="cb.tag.cobre">Amplia, con detalles en cobre</p>
           </div>
           <div class="p-8 sm:p-10">
-            <p class="leading-8 text-[#4a5a6b]">Cabaña amplia y encantadora, con detalles en cobre y madera. Disfruta de vistas espectaculares al valle y de una terraza con comedor y living exterior.</p>
+            <p class="leading-8 text-[#4a5a6b]" data-i18n="cb.desc.cobre">Cabaña amplia y encantadora, con detalles en cobre y madera. Disfruta de vistas espectaculares al valle y de una terraza con comedor y living exterior.</p>
             <div class="mt-6 grid gap-6 sm:grid-cols-[1.5fr_1fr]">
               <div>
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]">Equipamiento</p>
-                <p class="mt-2 text-sm leading-7 text-[#5a6978]">Dormitorio en suite con cama matrimonial · 2 baños · ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso, toallas 600 grs, secador) · cocina americana completa · comedor y living interior y exterior · citófono · TV · calefacción a leña · parrilla · ventilador · caja fuerte.</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]" data-i18n="cb.equip">Equipamiento</p>
+                <p class="mt-2 text-sm leading-7 text-[#5a6978]" data-i18n="cb.eq.cobre">Dormitorio en suite con cama matrimonial · 2 baños · ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso, toallas 600 grs, secador) · cocina americana completa · comedor y living interior y exterior · citófono · TV · calefacción a leña · parrilla · ventilador · caja fuerte.</p>
               </div>
               <div class="rounded-2xl bg-[#f8f6f1] p-5">
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]">Valores / noche</p>
-                <p class="mt-3 text-sm text-[#5a6978]">Temporada alta</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]" data-i18n="cb.valores">Valores / noche</p>
+                <p class="mt-3 text-sm text-[#5a6978]" data-i18n="common.tempAlta">Temporada alta</p>
                 <p class="font-display text-2xl text-[#102b52]">$100.000</p>
-                <p class="mt-2 text-sm text-[#5a6978]">Temporada baja</p>
+                <p class="mt-2 text-sm text-[#5a6978]" data-i18n="common.tempBaja">Temporada baja</p>
                 <p class="font-display text-2xl text-[#c64e2a]">$90.000</p>
               </div>
             </div>
-            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20por%20la%20caba%C3%B1a%20Cobre" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 text-sm font-medium h-11 rounded-full bg-[#c64e2a] px-6 text-white transition hover:bg-[#102b52]">Consultar Cobre por WhatsApp</a>
+            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20por%20la%20caba%C3%B1a%20Cobre" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 text-sm font-medium h-11 rounded-full bg-[#c64e2a] px-6 text-white transition hover:bg-[#102b52]" data-i18n="cb.btn.cobre">Consultar Cobre por WhatsApp</a>
+            <div data-gallery class="mt-6 grid grid-cols-3 gap-2 sm:grid-cols-6">
+              <img src="images/cabanas/cobre/1.jpg" alt="Cobre foto 1" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/cobre/2.jpg" alt="Cobre foto 2" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/cobre/3.jpg" alt="Cobre foto 3" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/cobre/4.jpg" alt="Cobre foto 4" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/cobre/5.jpg" alt="Cobre foto 5" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/cobre/6.jpg" alt="Cobre foto 6" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+            </div>
           </div>
         </div>
       </article>
@@ -219,28 +253,36 @@
         <div class="grid lg:grid-cols-[1fr_1.3fr]">
           <div class="relative min-h-[240px] p-8" style="background:linear-gradient(135deg,#2b9298,#1f767b)">
             <div class="flex items-center justify-between text-white">
-              <span class="rounded-full bg-black/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]">Cabaña · 2 personas</span>
+              <span class="rounded-full bg-black/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]" data-i18n="cb.badgeCab">Cabaña · 2 personas</span>
               <span class="font-display text-5xl text-white/40">05</span>
             </div>
             <h2 class="mt-16 font-display text-5xl text-white">Agua</h2>
-            <p class="mt-2 font-semibold text-white/90">Acceso directo a la piscina</p>
+            <p class="mt-2 font-semibold text-white/90" data-i18n="cb.tag.agua">Acceso directo a la piscina</p>
           </div>
           <div class="p-8 sm:p-10">
-            <p class="leading-8 text-[#4a5a6b]">Hermosa cabaña con acceso directo a la piscina. Construida en adobe y madera, ofrece mucha luz y una terraza espectacular. Disfruta de una envidiable vista a la piscina, los jardines, los viñedos, las montañas y los cielos, en la tranquilidad del Valle de Elqui.</p>
+            <p class="leading-8 text-[#4a5a6b]" data-i18n="cb.desc.agua">Hermosa cabaña con acceso directo a la piscina. Construida en adobe y madera, ofrece mucha luz y una terraza espectacular. Disfruta de una envidiable vista a la piscina, los jardines, los viñedos, las montañas y los cielos, en la tranquilidad del Valle de Elqui.</p>
             <div class="mt-6 grid gap-6 sm:grid-cols-[1.5fr_1fr]">
               <div>
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]">Equipamiento</p>
-                <p class="mt-2 text-sm leading-7 text-[#5a6978]">Dormitorio matrimonial y living · ropa de cama premium (plumón de pluma de ganso, sábanas de 400 hilos) · cocina completa · baño amplio (toallas 600 grs, secador) · living-comedor · citófono · TV · ventilador · calefacción a leña · caja fuerte · amplia terraza con reposeras y parrilla.</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]" data-i18n="cb.equip">Equipamiento</p>
+                <p class="mt-2 text-sm leading-7 text-[#5a6978]" data-i18n="cb.eq.agua">Dormitorio matrimonial y living · ropa de cama premium (plumón de pluma de ganso, sábanas de 400 hilos) · cocina completa · baño amplio (toallas 600 grs, secador) · living-comedor · citófono · TV · ventilador · calefacción a leña · caja fuerte · amplia terraza con reposeras y parrilla.</p>
               </div>
               <div class="rounded-2xl bg-[#f8f6f1] p-5">
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]">Valores / noche</p>
-                <p class="mt-3 text-sm text-[#5a6978]">Temporada alta</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]" data-i18n="cb.valores">Valores / noche</p>
+                <p class="mt-3 text-sm text-[#5a6978]" data-i18n="common.tempAlta">Temporada alta</p>
                 <p class="font-display text-2xl text-[#102b52]">$100.000</p>
-                <p class="mt-2 text-sm text-[#5a6978]">Temporada baja</p>
+                <p class="mt-2 text-sm text-[#5a6978]" data-i18n="common.tempBaja">Temporada baja</p>
                 <p class="font-display text-2xl text-[#c64e2a]">$90.000</p>
               </div>
             </div>
-            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20por%20la%20caba%C3%B1a%20Agua" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 text-sm font-medium h-11 rounded-full bg-[#c64e2a] px-6 text-white transition hover:bg-[#102b52]">Consultar Agua por WhatsApp</a>
+            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20por%20la%20caba%C3%B1a%20Agua" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 text-sm font-medium h-11 rounded-full bg-[#c64e2a] px-6 text-white transition hover:bg-[#102b52]" data-i18n="cb.btn.agua">Consultar Agua por WhatsApp</a>
+            <div data-gallery class="mt-6 grid grid-cols-3 gap-2 sm:grid-cols-6">
+              <img src="images/cabanas/agua/1.jpg" alt="Agua foto 1" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/agua/2.jpg" alt="Agua foto 2" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/agua/3.jpg" alt="Agua foto 3" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/agua/4.jpg" alt="Agua foto 4" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/agua/5.jpg" alt="Agua foto 5" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/agua/6.jpg" alt="Agua foto 6" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+            </div>
           </div>
         </div>
       </article>
@@ -250,28 +292,36 @@
         <div class="grid lg:grid-cols-[1fr_1.3fr]">
           <div class="relative min-h-[240px] p-8" style="background:linear-gradient(135deg,#596b7d,#3f4f60)">
             <div class="flex items-center justify-between text-white">
-              <span class="rounded-full bg-black/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]">Departamento · 2 personas</span>
+              <span class="rounded-full bg-black/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em]" data-i18n="cb.badgeDpto">Departamento · 2 personas</span>
               <span class="font-display text-5xl text-white/40">06</span>
             </div>
             <h2 class="mt-16 font-display text-5xl text-white">Piedra</h2>
-            <p class="mt-2 font-semibold text-white/90">Estilo señorial, como un castillo</p>
+            <p class="mt-2 font-semibold text-white/90" data-i18n="cb.tag.piedra">Estilo señorial, como un castillo</p>
           </div>
           <div class="p-8 sm:p-10">
-            <p class="leading-8 text-[#4a5a6b]">El departamento Piedra está construido, como su nombre lo dice, en piedra de nuestra zona, cargándolo con la energía positiva de los minerales de la región. Alhajado con estilo señorial, da la sensación de estar en un pequeño castillo. Cuenta con un dormitorio con cama matrimonial.</p>
+            <p class="leading-8 text-[#4a5a6b]" data-i18n="cb.desc.piedra">El departamento Piedra está construido, como su nombre lo dice, en piedra de nuestra zona, cargándolo con la energía positiva de los minerales de la región. Alhajado con estilo señorial, da la sensación de estar en un pequeño castillo. Cuenta con un dormitorio con cama matrimonial.</p>
             <div class="mt-6 grid gap-6 sm:grid-cols-[1.5fr_1fr]">
               <div>
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]">Equipamiento</p>
-                <p class="mt-2 text-sm leading-7 text-[#5a6978]">Ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso) · cocina americana completa · comedor y living · baño (toallas 600 grs, secador) · aire acondicionado · citófono · TV · estufa de combustión lenta · vistas a las montañas.</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]" data-i18n="cb.equip">Equipamiento</p>
+                <p class="mt-2 text-sm leading-7 text-[#5a6978]" data-i18n="cb.eq.piedra">Ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso) · cocina americana completa · comedor y living · baño (toallas 600 grs, secador) · aire acondicionado · citófono · TV · estufa de combustión lenta · vistas a las montañas.</p>
               </div>
               <div class="rounded-2xl bg-[#f8f6f1] p-5">
-                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]">Valores / noche</p>
-                <p class="mt-3 text-sm text-[#5a6978]">Temporada alta</p>
+                <p class="text-xs font-bold uppercase tracking-[0.16em] text-[#718091]" data-i18n="cb.valores">Valores / noche</p>
+                <p class="mt-3 text-sm text-[#5a6978]" data-i18n="common.tempAlta">Temporada alta</p>
                 <p class="font-display text-2xl text-[#102b52]">$80.000</p>
-                <p class="mt-2 text-sm text-[#5a6978]">Temporada baja</p>
+                <p class="mt-2 text-sm text-[#5a6978]" data-i18n="common.tempBaja">Temporada baja</p>
                 <p class="font-display text-2xl text-[#c64e2a]">$70.000</p>
               </div>
             </div>
-            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20por%20el%20departamento%20Piedra" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 text-sm font-medium h-11 rounded-full bg-[#c64e2a] px-6 text-white transition hover:bg-[#102b52]">Consultar Piedra por WhatsApp</a>
+            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20por%20el%20departamento%20Piedra" target="_blank" rel="noreferrer" class="mt-6 inline-flex items-center justify-center gap-2 text-sm font-medium h-11 rounded-full bg-[#c64e2a] px-6 text-white transition hover:bg-[#102b52]" data-i18n="cb.btn.piedra">Consultar Piedra por WhatsApp</a>
+            <div data-gallery class="mt-6 grid grid-cols-3 gap-2 sm:grid-cols-6">
+              <img src="images/cabanas/piedra/1.jpg" alt="Piedra foto 1" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/piedra/2.jpg" alt="Piedra foto 2" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/piedra/3.jpg" alt="Piedra foto 3" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/piedra/4.jpg" alt="Piedra foto 4" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/piedra/5.jpg" alt="Piedra foto 5" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+              <img src="images/cabanas/piedra/6.jpg" alt="Piedra foto 6" loading="lazy" class="cab-thumb aspect-square w-full cursor-pointer rounded-lg object-cover shadow-sm transition hover:opacity-80">
+            </div>
           </div>
         </div>
       </article>
@@ -282,14 +332,14 @@
   <!-- ===== CONDICIONES ===== -->
   <section class="px-5 py-16 sm:px-8">
     <div class="mx-auto max-w-7xl reveal rounded-[2rem] bg-[#102b52] p-8 text-white sm:p-12">
-      <h2 class="font-display text-3xl">Condiciones de reserva</h2>
+      <h2 class="font-display text-3xl" data-i18n="cb.condTitle">Condiciones de reserva</h2>
       <div class="mt-6 grid gap-6 text-sm leading-7 text-white/75 sm:grid-cols-2 lg:grid-cols-3">
-        <p>· Reservas por un mínimo de <strong class="text-white">dos noches</strong>. Cada unidad recibe <strong class="text-white">solo dos personas</strong>.</p>
-        <p>· Valores por noche, en pesos chilenos, <strong class="text-white">IVA incluido</strong>. Extranjeros no residentes pueden quedar exentos del IVA (19%) con la documentación requerida.</p>
-        <p>· <strong class="text-white">Temporada alta:</strong> 15 de diciembre al 15 de abril, feriados y fines de semana largos, vacaciones de invierno (julio) y septiembre (12 al 21).</p>
-        <p>· Se aceptan tarjetas de crédito y débito, efectivo, dólares y euros.</p>
-        <p>· Para reservar se deposita el <strong class="text-white">50% del valor total</strong> por anticipado; el saldo se paga al ingreso.</p>
-        <p>· No se aceptan visitas en las cabañas ni en la piscina. No contamos con servicio de restaurante.</p>
+        <p data-i18n="cb.c1">· Reservas por un mínimo de <strong class="text-white">dos noches</strong>. Cada unidad recibe <strong class="text-white">solo dos personas</strong>.</p>
+        <p data-i18n="cb.c2">· Valores por noche, en pesos chilenos, <strong class="text-white">IVA incluido</strong>. Extranjeros no residentes pueden quedar exentos del IVA (19%) con la documentación requerida.</p>
+        <p data-i18n="cb.c3">· <strong class="text-white">Temporada alta:</strong> 15 de diciembre al 15 de abril, feriados y fines de semana largos, vacaciones de invierno (julio) y septiembre (12 al 21).</p>
+        <p data-i18n="cb.c4">· Se aceptan tarjetas de crédito y débito, efectivo, dólares y euros.</p>
+        <p data-i18n="cb.c5">· Para reservar se deposita el <strong class="text-white">50% del valor total</strong> por anticipado; el saldo se paga al ingreso.</p>
+        <p data-i18n="cb.c6">· No se aceptan visitas en las cabañas ni en la piscina. No contamos con servicio de restaurante.</p>
       </div>
       <a href="index.html#reservar" class="mt-8 inline-flex items-center justify-center gap-2 text-sm font-medium h-12 rounded-full bg-[#e3aa36] px-7 text-[#112b4f] transition hover:bg-white">
         Consultar disponibilidad
@@ -303,12 +353,12 @@
     <div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 border-b border-white/10 pb-10 lg:flex-row lg:items-center">
       <img src="images/caballieri-logo.png" alt="Cabañas Caballieri" width="360" height="180" class="h-20 w-auto rounded-xl bg-white object-contain p-1">
       <div class="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold">
-        <a class="hover:text-white" href="cabanas.html">Cabañas</a>
-        <a class="hover:text-white" href="historia.html">Historia</a>
-        <a class="hover:text-white" href="entorno.html">Entorno</a>
-        <a class="hover:text-white" href="como-llegar.html">Cómo llegar</a>
-        <a class="hover:text-white" href="galeria.html">Galería</a>
-        <a class="hover:text-white" href="index.html#tarifas">Tarifas</a>
+        <a class="hover:text-white" href="cabanas.html" data-i18n="nav.cabanas">Cabañas</a>
+        <a class="hover:text-white" href="historia.html" data-i18n="nav.historia">Historia</a>
+        <a class="hover:text-white" href="entorno.html" data-i18n="nav.entorno">Entorno</a>
+        <a class="hover:text-white" href="como-llegar.html" data-i18n="nav.comollegar">Cómo llegar</a>
+        <a class="hover:text-white" href="galeria.html" data-i18n="nav.galeria">Galería</a>
+        <a class="hover:text-white" href="index.html#tarifas" data-i18n="nav.tarifas">Tarifas</a>
       </div>
       <div class="flex gap-3">
         <a class="grid size-11 place-items-center rounded-full border border-white/15 hover:border-white hover:text-white" href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram">
@@ -324,14 +374,144 @@
     </div>
     <div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 pt-7 text-xs sm:flex-row">
       <p>© 2026 Cabañas Caballieri · Pisco Elqui, Chile</p>
-      <p>Estadía mínima: 2 noches · Máximo 2 huéspedes por unidad</p>
+      <p data-i18n="foot.min">Estadía mínima: 2 noches · Máximo 2 huéspedes por unidad</p>
     </div>
   </footer>
 
   <a href="https://wa.me/56996414055" target="_blank" rel="noreferrer" class="wa-float fixed bottom-5 right-5 z-40 grid size-14 place-items-center rounded-full bg-[#25d366] text-white shadow-[0_12px_35px_rgba(37,211,102,0.38)] transition hover:scale-105" aria-label="Consultar por WhatsApp">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
   </a>
+
+  <!-- Visor de fotos de cabaña -->
+  <div id="cab-lightbox" class="hidden fixed inset-0 z-[90] flex items-center justify-center bg-black/85 p-4" role="dialog" aria-modal="true" aria-label="Fotos de la cabaña">
+    <button id="cab-close" aria-label="Cerrar" class="absolute right-4 top-4 grid size-12 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+    </button>
+    <button id="cab-prev" aria-label="Anterior" class="absolute left-4 grid size-12 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20 sm:left-8">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6"><path d="m15 18-6-6 6-6"></path></svg>
+    </button>
+    <button id="cab-next" aria-label="Siguiente" class="absolute right-4 grid size-12 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20 sm:right-8">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6"><path d="m9 18 6-6-6-6"></path></svg>
+    </button>
+    <img id="cab-img" src="" alt="" class="mx-auto max-h-[85vh] w-auto rounded-2xl object-contain shadow-2xl">
+  </div>
 </main>
+<script>
+  window.I18N = {
+    es: {
+      "cb.eyebrow":"Alojamiento con identidad","cb.h1":"Cinco cabañas y un departamento, únicos entre sí.",
+      "cb.intro":"Cada unidad recibe a solo dos personas, con cocina equipada, climatización, ropa de cama de primera calidad y salida a los jardines. Construidas con materiales y artesanos locales.",
+      "cb.badgeCab":"Cabaña · 2 personas","cb.badgeDpto":"Departamento · 2 personas","cb.equip":"Equipamiento","cb.valores":"Valores / noche","cb.condTitle":"Condiciones de reserva",
+      "cb.tag.cuarzo":"Especial para enamorados","cb.tag.aire":"Luz, sol y la mejor vista","cb.tag.fuego":"Fuerza, vida y renacer","cb.tag.cobre":"Amplia, con detalles en cobre","cb.tag.agua":"Acceso directo a la piscina","cb.tag.piedra":"Estilo señorial, como un castillo",
+      "cb.btn.cuarzo":"Consultar Cuarzo por WhatsApp","cb.btn.aire":"Consultar Aire por WhatsApp","cb.btn.fuego":"Consultar Fuego por WhatsApp","cb.btn.cobre":"Consultar Cobre por WhatsApp","cb.btn.agua":"Consultar Agua por WhatsApp","cb.btn.piedra":"Consultar Piedra por WhatsApp",
+      "cb.desc.cuarzo":"Nuestra cabaña más especial: diseñada para contemplar los cielos más limpios del mundo a toda hora. Sus techos en forma de domos permiten ver estrellas fugaces, la Vía Láctea y el amanecer en todo su esplendor. Sus muros están hechos por completo de cuarzo blanco y rosado, que transmiten la mejor energía.",
+      "cb.desc.aire":"Nueva, llena de luz y sol. Se encuentra en el punto más alto, en el 6.º nivel, con una vista hermosa a la piscina, el jardín y todo el valle. Tiene muros de piedra y un techo con forma de cuatro pirámides transparentes. Disfruta de una gran terraza con comedor exterior y reposeras.",
+      "cb.desc.fuego":"Nueva y moderna, una mezcla perfecta de piedra, fierro, cuarzo blanco y finos materiales que representan la fuerza del fuego. La cabaña y todos sus muebles fueron diseñados y hechos a mano por artesanos de la zona. Sus techos curvos siguen la suavidad de las montañas, que al atardecer se encienden en colores naranjos y rojos.",
+      "cb.desc.cobre":"Cabaña amplia y encantadora, con detalles en cobre y madera. Disfruta de vistas espectaculares al valle y de una terraza con comedor y living exterior.",
+      "cb.desc.agua":"Hermosa cabaña con acceso directo a la piscina. Construida en adobe y madera, ofrece mucha luz y una terraza espectacular. Disfruta de una envidiable vista a la piscina, los jardines, los viñedos, las montañas y los cielos, en la tranquilidad del Valle de Elqui.",
+      "cb.desc.piedra":"El departamento Piedra está construido, como su nombre lo dice, en piedra de nuestra zona, cargándolo con la energía positiva de los minerales de la región. Alhajado con estilo señorial, da la sensación de estar en un pequeño castillo. Cuenta con un dormitorio con cama matrimonial.",
+      "cb.eq.cuarzo":"Cama matrimonial · ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso) · aire acondicionado · cocina completa · baño amplio (toallas 600 grs, secador) · citófono · TV · comedor y living · calefacción a leña · ventilador · caja fuerte · terraza con parrilla · reposeras y salida directa a la piscina.",
+      "cb.eq.aire":"Cama king · ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso) · aire acondicionado · cocina completa · baño amplio (toallas 600 grs, secador) · living-comedor · citófono · TV · calefacción · ventilador · terraza con parrilla, comedor exterior y reposeras.",
+      "cb.eq.fuego":"Cama king · ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso) · aire acondicionado · cocina completa · baño amplio (toallas 600 grs, secador) · citófono · TV · comedor y living · ventilador · caja fuerte · terraza con parrilla · muros de piedra y cuarzo blanco · vista al valle, piscina y jardines.",
+      "cb.eq.cobre":"Dormitorio en suite con cama matrimonial · 2 baños · ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso, toallas 600 grs, secador) · cocina americana completa · comedor y living interior y exterior · citófono · TV · calefacción a leña · parrilla · ventilador · caja fuerte.",
+      "cb.eq.agua":"Dormitorio matrimonial y living · ropa de cama premium (plumón de pluma de ganso, sábanas de 400 hilos) · cocina completa · baño amplio (toallas 600 grs, secador) · living-comedor · citófono · TV · ventilador · calefacción a leña · caja fuerte · amplia terraza con reposeras y parrilla.",
+      "cb.eq.piedra":"Ropa de cama premium (sábanas de 400 hilos, plumón de pluma de ganso) · cocina americana completa · comedor y living · baño (toallas 600 grs, secador) · aire acondicionado · citófono · TV · estufa de combustión lenta · vistas a las montañas.",
+      "cb.c1":"· Reservas por un mínimo de dos noches. Cada unidad recibe solo dos personas.",
+      "cb.c2":"· Valores por noche, en pesos chilenos, IVA incluido. Extranjeros no residentes pueden quedar exentos del IVA (19%) con la documentación requerida.",
+      "cb.c3":"· Temporada alta: 15 de diciembre al 15 de abril, feriados y fines de semana largos, vacaciones de invierno (julio) y septiembre (12 al 21).",
+      "cb.c4":"· Se aceptan tarjetas de crédito y débito, efectivo, dólares y euros.",
+      "cb.c5":"· Para reservar se deposita el 50% del valor total por anticipado; el saldo se paga al ingreso.",
+      "cb.c6":"· No se aceptan visitas en las cabañas ni en la piscina. No contamos con servicio de restaurante.",
+      "cb.condCta":"Consultar disponibilidad"
+    },
+    en: {
+      "cb.eyebrow":"Lodging with character","cb.h1":"Five cabins and one apartment, each one unique.",
+      "cb.intro":"Each unit hosts only two people, with a full kitchen, climate control, premium bed linen and access to the gardens. Built with local materials and craftspeople.",
+      "cb.badgeCab":"Cabin · 2 guests","cb.badgeDpto":"Apartment · 2 guests","cb.equip":"Amenities","cb.valores":"Rates / night","cb.condTitle":"Booking conditions",
+      "cb.tag.cuarzo":"Perfect for couples","cb.tag.aire":"Light, sun and the best view","cb.tag.fuego":"Strength, life and renewal","cb.tag.cobre":"Spacious, with copper details","cb.tag.agua":"Direct access to the pool","cb.tag.piedra":"Stately style, like a castle",
+      "cb.btn.cuarzo":"Ask about Cuarzo on WhatsApp","cb.btn.aire":"Ask about Aire on WhatsApp","cb.btn.fuego":"Ask about Fuego on WhatsApp","cb.btn.cobre":"Ask about Cobre on WhatsApp","cb.btn.agua":"Ask about Agua on WhatsApp","cb.btn.piedra":"Ask about Piedra on WhatsApp",
+      "cb.desc.cuarzo":"Our most special cabin: designed to admire the world's clearest skies at any hour. Its dome-shaped roofs let you watch shooting stars, the Milky Way and the sunrise in full splendour. Its walls are made entirely of white and pink quartz, which convey the best energy.",
+      "cb.desc.aire":"New, full of light and sun. It sits at the highest point, on the 6th level, with a beautiful view of the pool, the garden and the whole valley. It has stone walls and a roof shaped like four transparent pyramids. Enjoy a large terrace with an outdoor dining area and loungers.",
+      "cb.desc.fuego":"New and modern, a perfect blend of stone, iron, white quartz and fine materials that represent the strength of fire. The cabin and all its furniture were designed and handmade by local craftspeople. Its curved roofs follow the softness of the mountains, which glow orange and red at dusk.",
+      "cb.desc.cobre":"Spacious and charming cabin, with copper and wood details. Enjoy spectacular valley views and a terrace with an outdoor dining and living area.",
+      "cb.desc.agua":"Beautiful cabin with direct access to the pool. Built of adobe and wood, it offers plenty of light and a spectacular terrace. Enjoy an enviable view of the pool, gardens, vineyards, mountains and skies, in the calm of the Elqui Valley.",
+      "cb.desc.piedra":"The Piedra apartment is built, as its name says, from local stone, charging it with the positive energy of the region's minerals. Furnished in a stately style, it feels like a little castle. It has a bedroom with a double bed.",
+      "cb.eq.cuarzo":"Double bed · premium bed linen (400-thread-count sheets, goose-down duvet) · air conditioning · full kitchen · large bathroom (600 g towels, hairdryer) · intercom · TV · dining and living area · wood heating · fan · safe · terrace with grill · loungers and direct access to the pool.",
+      "cb.eq.aire":"King bed · premium bed linen (400-thread-count sheets, goose-down duvet) · air conditioning · full kitchen · large bathroom (600 g towels, hairdryer) · living-dining area · intercom · TV · heating · fan · terrace with grill, outdoor dining area and loungers.",
+      "cb.eq.fuego":"King bed · premium bed linen (400-thread-count sheets, goose-down duvet) · air conditioning · full kitchen · large bathroom (600 g towels, hairdryer) · intercom · TV · dining and living area · fan · safe · terrace with grill · stone and white-quartz walls · view of the valley, pool and gardens.",
+      "cb.eq.cobre":"En-suite bedroom with double bed · 2 bathrooms · premium bed linen (400-thread-count sheets, goose-down duvet, 600 g towels, hairdryer) · full open kitchen · indoor and outdoor dining and living area · intercom · TV · wood heating · grill · fan · safe.",
+      "cb.eq.agua":"Double bedroom and living area · premium bed linen (goose-down duvet, 400-thread-count sheets) · full kitchen · large bathroom (600 g towels, hairdryer) · living-dining area · intercom · TV · fan · wood heating · safe · large terrace with loungers and grill.",
+      "cb.eq.piedra":"Premium bed linen (400-thread-count sheets, goose-down duvet) · full open kitchen · dining and living area · bathroom (600 g towels, hairdryer) · air conditioning · intercom · TV · slow-combustion stove · mountain views.",
+      "cb.c1":"· Bookings for a minimum of two nights. Each unit hosts only two people.",
+      "cb.c2":"· Rates per night, in Chilean pesos, VAT included. Non-resident foreigners may be exempt from VAT (19%) with the required documentation.",
+      "cb.c3":"· High season: 15 December to 15 April, holidays and long weekends, winter holidays (July) and September (12–21).",
+      "cb.c4":"· Credit and debit cards, cash, US dollars and euros accepted.",
+      "cb.c5":"· To book, 50% of the total is paid in advance; the balance is paid on arrival.",
+      "cb.c6":"· Visitors are not allowed in the cabins or the pool. We do not have restaurant service.",
+      "cb.condCta":"Check availability"
+    },
+    de: {
+      "cb.eyebrow":"Unterkunft mit Charakter","cb.h1":"Fünf Hütten und ein Apartment, jedes einzigartig.",
+      "cb.intro":"Jede Einheit beherbergt nur zwei Personen, mit voll ausgestatteter Küche, Klimaanlage, hochwertiger Bettwäsche und Zugang zu den Gärten. Aus lokalen Materialien und von lokalen Handwerkern gebaut.",
+      "cb.badgeCab":"Hütte · 2 Gäste","cb.badgeDpto":"Apartment · 2 Gäste","cb.equip":"Ausstattung","cb.valores":"Preise / Nacht","cb.condTitle":"Buchungsbedingungen",
+      "cb.tag.cuarzo":"Ideal für Verliebte","cb.tag.aire":"Licht, Sonne und die beste Aussicht","cb.tag.fuego":"Kraft, Leben und Neubeginn","cb.tag.cobre":"Geräumig, mit Kupferdetails","cb.tag.agua":"Direkter Zugang zum Pool","cb.tag.piedra":"Herrschaftlicher Stil, wie ein Schloss",
+      "cb.btn.cuarzo":"Cuarzo per WhatsApp anfragen","cb.btn.aire":"Aire per WhatsApp anfragen","cb.btn.fuego":"Fuego per WhatsApp anfragen","cb.btn.cobre":"Cobre per WhatsApp anfragen","cb.btn.agua":"Agua per WhatsApp anfragen","cb.btn.piedra":"Piedra per WhatsApp anfragen",
+      "cb.desc.cuarzo":"Unsere besondere Hütte: entworfen, um zu jeder Stunde den klarsten Himmel der Welt zu bewundern. Ihre kuppelförmigen Dächer lassen Sternschnuppen, die Milchstraße und den Sonnenaufgang in voller Pracht sehen. Die Wände bestehen vollständig aus weißem und rosa Quarz, der die beste Energie überträgt.",
+      "cb.desc.aire":"Neu, voller Licht und Sonne. Sie liegt am höchsten Punkt, auf der 6. Ebene, mit herrlichem Blick auf Pool, Garten und das ganze Tal. Sie hat Steinwände und ein Dach in Form von vier transparenten Pyramiden. Genießen Sie eine große Terrasse mit Außenessbereich und Liegen.",
+      "cb.desc.fuego":"Neu und modern, eine perfekte Mischung aus Stein, Eisen, weißem Quarz und feinen Materialien, die die Kraft des Feuers darstellen. Die Hütte und alle Möbel wurden von lokalen Handwerkern entworfen und handgefertigt. Die geschwungenen Dächer folgen der Sanftheit der Berge, die bei Sonnenuntergang orange und rot leuchten.",
+      "cb.desc.cobre":"Geräumige und charmante Hütte mit Kupfer- und Holzdetails. Genießen Sie spektakuläre Talblicke und eine Terrasse mit Ess- und Wohnbereich im Freien.",
+      "cb.desc.agua":"Schöne Hütte mit direktem Zugang zum Pool. Aus Adobe und Holz gebaut, bietet sie viel Licht und eine spektakuläre Terrasse. Genießen Sie einen beneidenswerten Blick auf Pool, Gärten, Weinberge, Berge und Himmel, in der Ruhe des Elqui-Tals.",
+      "cb.desc.piedra":"Das Apartment Piedra ist, wie sein Name sagt, aus lokalem Stein gebaut und mit der positiven Energie der Mineralien der Region aufgeladen. Herrschaftlich eingerichtet, fühlt es sich wie ein kleines Schloss an. Es verfügt über ein Schlafzimmer mit Doppelbett.",
+      "cb.eq.cuarzo":"Doppelbett · hochwertige Bettwäsche (Laken mit 400 Fäden, Gänsedaunendecke) · Klimaanlage · voll ausgestattete Küche · großes Bad (600-g-Handtücher, Föhn) · Gegensprechanlage · TV · Ess- und Wohnbereich · Holzheizung · Ventilator · Safe · Terrasse mit Grill · Liegen und direkter Zugang zum Pool.",
+      "cb.eq.aire":"Kingbett · hochwertige Bettwäsche (Laken mit 400 Fäden, Gänsedaunendecke) · Klimaanlage · voll ausgestattete Küche · großes Bad (600-g-Handtücher, Föhn) · Wohn-Essbereich · Gegensprechanlage · TV · Heizung · Ventilator · Terrasse mit Grill, Außenessbereich und Liegen.",
+      "cb.eq.fuego":"Kingbett · hochwertige Bettwäsche (Laken mit 400 Fäden, Gänsedaunendecke) · Klimaanlage · voll ausgestattete Küche · großes Bad (600-g-Handtücher, Föhn) · Gegensprechanlage · TV · Ess- und Wohnbereich · Ventilator · Safe · Terrasse mit Grill · Wände aus Stein und weißem Quarz · Blick auf Tal, Pool und Gärten.",
+      "cb.eq.cobre":"Schlafzimmer en suite mit Doppelbett · 2 Bäder · hochwertige Bettwäsche (Laken mit 400 Fäden, Gänsedaunendecke, 600-g-Handtücher, Föhn) · offene voll ausgestattete Küche · Ess- und Wohnbereich innen und außen · Gegensprechanlage · TV · Holzheizung · Grill · Ventilator · Safe.",
+      "cb.eq.agua":"Doppelschlafzimmer und Wohnbereich · hochwertige Bettwäsche (Gänsedaunendecke, Laken mit 400 Fäden) · voll ausgestattete Küche · großes Bad (600-g-Handtücher, Föhn) · Wohn-Essbereich · Gegensprechanlage · TV · Ventilator · Holzheizung · Safe · große Terrasse mit Liegen und Grill.",
+      "cb.eq.piedra":"Hochwertige Bettwäsche (Laken mit 400 Fäden, Gänsedaunendecke) · offene voll ausgestattete Küche · Ess- und Wohnbereich · Bad (600-g-Handtücher, Föhn) · Klimaanlage · Gegensprechanlage · TV · Kaminofen · Bergblick.",
+      "cb.c1":"· Buchungen für mindestens zwei Nächte. Jede Einheit beherbergt nur zwei Personen.",
+      "cb.c2":"· Preise pro Nacht, in chilenischen Pesos, inkl. MwSt. Nicht ansässige Ausländer können mit den erforderlichen Unterlagen von der MwSt. (19%) befreit werden.",
+      "cb.c3":"· Hochsaison: 15. Dezember bis 15. April, Feiertage und lange Wochenenden, Winterferien (Juli) und September (12.–21.).",
+      "cb.c4":"· Kredit- und Debitkarten, Bargeld, US-Dollar und Euro werden akzeptiert.",
+      "cb.c5":"· Für die Buchung werden 50% des Gesamtbetrags im Voraus gezahlt; der Rest bei der Ankunft.",
+      "cb.c6":"· Besuche in den Hütten oder am Pool sind nicht gestattet. Wir bieten keinen Restaurantservice.",
+      "cb.condCta":"Verfügbarkeit anfragen"
+    }
+  };
+</script>
 <script src="assets/site.js"></script>
+<script>
+  // Visor de miniaturas por cabaña
+  (function () {
+    const lb = document.getElementById("cab-lightbox");
+    const img = document.getElementById("cab-img");
+    if (!lb || !img) return;
+    let group = [], idx = 0;
+    document.querySelectorAll("[data-gallery]").forEach(function (g) {
+      const thumbs = Array.prototype.slice.call(g.querySelectorAll("img"));
+      thumbs.forEach(function (t, i) {
+        t.addEventListener("click", function () {
+          group = thumbs.map(function (x) { return x.src; });
+          idx = i; show();
+          lb.classList.remove("hidden");
+          document.body.style.overflow = "hidden";
+        });
+      });
+    });
+    function show() { img.src = group[idx]; }
+    function close() { lb.classList.add("hidden"); document.body.style.overflow = ""; }
+    function next() { idx = (idx + 1) % group.length; show(); }
+    function prev() { idx = (idx - 1 + group.length) % group.length; show(); }
+    document.getElementById("cab-close").addEventListener("click", close);
+    document.getElementById("cab-next").addEventListener("click", next);
+    document.getElementById("cab-prev").addEventListener("click", prev);
+    lb.addEventListener("click", function (e) { if (e.target === lb) close(); });
+    document.addEventListener("keydown", function (e) {
+      if (lb.classList.contains("hidden")) return;
+      if (e.key === "Escape") close();
+      if (e.key === "ArrowRight") next();
+      if (e.key === "ArrowLeft") prev();
+    });
+  })();
+</script>
 </body>
 </html>

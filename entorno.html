@@ -18,24 +18,25 @@
         <img src="images/caballieri-logo.png" alt="Cabañas Caballieri" width="360" height="180" class="h-12 w-auto object-contain sm:h-14">
       </a>
       <nav aria-label="Navegación principal" class="hidden items-center gap-5 text-sm font-semibold text-[#243d58] lg:flex">
-        <a class="transition hover:text-[#c64e2a]" href="cabanas.html">Cabañas</a>
-        <a class="transition hover:text-[#c64e2a]" href="historia.html">Historia</a>
-        <a class="transition hover:text-[#c64e2a]" href="index.html#servicios">Servicios</a>
-        <a class="text-[#c64e2a]" href="entorno.html">Entorno</a>
-        <a class="transition hover:text-[#c64e2a]" href="como-llegar.html">Cómo llegar</a>
-        <a class="transition hover:text-[#c64e2a]" href="galeria.html">Galería</a>
-        <a class="transition hover:text-[#c64e2a]" href="index.html#tarifas">Tarifas</a>
-        <a class="transition hover:text-[#c64e2a]" href="index.html#reservar">Contacto</a>
+        <a class="transition hover:text-[#c64e2a]" href="cabanas.html" data-i18n="nav.cabanas">Cabañas</a>
+        <a class="transition hover:text-[#c64e2a]" href="historia.html" data-i18n="nav.historia">Historia</a>
+        <a class="transition hover:text-[#c64e2a]" href="index.html#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a class="text-[#c64e2a]" href="entorno.html" data-i18n="nav.entorno">Entorno</a>
+        <a class="transition hover:text-[#c64e2a]" href="como-llegar.html" data-i18n="nav.comollegar">Cómo llegar</a>
+        <a class="transition hover:text-[#c64e2a]" href="galeria.html" data-i18n="nav.galeria">Galería</a>
+        <a class="transition hover:text-[#c64e2a]" href="index.html#tarifas" data-i18n="nav.tarifas">Tarifas</a>
+        <a class="transition hover:text-[#c64e2a]" href="index.html#reservar" data-i18n="nav.contacto">Contacto</a>
       </nav>
       <button id="menu-open" type="button" aria-label="Abrir menú" class="grid size-11 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:bg-[#102b52]/5 lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
         </button>
         <div class="hidden shrink-0 items-center gap-2 lg:flex">
+        <div class="lang-switch flex items-center rounded-full border border-[#102b52]/15 p-0.5"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="de">DE</button></div>
         <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram" class="grid size-11 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:border-transparent hover:bg-gradient-to-tr hover:from-[#f4c464] hover:to-[#c64e2a] hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
         </a>
         <a href="index.html#reservar" class="inline-flex items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all h-11 rounded-full bg-[#102b52] px-5 text-white hover:bg-[#c64e2a]">
-          Consultar <span class="hidden sm:inline">disponibilidad</span>
+          <span data-i18n="btn.consultarDisp"><span data-i18n="ev.btn2">Consultar disponibilidad</span></span>
         </a>
       </div>
     </div>
@@ -51,23 +52,24 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
         </button>
       </div>
+      <div class="lang-switch flex items-center justify-center gap-1 border-b border-[#102b52]/10 px-4 py-3"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="de">DE</button></div>
       <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-5 text-[#102b52]">
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html">Inicio</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="cabanas.html">Cabañas</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="historia.html">Historia</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#servicios">Servicios</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="entorno.html">Entorno</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="como-llegar.html">Cómo llegar</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="galeria.html">Galería</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#tour360">Recorrido 360°</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#tarifas">Tarifas</a>
-        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#reservar">Contacto</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html" data-i18n="nav.inicio">Inicio</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="cabanas.html" data-i18n="nav.cabanas">Cabañas</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="historia.html" data-i18n="nav.historia">Historia</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#servicios" data-i18n="nav.servicios">Servicios</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="entorno.html" data-i18n="nav.entorno">Entorno</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="como-llegar.html" data-i18n="nav.comollegar">Cómo llegar</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="galeria.html" data-i18n="nav.galeria">Galería</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#tour360" data-i18n="nav.tour360">Recorrido 360°</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#tarifas" data-i18n="nav.tarifas">Tarifas</a>
+        <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html#reservar" data-i18n="nav.contacto">Contacto</a>
       </nav>
       <div class="flex items-center gap-2 border-t border-[#102b52]/10 p-4">
         <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram" class="grid size-12 shrink-0 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:border-transparent hover:bg-gradient-to-tr hover:from-[#f4c464] hover:to-[#c64e2a] hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
         </a>
-        <a href="index.html#reservar" class="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-[#102b52] px-5 text-sm font-semibold text-white transition hover:bg-[#c64e2a]">Consultar disponibilidad</a>
+        <a href="index.html#reservar" class="inline-flex h-12 flex-1 items-center justify-center gap-2 rounded-full bg-[#102b52] px-5 text-sm font-semibold text-white transition hover:bg-[#c64e2a]" data-i18n="btn.consultarDisp">Consultar disponibilidad</a>
       </div>
     </aside>
   </div>
@@ -80,11 +82,11 @@
     <div class="relative z-10 mx-auto w-full max-w-7xl px-5 pb-14 sm:px-8">
       <a href="index.html" class="mb-5 inline-flex items-center gap-2 text-sm font-semibold text-white/80 transition hover:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
-        Volver al inicio
+        <span data-i18n="common.volver">Volver al inicio</span>
       </a>
-      <p class="eyebrow text-[#f4c464]">El entorno</p>
-      <h1 class="font-display text-5xl leading-tight tracking-[-0.035em] text-white sm:text-7xl">El Valle de Elqui,<br>a la puerta de tu cabaña.</h1>
-      <p class="mt-5 max-w-2xl text-lg leading-8 text-white/80">Pisco Elqui está a unos 1.300 m de altura, rodeado por la Cordillera de los Andes. Hay opciones para todos: descanso, deporte, cultura, astronomía, gastronomía y vida nocturna.</p>
+      <p class="eyebrow text-[#f4c464]" data-i18n="ev.eyebrow">El entorno</p>
+      <h1 class="font-display text-5xl leading-tight tracking-[-0.035em] text-white sm:text-7xl" data-i18n="ev.h1">El Valle de Elqui, a la puerta de tu cabaña.</h1>
+      <p class="mt-5 max-w-2xl text-lg leading-8 text-white/80" data-i18n="ev.intro">Pisco Elqui está a unos 1.300 m de altura, rodeado por la Cordillera de los Andes. Hay opciones para todos: descanso, deporte, cultura, astronomía, gastronomía y vida nocturna.</p>
     </div>
   </section>
 
@@ -97,55 +99,55 @@
           <div class="grid size-12 place-items-center rounded-2xl bg-[#102b52] text-[#f4c464]">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
           </div>
-          <h2 class="mt-5 font-display text-3xl text-[#102b52]">Astroturismo</h2>
-          <p class="mt-3 leading-7 text-[#5a6978]">Tenemos el cielo más claro del mundo. Reserva un tour o una visita en alguno de los observatorios cercanos y descubre la Vía Láctea, planetas y estrellas fugaces a simple vista.</p>
+          <h2 class="mt-5 font-display text-3xl text-[#102b52]" data-i18n="ev.t1">Astroturismo</h2>
+          <p class="mt-3 leading-7 text-[#5a6978]" data-i18n="ev.d1">Tenemos el cielo más claro del mundo. Reserva un tour o una visita en alguno de los observatorios cercanos y descubre la Vía Láctea, planetas y estrellas fugaces a simple vista.</p>
         </article>
 
         <article class="reveal lift rounded-[1.75rem] border border-[#102b52]/10 bg-white p-8 shadow-[0_10px_30px_rgba(18,39,63,0.05)]">
           <div class="grid size-12 place-items-center rounded-2xl bg-[#102b52] text-[#f4c464]">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M8 22h8"></path><path d="M7 10h3m4 0h3"></path><path d="M12 15v7"></path><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-1-6H8c-.5 2-1 4-1 6a5 5 0 0 0 5 5Z"></path></svg>
           </div>
-          <h2 class="mt-5 font-display text-3xl text-[#102b52]">Ruta del pisco</h2>
-          <p class="mt-3 leading-7 text-[#5a6978]">Visita la Pisquera Mistral en pleno Pisco Elqui o la histórica Pisquera Los Nichos, a unos 2 km en dirección a Horcón. Degustaciones y recorridos por la tradición del valle.</p>
+          <h2 class="mt-5 font-display text-3xl text-[#102b52]" data-i18n="ev.t2">Ruta del pisco</h2>
+          <p class="mt-3 leading-7 text-[#5a6978]" data-i18n="ev.d2">Visita la Pisquera Mistral en pleno Pisco Elqui o la histórica Pisquera Los Nichos, a unos 2 km en dirección a Horcón. Degustaciones y recorridos por la tradición del valle.</p>
         </article>
 
         <article class="reveal lift rounded-[1.75rem] border border-[#102b52]/10 bg-white p-8 shadow-[0_10px_30px_rgba(18,39,63,0.05)]">
           <div class="grid size-12 place-items-center rounded-2xl bg-[#102b52] text-[#f4c464]">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"></path></svg>
           </div>
-          <h2 class="mt-5 font-display text-3xl text-[#102b52]">Naturaleza y cerros</h2>
-          <p class="mt-3 leading-7 text-[#5a6978]">Explora la naturaleza espectacular del valle a caballo, en bicicleta o caminando por los cerros. Descubre los pueblos de Horcón y Alcohuaz, al fin del valle, o el vecino valle de Cochiguaz.</p>
+          <h2 class="mt-5 font-display text-3xl text-[#102b52]" data-i18n="ev.t3">Naturaleza y cerros</h2>
+          <p class="mt-3 leading-7 text-[#5a6978]" data-i18n="ev.d3">Explora la naturaleza espectacular del valle a caballo, en bicicleta o caminando por los cerros. Descubre los pueblos de Horcón y Alcohuaz, al fin del valle, o el vecino valle de Cochiguaz.</p>
         </article>
 
         <article class="reveal lift rounded-[1.75rem] border border-[#102b52]/10 bg-white p-8 shadow-[0_10px_30px_rgba(18,39,63,0.05)]">
           <div class="grid size-12 place-items-center rounded-2xl bg-[#102b52] text-[#f4c464]">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
           </div>
-          <h2 class="mt-5 font-display text-3xl text-[#102b52]">Gabriela Mistral</h2>
-          <p class="mt-3 leading-7 text-[#5a6978]">En el pueblo de Montegrande se encuentran la tumba y el museo de la famosa poetisa chilena y Premio Nobel de Literatura, Gabriela Mistral. Un imperdible cultural del valle.</p>
+          <h2 class="mt-5 font-display text-3xl text-[#102b52]" data-i18n="ev.t4">Gabriela Mistral</h2>
+          <p class="mt-3 leading-7 text-[#5a6978]" data-i18n="ev.d4">En el pueblo de Montegrande se encuentran la tumba y el museo de la famosa poetisa chilena y Premio Nobel de Literatura, Gabriela Mistral. Un imperdible cultural del valle.</p>
         </article>
 
         <article class="reveal lift rounded-[1.75rem] border border-[#102b52]/10 bg-white p-8 shadow-[0_10px_30px_rgba(18,39,63,0.05)]">
           <div class="grid size-12 place-items-center rounded-2xl bg-[#102b52] text-[#f4c464]">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M12 2v7.31"></path><path d="M14 9.3V1.99"></path><path d="M8.5 2h7"></path><path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path><path d="M5.52 16h12.96"></path></svg>
           </div>
-          <h2 class="mt-5 font-display text-3xl text-[#102b52]">Gastronomía y noche</h2>
-          <p class="mt-3 leading-7 text-[#5a6978]">Varios pubs y restaurantes con la gastronomía típica del valle. Por las noches, disfruta de bandas locales e invitados nacionales, y de una entretenida vida nocturna.</p>
+          <h2 class="mt-5 font-display text-3xl text-[#102b52]" data-i18n="ev.t5">Gastronomía y noche</h2>
+          <p class="mt-3 leading-7 text-[#5a6978]" data-i18n="ev.d5">Varios pubs y restaurantes con la gastronomía típica del valle. Por las noches, disfruta de bandas locales e invitados nacionales, y de una entretenida vida nocturna.</p>
         </article>
 
         <article class="reveal lift rounded-[1.75rem] border border-[#102b52]/10 bg-white p-8 shadow-[0_10px_30px_rgba(18,39,63,0.05)]">
           <div class="grid size-12 place-items-center rounded-2xl bg-[#102b52] text-[#f4c464]">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
           </div>
-          <h2 class="mt-5 font-display text-3xl text-[#102b52]">Bienestar y descanso</h2>
-          <p class="mt-3 leading-7 text-[#5a6978]">Relájate leyendo un libro junto a la piscina o disfruta de tratamientos alternativos: una sesión de tarot o de runas, o un masaje relajante para desconectar por completo.</p>
+          <h2 class="mt-5 font-display text-3xl text-[#102b52]" data-i18n="ev.t6">Bienestar y descanso</h2>
+          <p class="mt-3 leading-7 text-[#5a6978]" data-i18n="ev.d6">Relájate leyendo un libro junto a la piscina o disfruta de tratamientos alternativos: una sesión de tarot o de runas, o un masaje relajante para desconectar por completo.</p>
         </article>
 
       </div>
 
       <div class="reveal mt-12 flex flex-wrap gap-3">
         <a href="como-llegar.html" class="inline-flex items-center justify-center gap-2 text-sm font-semibold transition-all h-12 rounded-full bg-[#102b52] px-7 text-white hover:bg-[#c64e2a]">
-          Cómo llegar al valle
+          <span data-i18n="ev.btn1">Cómo llegar al valle</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
         </a>
         <a href="index.html#reservar" class="inline-flex items-center justify-center gap-2 text-sm font-semibold transition-all h-12 rounded-full border border-[#102b52]/15 bg-white px-7 text-[#102b52] hover:bg-[#102b52] hover:text-white">
@@ -160,12 +162,12 @@
     <div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 border-b border-white/10 pb-10 lg:flex-row lg:items-center">
       <img src="images/caballieri-logo.png" alt="Cabañas Caballieri" width="360" height="180" class="h-20 w-auto rounded-xl bg-white object-contain p-1">
       <div class="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold">
-        <a class="hover:text-white" href="cabanas.html">Cabañas</a>
-        <a class="hover:text-white" href="historia.html">Historia</a>
-        <a class="hover:text-white" href="entorno.html">Entorno</a>
-        <a class="hover:text-white" href="como-llegar.html">Cómo llegar</a>
-        <a class="hover:text-white" href="galeria.html">Galería</a>
-        <a class="hover:text-white" href="index.html#tarifas">Tarifas</a>
+        <a class="hover:text-white" href="cabanas.html" data-i18n="nav.cabanas">Cabañas</a>
+        <a class="hover:text-white" href="historia.html" data-i18n="nav.historia">Historia</a>
+        <a class="hover:text-white" href="entorno.html" data-i18n="nav.entorno">Entorno</a>
+        <a class="hover:text-white" href="como-llegar.html" data-i18n="nav.comollegar">Cómo llegar</a>
+        <a class="hover:text-white" href="galeria.html" data-i18n="nav.galeria">Galería</a>
+        <a class="hover:text-white" href="index.html#tarifas" data-i18n="nav.tarifas">Tarifas</a>
       </div>
       <div class="flex gap-3">
         <a class="grid size-11 place-items-center rounded-full border border-white/15 hover:border-white hover:text-white" href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram">
@@ -181,7 +183,7 @@
     </div>
     <div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 pt-7 text-xs sm:flex-row">
       <p>© 2026 Cabañas Caballieri · Pisco Elqui, Chile</p>
-      <p>Estadía mínima: 2 noches · Máximo 2 huéspedes por unidad</p>
+      <p data-i18n="foot.min">Estadía mínima: 2 noches · Máximo 2 huéspedes por unidad</p>
     </div>
   </footer>
 
@@ -189,6 +191,46 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
   </a>
 </main>
+<script>
+  window.I18N = {
+    es: {
+      "ev.eyebrow":"El entorno","ev.h1":"El Valle de Elqui, a la puerta de tu cabaña.",
+      "ev.intro":"Pisco Elqui está a unos 1.300 m de altura, rodeado por la Cordillera de los Andes. Hay opciones para todos: descanso, deporte, cultura, astronomía, gastronomía y vida nocturna.",
+      "ev.t1":"Astroturismo","ev.t2":"Ruta del pisco","ev.t3":"Naturaleza y cerros","ev.t4":"Gabriela Mistral","ev.t5":"Gastronomía y noche","ev.t6":"Bienestar y descanso",
+      "ev.d1":"Tenemos el cielo más claro del mundo. Reserva un tour o una visita en alguno de los observatorios cercanos y descubre la Vía Láctea, planetas y estrellas fugaces a simple vista.",
+      "ev.d2":"Visita la Pisquera Mistral en pleno Pisco Elqui o la histórica Pisquera Los Nichos, a unos 2 km en dirección a Horcón. Degustaciones y recorridos por la tradición del valle.",
+      "ev.d3":"Explora la naturaleza espectacular del valle a caballo, en bicicleta o caminando por los cerros. Descubre los pueblos de Horcón y Alcohuaz, al fin del valle, o el vecino valle de Cochiguaz.",
+      "ev.d4":"En el pueblo de Montegrande se encuentran la tumba y el museo de la famosa poetisa chilena y Premio Nobel de Literatura, Gabriela Mistral. Un imperdible cultural del valle.",
+      "ev.d5":"Varios pubs y restaurantes con la gastronomía típica del valle. Por las noches, disfruta de bandas locales e invitados nacionales, y de una entretenida vida nocturna.",
+      "ev.d6":"Relájate leyendo un libro junto a la piscina o disfruta de tratamientos alternativos: una sesión de tarot o de runas, o un masaje relajante para desconectar por completo.",
+      "ev.btn1":"Cómo llegar al valle","ev.btn2":"Consultar disponibilidad"
+    },
+    en: {
+      "ev.eyebrow":"The surroundings","ev.h1":"The Elqui Valley, at your cabin's doorstep.",
+      "ev.intro":"Pisco Elqui sits at about 1,300 m, surrounded by the Andes. There's something for everyone: rest, sport, culture, astronomy, gastronomy and nightlife.",
+      "ev.t1":"Astro-tourism","ev.t2":"The pisco route","ev.t3":"Nature and hills","ev.t4":"Gabriela Mistral","ev.t5":"Food and nightlife","ev.t6":"Wellness and rest",
+      "ev.d1":"We have the world's clearest skies. Book a tour or a visit at one of the nearby observatories and discover the Milky Way, planets and shooting stars with the naked eye.",
+      "ev.d2":"Visit the Mistral distillery right in Pisco Elqui or the historic Los Nichos distillery, about 2 km towards Horcón. Tastings and tours through the valley's tradition.",
+      "ev.d3":"Explore the valley's spectacular nature on horseback, by bike or hiking the hills. Discover the towns of Horcón and Alcohuaz, at the end of the valley, or the neighbouring Cochiguaz valley.",
+      "ev.d4":"In the town of Montegrande you'll find the tomb and museum of the famous Chilean poet and Nobel laureate, Gabriela Mistral. A cultural must-see of the valley.",
+      "ev.d5":"Several pubs and restaurants with the valley's typical cuisine. At night, enjoy local bands and national guests, and lively nightlife.",
+      "ev.d6":"Relax reading a book by the pool or enjoy alternative treatments: a tarot or rune session, or a relaxing massage to fully disconnect.",
+      "ev.btn1":"How to get to the valley","ev.btn2":"Check availability"
+    },
+    de: {
+      "ev.eyebrow":"Die Umgebung","ev.h1":"Das Elqui-Tal, direkt vor deiner Hütte.",
+      "ev.intro":"Pisco Elqui liegt auf etwa 1.300 m, umgeben von den Anden. Für jeden ist etwas dabei: Erholung, Sport, Kultur, Astronomie, Gastronomie und Nachtleben.",
+      "ev.t1":"Astrotourismus","ev.t2":"Die Pisco-Route","ev.t3":"Natur und Berge","ev.t4":"Gabriela Mistral","ev.t5":"Gastronomie und Nachtleben","ev.t6":"Wellness und Erholung",
+      "ev.d1":"Wir haben den klarsten Himmel der Welt. Buche eine Tour oder einen Besuch in einem der nahen Observatorien und entdecke die Milchstraße, Planeten und Sternschnuppen mit bloßem Auge.",
+      "ev.d2":"Besuche die Mistral-Brennerei mitten in Pisco Elqui oder die historische Brennerei Los Nichos, etwa 2 km Richtung Horcón. Verkostungen und Rundgänge durch die Tradition des Tals.",
+      "ev.d3":"Erkunde die spektakuläre Natur des Tals zu Pferd, mit dem Fahrrad oder wandernd über die Berge. Entdecke die Dörfer Horcón und Alcohuaz am Ende des Tals oder das benachbarte Cochiguaz-Tal.",
+      "ev.d4":"Im Dorf Montegrande befinden sich das Grab und das Museum der berühmten chilenischen Dichterin und Nobelpreisträgerin Gabriela Mistral. Ein kulturelles Muss des Tals.",
+      "ev.d5":"Mehrere Pubs und Restaurants mit der typischen Küche des Tals. Abends locken lokale Bands und nationale Gäste sowie ein unterhaltsames Nachtleben.",
+      "ev.d6":"Entspanne bei einem Buch am Pool oder genieße alternative Behandlungen: eine Tarot- oder Runensitzung oder eine entspannende Massage zum völligen Abschalten.",
+      "ev.btn1":"Anreise zum Tal","ev.btn2":"Verfügbarkeit anfragen"
+    }
+  };
+</script>
 <script src="assets/site.js"></script>
 </body>
 </html>
