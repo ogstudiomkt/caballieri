@@ -35,7 +35,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg>
         </button>
         <div class="hidden shrink-0 items-center gap-2 lg:flex">
-        <div class="lang-switch flex items-center rounded-full border border-[#102b52]/15 p-0.5"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="de">DE</button></div>
+        <div class="lang-switch flex items-center rounded-full border border-[#102b52]/15 p-0.5"><button type="button" data-lang="es" aria-label="Español"><img src="images/flags/cl.svg" alt="Español"></button><button type="button" data-lang="en" aria-label="English"><img src="images/flags/gb.svg" alt="English"></button><button type="button" data-lang="de" aria-label="Deutsch"><img src="images/flags/de.svg" alt="Deutsch"></button></div>
         <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram" class="grid size-11 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:border-transparent hover:bg-gradient-to-tr hover:from-[#f4c464] hover:to-[#c64e2a] hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
         </a>
@@ -56,7 +56,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
         </button>
       </div>
-      <div class="lang-switch flex items-center justify-center gap-1 border-b border-[#102b52]/10 px-4 py-3"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="de">DE</button></div>
+      <div class="lang-switch flex items-center justify-center gap-1 border-b border-[#102b52]/10 px-4 py-3"><button type="button" data-lang="es" aria-label="Español"><img src="images/flags/cl.svg" alt="Español"></button><button type="button" data-lang="en" aria-label="English"><img src="images/flags/gb.svg" alt="English"></button><button type="button" data-lang="de" aria-label="Deutsch"><img src="images/flags/de.svg" alt="Deutsch"></button></div>
       <nav class="flex flex-1 flex-col gap-1 overflow-y-auto px-4 py-5 text-[#102b52]">
         <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="index.html" data-i18n="nav.inicio">Inicio</a>
         <a class="rounded-xl px-4 py-3 text-lg font-semibold transition hover:bg-[#102b52]/5" href="cabanas.html" data-i18n="nav.cabanas">Cabañas</a>
@@ -112,31 +112,31 @@
           <label class="block">
             <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
-              Llegada
+              <span data-i18n="f.llegada">Llegada</span>
             </span>
             <input data-llegada aria-label="Fecha de llegada" type="date" class="h-12 w-full rounded-xl border border-[#102b52]/15 bg-[#f8f6f1] px-3 text-base text-[#102b52] outline-none transition focus:border-[#2b9298] focus:ring-2 focus:ring-[#2b9298]/15">
           </label>
           <label class="block">
             <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
-              Salida
+              <span data-i18n="f.salida">Salida</span>
             </span>
             <input data-salida aria-label="Fecha de salida" type="date" class="h-12 w-full rounded-xl border border-[#102b52]/15 bg-[#f8f6f1] px-3 text-base text-[#102b52] outline-none transition focus:border-[#2b9298] focus:ring-2 focus:ring-[#2b9298]/15">
           </label>
           <div>
             <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
-              Huéspedes
+              <span data-i18n="f.huespedes">Huéspedes</span>
             </span>
             <select data-huespedes class="field" aria-label="Cantidad de huéspedes">
-              <option value="1">1 huésped</option>
-              <option value="2" selected>2 huéspedes</option>
+              <option value="1" data-i18n="f.g1">1 huésped</option>
+              <option value="2" selected data-i18n="f.g2">2 huéspedes</option>
             </select>
           </div>
           <div>
-            <span class="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#667687]" data-i18n="f.espacio">Espacio</span>
+            <span class="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#667687]" data-i18n="f.espacio" data-i18n="f.espacio">Espacio</span>
             <select data-espacio class="field" aria-label="Cabaña o departamento">
-              <option value="Cualquiera" selected>Cualquiera</option>
+              <option value="Cualquiera" selected data-i18n="f.cualquiera">Cualquiera</option>
               <option value="Cuarzo">Cuarzo</option>
               <option value="Aire">Aire</option>
               <option value="Fuego">Fuego</option>
@@ -172,14 +172,14 @@
           <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#e8a9a0"></div>
           <div class="relative">
             <div class="mb-12 flex items-center justify-between">
-              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#e8a9a0">Cabaña</span>
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#e8a9a0" data-i18n="common.cabana">Cabaña</span>
               <span class="font-display text-4xl text-[#102b52]/15">01</span>
             </div>
             <h3 class="font-display text-4xl text-[#102b52]">Cuarzo</h3>
             <div class="mt-6 flex items-end justify-between border-t border-[#15314f]/10 pt-5">
               <div>
-                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]" data-i18n="common.tempBaja">Temporada baja</p>
-                <p class="mt-1 text-xl font-bold text-[#102b52]">Desde $120.000</p>
+                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]" data-i18n="common.tempBaja" data-i18n="common.tempBaja">Temporada baja</p>
+                <p class="mt-1 text-xl font-bold text-[#102b52]"><span data-i18n="common.desde">Desde</span> $120.000</p>
               </div>
               <a href="cabanas.html#cuarzo" aria-label="Ver Cuarzo en detalle" class="grid size-11 place-items-center rounded-full bg-[#f1eee7] text-[#102b52] transition group-hover:bg-[#102b52] group-hover:text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -192,14 +192,14 @@
           <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#9fc9dd"></div>
           <div class="relative">
             <div class="mb-12 flex items-center justify-between">
-              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#9fc9dd">Cabaña</span>
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#9fc9dd" data-i18n="common.cabana">Cabaña</span>
               <span class="font-display text-4xl text-[#102b52]/15">02</span>
             </div>
             <h3 class="font-display text-4xl text-[#102b52]">Aire</h3>
             <div class="mt-6 flex items-end justify-between border-t border-[#15314f]/10 pt-5">
               <div>
-                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
-                <p class="mt-1 text-xl font-bold text-[#102b52]">Desde $120.000</p>
+                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]" data-i18n="common.tempBaja">Temporada baja</p>
+                <p class="mt-1 text-xl font-bold text-[#102b52]"><span data-i18n="common.desde">Desde</span> $120.000</p>
               </div>
               <a href="cabanas.html#aire" aria-label="Ver Aire en detalle" class="grid size-11 place-items-center rounded-full bg-[#f1eee7] text-[#102b52] transition group-hover:bg-[#102b52] group-hover:text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -212,14 +212,14 @@
           <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#c9542d"></div>
           <div class="relative">
             <div class="mb-12 flex items-center justify-between">
-              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#c9542d">Cabaña</span>
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#c9542d" data-i18n="common.cabana">Cabaña</span>
               <span class="font-display text-4xl text-[#102b52]/15">03</span>
             </div>
             <h3 class="font-display text-4xl text-[#102b52]">Fuego</h3>
             <div class="mt-6 flex items-end justify-between border-t border-[#15314f]/10 pt-5">
               <div>
-                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
-                <p class="mt-1 text-xl font-bold text-[#102b52]">Desde $90.000</p>
+                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]" data-i18n="common.tempBaja">Temporada baja</p>
+                <p class="mt-1 text-xl font-bold text-[#102b52]"><span data-i18n="common.desde">Desde</span> $90.000</p>
               </div>
               <a href="cabanas.html#fuego" aria-label="Ver Fuego en detalle" class="grid size-11 place-items-center rounded-full bg-[#f1eee7] text-[#102b52] transition group-hover:bg-[#102b52] group-hover:text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -232,14 +232,14 @@
           <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#c79330"></div>
           <div class="relative">
             <div class="mb-12 flex items-center justify-between">
-              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#c79330">Cabaña</span>
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#c79330" data-i18n="common.cabana">Cabaña</span>
               <span class="font-display text-4xl text-[#102b52]/15">04</span>
             </div>
             <h3 class="font-display text-4xl text-[#102b52]">Cobre</h3>
             <div class="mt-6 flex items-end justify-between border-t border-[#15314f]/10 pt-5">
               <div>
-                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
-                <p class="mt-1 text-xl font-bold text-[#102b52]">Desde $90.000</p>
+                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]" data-i18n="common.tempBaja">Temporada baja</p>
+                <p class="mt-1 text-xl font-bold text-[#102b52]"><span data-i18n="common.desde">Desde</span> $90.000</p>
               </div>
               <a href="cabanas.html#cobre" aria-label="Ver Cobre en detalle" class="grid size-11 place-items-center rounded-full bg-[#f1eee7] text-[#102b52] transition group-hover:bg-[#102b52] group-hover:text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -252,14 +252,14 @@
           <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#2b9298"></div>
           <div class="relative">
             <div class="mb-12 flex items-center justify-between">
-              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#2b9298">Cabaña</span>
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#2b9298" data-i18n="common.cabana">Cabaña</span>
               <span class="font-display text-4xl text-[#102b52]/15">05</span>
             </div>
             <h3 class="font-display text-4xl text-[#102b52]">Agua</h3>
             <div class="mt-6 flex items-end justify-between border-t border-[#15314f]/10 pt-5">
               <div>
-                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
-                <p class="mt-1 text-xl font-bold text-[#102b52]">Desde $90.000</p>
+                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]" data-i18n="common.tempBaja">Temporada baja</p>
+                <p class="mt-1 text-xl font-bold text-[#102b52]"><span data-i18n="common.desde">Desde</span> $90.000</p>
               </div>
               <a href="cabanas.html#agua" aria-label="Ver Agua en detalle" class="grid size-11 place-items-center rounded-full bg-[#f1eee7] text-[#102b52] transition group-hover:bg-[#102b52] group-hover:text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -272,14 +272,14 @@
           <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#596b7d"></div>
           <div class="relative">
             <div class="mb-12 flex items-center justify-between">
-              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#596b7d">Departamento</span>
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#596b7d" data-i18n="common.departamento">Departamento</span>
               <span class="font-display text-4xl text-[#102b52]/15">06</span>
             </div>
             <h3 class="font-display text-4xl text-[#102b52]">Piedra</h3>
             <div class="mt-6 flex items-end justify-between border-t border-[#15314f]/10 pt-5">
               <div>
-                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
-                <p class="mt-1 text-xl font-bold text-[#102b52]">Desde $70.000</p>
+                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]" data-i18n="common.tempBaja">Temporada baja</p>
+                <p class="mt-1 text-xl font-bold text-[#102b52]"><span data-i18n="common.desde">Desde</span> $70.000</p>
               </div>
               <a href="cabanas.html#piedra" aria-label="Ver Piedra en detalle" class="grid size-11 place-items-center rounded-full bg-[#f1eee7] text-[#102b52] transition group-hover:bg-[#102b52] group-hover:text-white">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -310,8 +310,8 @@
           <img src="images/night.jpg" alt="Noche estrellada en Cabañas Caballieri" class="object-cover" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
         </div>
         <div class="absolute bottom-10 left-5 rounded-2xl bg-[#e4aa36] px-5 py-4 text-[#102b52] shadow-xl">
-          <p class="text-xs font-bold uppercase tracking-[0.2em]">Desde 1995</p>
-          <p class="mt-1 font-display text-2xl">Una historia ligada al Valle</p>
+          <p class="text-xs font-bold uppercase tracking-[0.2em]" data-i18n="hh.badge1995">Desde 1995</p>
+          <p class="mt-1 font-display text-2xl" data-i18n="hh.badgeTitle">Una historia ligada al Valle</p>
         </div>
       </div>
       <div class="reveal lg:pl-10">
@@ -396,8 +396,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M2 12q2.5 2 5 0t5 0 5 0 5 0"></path><path d="M2 19q2.5 2 5 0t5 0 5 0 5 0"></path><path d="M2 5q2.5 2 5 0t5 0 5 0 5 0"></path></svg>
           </span>
           <div>
-            <h3 class="font-semibold text-[#102b52]">Piscina</h3>
-            <p class="text-sm leading-6 text-[#5a6978]">Rodeada de jardines y montaña.</p>
+            <h3 class="font-semibold text-[#102b52]" data-i18n="sv.t1">Piscina</h3>
+            <p class="text-sm leading-6 text-[#5a6978]" data-i18n="sv.d1">Rodeada de jardines y montaña.</p>
           </div>
         </div>
         <div class="lift reveal flex items-center gap-4 rounded-2xl border border-[#102b52]/10 bg-white px-5 py-4 shadow-[0_6px_20px_rgba(18,39,63,0.05)] hover:border-[#2b9298]/40 hover:shadow-[0_14px_34px_rgba(18,39,63,0.1)]">
@@ -405,8 +405,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M12 20h.01"></path><path d="M2 8.82a15 15 0 0 1 20 0"></path><path d="M5 12.859a10 10 0 0 1 14 0"></path><path d="M8.5 16.429a5 5 0 0 1 7 0"></path></svg>
           </span>
           <div>
-            <h3 class="font-semibold text-[#102b52]">Wi-Fi</h3>
-            <p class="text-sm leading-6 text-[#5a6978]">Conectividad en todo el complejo.</p>
+            <h3 class="font-semibold text-[#102b52]" data-i18n="sv.t2">Wi-Fi</h3>
+            <p class="text-sm leading-6 text-[#5a6978]" data-i18n="sv.d2">Conectividad en todo el complejo.</p>
           </div>
         </div>
         <div class="lift reveal flex items-center gap-4 rounded-2xl border border-[#102b52]/10 bg-white px-5 py-4 shadow-[0_6px_20px_rgba(18,39,63,0.05)] hover:border-[#2b9298]/40 hover:shadow-[0_14px_34px_rgba(18,39,63,0.1)]">
@@ -414,8 +414,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="m10 20-1.25-2.5L6 18"></path><path d="M10 4 8.75 6.5 6 6"></path><path d="m14 20 1.25-2.5L18 18"></path><path d="m14 4 1.25 2.5L18 6"></path><path d="m17 21-3-6h-4"></path><path d="m17 3-3 6 1.5 3"></path><path d="M2 12h6.5L10 9"></path><path d="m20 10-1.5 2 1.5 2"></path><path d="M22 12h-6.5L14 15"></path><path d="m4 10 1.5 2L4 14"></path><path d="m7 21 3-6-1.5-3"></path><path d="m7 3 3 6h4"></path></svg>
           </span>
           <div>
-            <h3 class="font-semibold text-[#102b52]">Climatización</h3>
-            <p class="text-sm leading-6 text-[#5a6978]">Aire acondicionado y calefacción.</p>
+            <h3 class="font-semibold text-[#102b52]" data-i18n="sv.t3">Climatización</h3>
+            <p class="text-sm leading-6 text-[#5a6978]" data-i18n="sv.d3">Aire acondicionado y calefacción.</p>
           </div>
         </div>
         <div class="lift reveal flex items-center gap-4 rounded-2xl border border-[#102b52]/10 bg-white px-5 py-4 shadow-[0_6px_20px_rgba(18,39,63,0.05)] hover:border-[#2b9298]/40 hover:shadow-[0_14px_34px_rgba(18,39,63,0.1)]">
@@ -423,8 +423,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
           </span>
           <div>
-            <h3 class="font-semibold text-[#102b52]">Energía solar</h3>
-            <p class="text-sm leading-6 text-[#5a6978]">Coherente con el entorno del Valle.</p>
+            <h3 class="font-semibold text-[#102b52]" data-i18n="sv.t4">Energía solar</h3>
+            <p class="text-sm leading-6 text-[#5a6978]" data-i18n="sv.d4">Coherente con el entorno del Valle.</p>
           </div>
         </div>
         <div class="lift reveal flex items-center gap-4 rounded-2xl border border-[#102b52]/10 bg-white px-5 py-4 shadow-[0_6px_20px_rgba(18,39,63,0.05)] hover:border-[#2b9298]/40 hover:shadow-[0_14px_34px_rgba(18,39,63,0.1)]">
@@ -432,8 +432,8 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><circle cx="18.5" cy="17.5" r="3.5"></circle><circle cx="5.5" cy="17.5" r="3.5"></circle><circle cx="15" cy="5" r="1"></circle><path d="M12 17.5V14l-3-3 4-3 2 3h2"></path></svg>
           </span>
           <div>
-            <h3 class="font-semibold text-[#102b52]">Bicicletas</h3>
-            <p class="text-sm leading-6 text-[#5a6978]">Para recorrer los alrededores.</p>
+            <h3 class="font-semibold text-[#102b52]" data-i18n="sv.t5">Bicicletas</h3>
+            <p class="text-sm leading-6 text-[#5a6978]" data-i18n="sv.d5">Para recorrer los alrededores.</p>
           </div>
         </div>
         <div class="lift reveal flex items-center gap-4 rounded-2xl border border-[#102b52]/10 bg-white px-5 py-4 shadow-[0_6px_20px_rgba(18,39,63,0.05)] hover:border-[#2b9298]/40 hover:shadow-[0_14px_34px_rgba(18,39,63,0.1)]">
@@ -441,19 +441,19 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg>
           </span>
           <div>
-            <h3 class="font-semibold text-[#102b52]">Estacionamiento</h3>
-            <p class="text-sm leading-6 text-[#5a6978]">Privado, incluido en la estadía.</p>
+            <h3 class="font-semibold text-[#102b52]" data-i18n="sv.t6">Estacionamiento</h3>
+            <p class="text-sm leading-6 text-[#5a6978]" data-i18n="sv.d6">Privado, incluido en la estadía.</p>
           </div>
         </div>
       </div>
 
       <!-- Extras en una sola línea de etiquetas -->
       <div class="reveal mt-6 flex flex-wrap items-center justify-center gap-2 text-sm text-[#526273]">
-        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5">Cocina equipada</span>
-        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5">Parrilla</span>
-        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5">Ropa de cama</span>
-        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5">Toallas</span>
-        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5">TV</span>
+        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5" data-i18n="sv.x1">Cocina equipada</span>
+        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5" data-i18n="sv.x2">Parrilla</span>
+        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5" data-i18n="sv.x3">Ropa de cama</span>
+        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5" data-i18n="sv.x4">Toallas</span>
+        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5" data-i18n="sv.x5">TV</span>
       </div>
     </div>
   </section>
@@ -546,32 +546,32 @@
         <!-- Temporada baja -->
         <article class="lift reveal group relative overflow-hidden rounded-[1.75rem] border border-[#102b52]/10 bg-white p-8 shadow-[0_10px_30px_rgba(18,39,63,0.06)] hover:shadow-[0_20px_50px_rgba(18,39,63,0.12)] sm:p-9">
           <div class="flex items-center justify-between">
-            <p class="text-sm font-bold uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
-            <span class="rounded-full bg-[#2b9298]/12 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[#1f7a80]">Abr – Nov</span>
+            <p class="text-sm font-bold uppercase tracking-[0.18em] text-[#718091]" data-i18n="common.tempBaja">Temporada baja</p>
+            <span class="rounded-full bg-[#2b9298]/12 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[#1f7a80]" data-i18n="th.badgeBaja">Abr – Nov</span>
           </div>
-          <p class="mt-4 font-display text-5xl text-[#102b52]">Desde <span class="text-[#c64e2a]">$70.000</span></p>
-          <p class="mt-2 text-sm text-[#5a6978]">Por noche · 2 personas · impuestos incluidos</p>
-          <p class="mt-5 border-t border-[#102b52]/10 pt-4 text-sm leading-6 text-[#526273]">Consulta por promociones y estadías largas.</p>
+          <p class="mt-4 font-display text-5xl text-[#102b52]"><span data-i18n="common.desde">Desde</span> <span class="text-[#c64e2a]">$70.000</span></p>
+          <p class="mt-2 text-sm text-[#5a6978]" data-i18n="th.per">Por noche · 2 personas · impuestos incluidos</p>
+          <p class="mt-5 border-t border-[#102b52]/10 pt-4 text-sm leading-6 text-[#526273]" data-i18n="th.bajaDesc">Consulta por promociones y estadías largas.</p>
         </article>
 
         <!-- Temporada alta (destacada) -->
         <article class="lift reveal group relative overflow-hidden rounded-[1.75rem] bg-[#e1a737] p-8 text-[#102b52] shadow-[0_16px_40px_rgba(225,167,55,0.35)] sm:p-9">
           <div class="pointer-events-none absolute -right-10 -top-10 size-40 rounded-full bg-white/25 blur-2xl"></div>
           <div class="relative flex items-center justify-between">
-            <p class="text-sm font-bold uppercase tracking-[0.18em]" data-i18n="common.tempAlta">Temporada alta</p>
-            <span class="rounded-full bg-[#102b52] px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-white">Más solicitada</span>
+            <p class="text-sm font-bold uppercase tracking-[0.18em]" data-i18n="common.tempAlta" data-i18n="common.tempAlta">Temporada alta</p>
+            <span class="rounded-full bg-[#102b52] px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-white" data-i18n="th.badgeAlta">Más solicitada</span>
           </div>
-          <p class="relative mt-4 font-display text-5xl">Desde $80.000</p>
-          <p class="relative mt-2 text-sm text-[#102b52]/70">Por noche · 2 personas · impuestos incluidos</p>
-          <p class="relative mt-5 border-t border-[#102b52]/20 pt-4 text-sm leading-6 text-[#102b52]/75">15 de diciembre al 15 de abril y fechas especiales.</p>
+          <p class="relative mt-4 font-display text-5xl"><span data-i18n="common.desde">Desde</span> $80.000</p>
+          <p class="relative mt-2 text-sm text-[#102b52]/70" data-i18n="th.per">Por noche · 2 personas · impuestos incluidos</p>
+          <p class="relative mt-5 border-t border-[#102b52]/20 pt-4 text-sm leading-6 text-[#102b52]/75" data-i18n="th.altaDesc">15 de diciembre al 15 de abril y fechas especiales.</p>
         </article>
       </div>
 
       <!-- Condiciones en línea, compactas -->
       <div class="reveal mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 rounded-2xl border border-[#102b52]/10 bg-white px-6 py-4 text-sm text-[#526273]">
-        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg> Estadía mínima 2 noches</span>
-        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg> Máximo 2 huéspedes por unidad</span>
-        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> El valor final depende de la unidad y la temporada</span>
+        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg> <span data-i18n="th.c1">Estadía mínima 2 noches</span></span>
+        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg> <span data-i18n="th.c2">Máximo 2 huéspedes por unidad</span></span>
+        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> <span data-i18n="th.c3">El valor final depende de la unidad y la temporada</span></span>
       </div>
     </div>
   </section>
@@ -689,31 +689,31 @@
           <label class="block">
             <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
-              Llegada
+              <span data-i18n="f.llegada">Llegada</span>
             </span>
             <input data-llegada aria-label="Fecha de llegada" type="date" class="h-12 w-full rounded-xl border border-[#102b52]/15 bg-[#f8f6f1] px-3 text-base text-[#102b52] outline-none transition focus:border-[#2b9298] focus:ring-2 focus:ring-[#2b9298]/15">
           </label>
           <label class="block">
             <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
-              Salida
+              <span data-i18n="f.salida">Salida</span>
             </span>
             <input data-salida aria-label="Fecha de salida" type="date" class="h-12 w-full rounded-xl border border-[#102b52]/15 bg-[#f8f6f1] px-3 text-base text-[#102b52] outline-none transition focus:border-[#2b9298] focus:ring-2 focus:ring-[#2b9298]/15">
           </label>
           <div>
             <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
-              Huéspedes
+              <span data-i18n="f.huespedes">Huéspedes</span>
             </span>
             <select data-huespedes class="field" aria-label="Cantidad de huéspedes">
-              <option value="1">1 huésped</option>
-              <option value="2" selected>2 huéspedes</option>
+              <option value="1" data-i18n="f.g1">1 huésped</option>
+              <option value="2" selected data-i18n="f.g2">2 huéspedes</option>
             </select>
           </div>
           <div>
-            <span class="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">Espacio</span>
+            <span class="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#667687]" data-i18n="f.espacio">Espacio</span>
             <select data-espacio class="field" aria-label="Cabaña o departamento">
-              <option value="Cualquiera" selected>Cualquiera</option>
+              <option value="Cualquiera" selected data-i18n="f.cualquiera">Cualquiera</option>
               <option value="Cuarzo">Cuarzo</option>
               <option value="Aire">Aire</option>
               <option value="Fuego">Fuego</option>
@@ -725,7 +725,7 @@
           <div class="sm:col-span-2">
             <button class="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all h-12 w-full rounded-xl bg-[#c64e2a] px-6 text-white hover:bg-[#102b52]" type="submit">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
-              Consultar por WhatsApp
+              <span data-i18n="f.consultarwa">Consultar por WhatsApp</span>
             </button>
           </div>
         </form>
@@ -747,10 +747,10 @@
           <label class="block">
             <span class="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#667687]" data-i18n="ct.motivo">Motivo</span>
             <select data-motivo class="field" aria-label="Motivo del mensaje">
-              <option value="Consulta">Consulta</option>
-              <option value="Sugerencia">Sugerencia</option>
-              <option value="Reclamo">Reclamo</option>
-              <option value="Otro">Otro</option>
+              <option value="Consulta" data-i18n="ct.o1">Consulta</option>
+              <option value="Sugerencia" data-i18n="ct.o2">Sugerencia</option>
+              <option value="Reclamo" data-i18n="ct.o3">Reclamo</option>
+              <option value="Otro" data-i18n="ct.o4">Otro</option>
             </select>
           </label>
           <label class="block">
@@ -798,8 +798,8 @@
       </div>
       <!-- Métricas mini -->
       <div class="flex items-center gap-5 text-xs text-white/60">
-        <span>Humedad <span id="wx-hum" class="font-semibold text-white">—%</span></span>
-        <span>Viento <span id="wx-wind" class="font-semibold text-white">— km/h</span></span>
+        <span><span data-i18n="clima.hum">Humedad</span> <span id="wx-hum" class="font-semibold text-white">—%</span></span>
+        <span><span data-i18n="clima.wind">Viento</span> <span id="wx-wind" class="font-semibold text-white">— km/h</span></span>
       </div>
       <!-- Pronóstico mini (2 días) -->
       <div class="flex items-center gap-2">
@@ -1021,7 +1021,17 @@
       "rsv.eyebrow":"Consulta tu estadía","rsv.title":"Tu descanso comienza con una fecha.","rsv.sub":"Completa la consulta y te llevaremos directamente a WhatsApp con los datos de tu viaje.",
       "ct.eyebrow":"Escríbenos","ct.title":"¿Consulta, sugerencia o reclamo?","ct.sub":"Cuéntanos lo que necesites y te responderemos a la brevedad.",
       "ct.motivo":"Motivo","ct.nombre":"Nombre","ct.contacto":"Email o teléfono","ct.mensaje":"Mensaje","ct.wa":"Enviar por WhatsApp","ct.mail":"Enviar por correo",
-      "clima.hoy":"Hoy en Pisco Elqui","common.tempBaja":"Temporada baja","common.tempAlta":"Temporada alta"
+      "clima.hoy":"Hoy en Pisco Elqui","common.tempBaja":"Temporada baja","common.tempAlta":"Temporada alta",
+      "sv.t1":"Piscina","sv.t2":"Wi-Fi","sv.t3":"Climatización","sv.t4":"Energía solar","sv.t5":"Bicicletas","sv.t6":"Estacionamiento",
+      "sv.d1":"Rodeada de jardines y montaña.","sv.d2":"Conectividad en todo el complejo.","sv.d3":"Aire acondicionado y calefacción.","sv.d4":"Coherente con el entorno del Valle.","sv.d5":"Para recorrer los alrededores.","sv.d6":"Privado, incluido en la estadía.",
+      "sv.x1":"Cocina equipada","sv.x2":"Parrilla","sv.x3":"Ropa de cama","sv.x4":"Toallas","sv.x5":"TV",
+      "th.badgeBaja":"Abr – Nov","th.badgeAlta":"Más solicitada","th.per":"Por noche · 2 personas · impuestos incluidos","th.bajaDesc":"Consulta por promociones y estadías largas.","th.altaDesc":"15 de diciembre al 15 de abril y fechas especiales.",
+      "th.c1":"Estadía mínima 2 noches","th.c2":"Máximo 2 huéspedes por unidad","th.c3":"El valor final depende de la unidad y la temporada",
+      "common.cabana":"Cabaña","common.departamento":"Departamento","common.desde":"Desde",
+      "hh.badge1995":"Desde 1995","hh.badgeTitle":"Una historia ligada al Valle",
+      "clima.hum":"Humedad","clima.wind":"Viento",
+      "f.llegada":"Llegada","f.salida":"Salida","f.huespedes":"Huéspedes","f.g1":"1 huésped","f.g2":"2 huéspedes","f.cualquiera":"Cualquiera",
+      "ct.o1":"Consulta","ct.o2":"Sugerencia","ct.o3":"Reclamo","ct.o4":"Otro"
     },
     en: {
       "hero.loc":"Pisco Elqui · Elqui Valley",
@@ -1046,7 +1056,17 @@
       "rsv.eyebrow":"Plan your stay","rsv.title":"Your rest begins with a date.","rsv.sub":"Fill in the request and we'll take you straight to WhatsApp with your trip details.",
       "ct.eyebrow":"Write to us","ct.title":"Question, suggestion or complaint?","ct.sub":"Tell us what you need and we'll reply shortly.",
       "ct.motivo":"Reason","ct.nombre":"Name","ct.contacto":"Email or phone","ct.mensaje":"Message","ct.wa":"Send via WhatsApp","ct.mail":"Send by email",
-      "clima.hoy":"Today in Pisco Elqui","common.tempBaja":"Low season","common.tempAlta":"High season"
+      "clima.hoy":"Today in Pisco Elqui","common.tempBaja":"Low season","common.tempAlta":"High season",
+      "sv.t1":"Pool","sv.t2":"Wi-Fi","sv.t3":"Climate control","sv.t4":"Solar power","sv.t5":"Bicycles","sv.t6":"Parking",
+      "sv.d1":"Surrounded by gardens and mountains.","sv.d2":"Connectivity throughout the property.","sv.d3":"Air conditioning and heating.","sv.d4":"In tune with the valley's environment.","sv.d5":"To explore the surroundings.","sv.d6":"Private, included in the stay.",
+      "sv.x1":"Equipped kitchen","sv.x2":"Grill","sv.x3":"Bed linen","sv.x4":"Towels","sv.x5":"TV",
+      "th.badgeBaja":"Apr – Nov","th.badgeAlta":"Most requested","th.per":"Per night · 2 people · taxes included","th.bajaDesc":"Ask about promotions and long stays.","th.altaDesc":"15 December to 15 April and special dates.",
+      "th.c1":"Minimum stay 2 nights","th.c2":"Maximum 2 guests per unit","th.c3":"The final price depends on the unit and the season",
+      "common.cabana":"Cabin","common.departamento":"Apartment","common.desde":"From",
+      "hh.badge1995":"Since 1995","hh.badgeTitle":"A story tied to the Valley",
+      "clima.hum":"Humidity","clima.wind":"Wind",
+      "f.llegada":"Check-in","f.salida":"Check-out","f.huespedes":"Guests","f.g1":"1 guest","f.g2":"2 guests","f.cualquiera":"Any",
+      "ct.o1":"Enquiry","ct.o2":"Suggestion","ct.o3":"Complaint","ct.o4":"Other"
     },
     de: {
       "hero.loc":"Pisco Elqui · Elqui-Tal",
@@ -1071,7 +1091,17 @@
       "rsv.eyebrow":"Plane deinen Aufenthalt","rsv.title":"Deine Erholung beginnt mit einem Datum.","rsv.sub":"Fülle die Anfrage aus und wir bringen dich direkt zu WhatsApp mit deinen Reisedaten.",
       "ct.eyebrow":"Schreib uns","ct.title":"Frage, Vorschlag oder Beschwerde?","ct.sub":"Sag uns, was du brauchst, wir antworten in Kürze.",
       "ct.motivo":"Anliegen","ct.nombre":"Name","ct.contacto":"E-Mail oder Telefon","ct.mensaje":"Nachricht","ct.wa":"Per WhatsApp senden","ct.mail":"Per E-Mail senden",
-      "clima.hoy":"Heute in Pisco Elqui","common.tempBaja":"Nebensaison","common.tempAlta":"Hochsaison"
+      "clima.hoy":"Heute in Pisco Elqui","common.tempBaja":"Nebensaison","common.tempAlta":"Hochsaison",
+      "sv.t1":"Pool","sv.t2":"WLAN","sv.t3":"Klimatisierung","sv.t4":"Solarenergie","sv.t5":"Fahrräder","sv.t6":"Parkplatz",
+      "sv.d1":"Umgeben von Gärten und Bergen.","sv.d2":"Konnektivität auf dem gesamten Gelände.","sv.d3":"Klimaanlage und Heizung.","sv.d4":"Im Einklang mit der Umgebung des Tals.","sv.d5":"Um die Umgebung zu erkunden.","sv.d6":"Privat, im Aufenthalt inbegriffen.",
+      "sv.x1":"Ausgestattete Küche","sv.x2":"Grill","sv.x3":"Bettwäsche","sv.x4":"Handtücher","sv.x5":"TV",
+      "th.badgeBaja":"Apr – Nov","th.badgeAlta":"Am gefragtesten","th.per":"Pro Nacht · 2 Personen · inkl. Steuern","th.bajaDesc":"Frag nach Aktionen und Langzeitaufenthalten.","th.altaDesc":"15. Dezember bis 15. April und besondere Termine.",
+      "th.c1":"Mindestaufenthalt 2 Nächte","th.c2":"Maximal 2 Gäste pro Einheit","th.c3":"Der Endpreis hängt von der Einheit und der Saison ab",
+      "common.cabana":"Hütte","common.departamento":"Apartment","common.desde":"Ab",
+      "hh.badge1995":"Seit 1995","hh.badgeTitle":"Eine mit dem Tal verbundene Geschichte",
+      "clima.hum":"Luftfeuchtigkeit","clima.wind":"Wind",
+      "f.llegada":"Anreise","f.salida":"Abreise","f.huespedes":"Gäste","f.g1":"1 Gast","f.g2":"2 Gäste","f.cualquiera":"Beliebig",
+      "ct.o1":"Anfrage","ct.o2":"Vorschlag","ct.o3":"Beschwerde","ct.o4":"Sonstiges"
     }
   };
 </script>
