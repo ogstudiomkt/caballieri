@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cabañas Caballieri | Pisco Elqui</title>
+  <meta name="description" content="Cinco cabañas y un departamento con identidad propia, piscina y jardines en Pisco Elqui, Valle de Elqui.">
+
+  <!-- ================= ESTILOS ================= -->
+  <!-- Tailwind (CDN) para las utilidades de diseño -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+
+<body class="antialiased">
+<main class="min-h-screen overflow-hidden bg-[#f6f2ea] text-[#142840]">
+
+  <!-- ================= HEADER ================= -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-5">
+    <div class="bar mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-white/70 bg-white/92 px-4 py-2 shadow-[0_16px_50px_rgba(18,39,63,0.12)] backdrop-blur-xl sm:px-6">
+      <a href="#inicio" aria-label="Cabañas Caballieri, inicio" class="shrink-0">
+        <img src="images/caballieri-logo.png" alt="Cabañas Caballieri" width="360" height="180" class="h-12 w-auto object-contain sm:h-14">
+      </a>
+      <nav aria-label="Navegación principal" class="hidden items-center gap-5 text-sm font-semibold text-[#243d58] lg:flex">
+        <a class="transition hover:text-[#c64e2a]" href="cabanas.html">Cabañas</a>
+        <a class="transition hover:text-[#c64e2a]" href="historia.html">Historia</a>
+        <a class="transition hover:text-[#c64e2a]" href="#servicios">Servicios</a>
+        <a class="transition hover:text-[#c64e2a]" href="entorno.html">Entorno</a>
+        <a class="transition hover:text-[#c64e2a]" href="como-llegar.html">Cómo llegar</a>
+        <a class="transition hover:text-[#c64e2a]" href="galeria.html">Galería</a>
+        <a class="transition hover:text-[#c64e2a]" href="#tarifas">Tarifas</a>
+        <a class="transition hover:text-[#c64e2a]" href="#reservar">Contacto</a>
+      </nav>
+      <div class="flex shrink-0 items-center gap-2">
+        <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram" class="grid size-11 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:border-transparent hover:bg-gradient-to-tr hover:from-[#f4c464] hover:to-[#c64e2a] hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+        </a>
+        <a href="#reservar" class="inline-flex items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all h-11 rounded-full bg-[#102b52] px-5 text-white hover:bg-[#c64e2a]">
+          Consultar <span class="hidden sm:inline">disponibilidad</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="inicio" class="relative flex min-h-[860px] items-end pt-24 lg:min-h-[900px]">
+    <img src="images/hero.jpg" alt="Cabañas de piedra integradas a la ladera de Pisco Elqui" class="object-cover kenburns" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+    <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,30,55,0.9)_0%,rgba(8,30,55,0.5)_47%,rgba(8,30,55,0.08)_78%),linear-gradient(0deg,rgba(8,30,55,0.8)_0%,transparent_45%)]"></div>
+    <div class="relative z-10 mx-auto w-full max-w-7xl px-5 pb-40 sm:px-8 lg:pb-44">
+      <div class="max-w-3xl text-white">
+        <p class="mb-6 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.28em] text-[#f4c464]">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Pisco Elqui · Valle de Elqui
+        </p>
+        <h1 class="font-display text-5xl leading-[0.98] tracking-[-0.04em] sm:text-7xl lg:text-[5.8rem]">Seis espacios.<br>Seis formas de vivir el Valle.</h1>
+        <p class="mt-7 max-w-2xl text-lg leading-8 text-white/85 sm:text-xl">Cinco cabañas y un departamento, distintos entre sí, construidos con materiales locales y rodeados de jardines, piscina y cielos abiertos.</p>
+        <div class="mt-9 flex flex-wrap gap-3">
+          <a href="#cabana" class="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all h-13 rounded-full bg-[#e3aa36] px-7 text-[#112b4f] hover:bg-white">
+            Conocer los espacios
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </a>
+          <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" class="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all border h-13 rounded-full border-white/50 bg-white/10 px-7 text-white backdrop-blur hover:bg-white hover:text-[#112b4f]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+            Ver Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Buscador flotante -->
+    <div class="absolute inset-x-0 bottom-0 z-20 translate-y-1/2 px-4 sm:px-8">
+      <div class="mx-auto max-w-7xl rounded-[1.75rem] border border-white/70 bg-white p-4 shadow-[0_24px_80px_rgba(11,33,54,0.2)] sm:p-6">
+        <form class="grid gap-3 lg:grid-cols-[1fr_1fr_0.75fr_0.85fr_auto] lg:items-end" data-reserva>
+          <label class="block">
+            <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+              Llegada
+            </span>
+            <input data-llegada aria-label="Fecha de llegada" type="date" class="h-12 w-full rounded-xl border border-[#102b52]/15 bg-[#f8f6f1] px-3 text-base text-[#102b52] outline-none transition focus:border-[#2b9298] focus:ring-2 focus:ring-[#2b9298]/15">
+          </label>
+          <label class="block">
+            <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+              Salida
+            </span>
+            <input data-salida aria-label="Fecha de salida" type="date" class="h-12 w-full rounded-xl border border-[#102b52]/15 bg-[#f8f6f1] px-3 text-base text-[#102b52] outline-none transition focus:border-[#2b9298] focus:ring-2 focus:ring-[#2b9298]/15">
+          </label>
+          <div>
+            <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+              Huéspedes
+            </span>
+            <select data-huespedes class="field" aria-label="Cantidad de huéspedes">
+              <option value="1">1 huésped</option>
+              <option value="2" selected>2 huéspedes</option>
+            </select>
+          </div>
+          <div>
+            <span class="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">Espacio</span>
+            <select data-espacio class="field" aria-label="Cabaña o departamento">
+              <option value="Cualquiera" selected>Cualquiera</option>
+              <option value="Cuarzo">Cuarzo</option>
+              <option value="Aire">Aire</option>
+              <option value="Fuego">Fuego</option>
+              <option value="Cobre">Cobre</option>
+              <option value="Agua">Agua</option>
+              <option value="Piedra">Piedra</option>
+            </select>
+          </div>
+          <div class="lg:pb-0">
+            <button class="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all h-12 w-full rounded-xl bg-[#c64e2a] px-6 text-white hover:bg-[#102b52]" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+              Consultar por WhatsApp
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CABAÑAS ================= -->
+  <section id="cabana" class="px-5 pb-24 pt-40 sm:px-8 lg:pb-32 lg:pt-48">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid items-end gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="reveal">
+          <p class="eyebrow">Alojamiento con identidad</p>
+          <h2 class="section-title max-w-4xl">Cada espacio tiene su propia manera de recibirte.</h2>
+        </div>
+        <p class="reveal max-w-xl text-lg leading-8 text-[#526273] lg:justify-self-end">No hay dos unidades iguales. Cada una tiene una materialidad, distribución y atmósfera particular, siempre con cocina equipada, climatización y privacidad.</p>
+      </div>
+
+      <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-stagger>
+        <!-- Tarjeta de cabaña (repetible) -->
+        <article class="reveal group relative overflow-hidden rounded-[1.75rem] border border-[#15314f]/10 bg-white p-7 shadow-[0_10px_35px_rgba(18,39,63,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(18,39,63,0.13)]">
+          <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#e8a9a0"></div>
+          <div class="relative">
+            <div class="mb-12 flex items-center justify-between">
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#e8a9a0">Cabaña</span>
+              <span class="font-display text-4xl text-[#102b52]/15">01</span>
+            </div>
+            <h3 class="font-display text-4xl text-[#102b52]">Cuarzo</h3>
+            <div class="mt-6 flex items-end justify-between border-t border-[#15314f]/10 pt-5">
+              <div>
+                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
+                <p class="mt-1 text-xl font-bold text-[#102b52]">Desde $120.000</p>
+              </div>
+              <a href="cabanas.html#cuarzo" aria-label="Ver Cuarzo en detalle" class="grid size-11 place-items-center rounded-full bg-[#f1eee7] text-[#102b52] transition group-hover:bg-[#102b52] group-hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="reveal group relative overflow-hidden rounded-[1.75rem] border border-[#15314f]/10 bg-white p-7 shadow-[0_10px_35px_rgba(18,39,63,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(18,39,63,0.13)]">
+          <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#9fc9dd"></div>
+          <div class="relative">
+            <div class="mb-12 flex items-center justify-between">
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#9fc9dd">Cabaña</span>
+              <span class="font-display text-4xl text-[#102b52]/15">02</span>
+            </div>
+            <h3 class="font-display text-4xl text-[#102b52]">Aire</h3>
+            <div class="mt-6 flex items-end justify-between border-t border-[#15314f]/10 pt-5">
+              <div>
+                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
+                <p class="mt-1 text-xl font-bold text-[#102b52]">Desde $120.000</p>
+              </div>
+              <a href="cabanas.html#aire" aria-label="Ver Aire en detalle" class="grid size-11 place-items-center rounded-full bg-[#f1eee7] text-[#102b52] transition group-hover:bg-[#102b52] group-hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="reveal group relative overflow-hidden rounded-[1.75rem] border border-[#15314f]/10 bg-white p-7 shadow-[0_10px_35px_rgba(18,39,63,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(18,39,63,0.13)]">
+          <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#c9542d"></div>
+          <div class="relative">
+            <div class="mb-12 flex items-center justify-between">
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#c9542d">Cabaña</span>
+              <span class="font-display text-4xl text-[#102b52]/15">03</span>
+            </div>
+            <h3 class="font-display text-4xl text-[#102b52]">Fuego</h3>
+            <div class="mt-6 flex items-end justify-between border-t border-[#15314f]/10 pt-5">
+              <div>
+                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
+                <p class="mt-1 text-xl font-bold text-[#102b52]">Desde $90.000</p>
+              </div>
+              <a href="cabanas.html#fuego" aria-label="Ver Fuego en detalle" class="grid size-11 place-items-center rounded-full bg-[#f1eee7] text-[#102b52] transition group-hover:bg-[#102b52] group-hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="reveal group relative overflow-hidden rounded-[1.75rem] border border-[#15314f]/10 bg-white p-7 shadow-[0_10px_35px_rgba(18,39,63,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(18,39,63,0.13)]">
+          <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#c79330"></div>
+          <div class="relative">
+            <div class="mb-12 flex items-center justify-between">
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#c79330">Cabaña</span>
+              <span class="font-display text-4xl text-[#102b52]/15">04</span>
+            </div>
+            <h3 class="font-display text-4xl text-[#102b52]">Cobre</h3>
+            <div class="mt-6 flex items-end justify-between border-t border-[#15314f]/10 pt-5">
+              <div>
+                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
+                <p class="mt-1 text-xl font-bold text-[#102b52]">Desde $90.000</p>
+              </div>
+              <a href="cabanas.html#cobre" aria-label="Ver Cobre en detalle" class="grid size-11 place-items-center rounded-full bg-[#f1eee7] text-[#102b52] transition group-hover:bg-[#102b52] group-hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="reveal group relative overflow-hidden rounded-[1.75rem] border border-[#15314f]/10 bg-white p-7 shadow-[0_10px_35px_rgba(18,39,63,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(18,39,63,0.13)]">
+          <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#2b9298"></div>
+          <div class="relative">
+            <div class="mb-12 flex items-center justify-between">
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#2b9298">Cabaña</span>
+              <span class="font-display text-4xl text-[#102b52]/15">05</span>
+            </div>
+            <h3 class="font-display text-4xl text-[#102b52]">Agua</h3>
+            <div class="mt-6 flex items-end justify-between border-t border-[#15314f]/10 pt-5">
+              <div>
+                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
+                <p class="mt-1 text-xl font-bold text-[#102b52]">Desde $90.000</p>
+              </div>
+              <a href="cabanas.html#agua" aria-label="Ver Agua en detalle" class="grid size-11 place-items-center rounded-full bg-[#f1eee7] text-[#102b52] transition group-hover:bg-[#102b52] group-hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="reveal group relative overflow-hidden rounded-[1.75rem] border border-[#15314f]/10 bg-white p-7 shadow-[0_10px_35px_rgba(18,39,63,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(18,39,63,0.13)]">
+          <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#596b7d"></div>
+          <div class="relative">
+            <div class="mb-12 flex items-center justify-between">
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#596b7d">Departamento</span>
+              <span class="font-display text-4xl text-[#102b52]/15">06</span>
+            </div>
+            <h3 class="font-display text-4xl text-[#102b52]">Piedra</h3>
+            <div class="mt-6 flex items-end justify-between border-t border-[#15314f]/10 pt-5">
+              <div>
+                <p class="text-xs uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
+                <p class="mt-1 text-xl font-bold text-[#102b52]">Desde $70.000</p>
+              </div>
+              <a href="cabanas.html#piedra" aria-label="Ver Piedra en detalle" class="grid size-11 place-items-center rounded-full bg-[#f1eee7] text-[#102b52] transition group-hover:bg-[#102b52] group-hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="reveal mt-10 flex justify-center">
+        <a href="cabanas.html" class="inline-flex items-center justify-center gap-2 text-sm font-semibold transition-all h-12 rounded-full border border-[#102b52]/15 bg-white px-7 text-[#102b52] hover:bg-[#102b52] hover:text-white">
+          Ver todas las cabañas en detalle
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HISTORIA ================= -->
+  <section id="experiencia" class="relative bg-[#102b52] px-5 py-24 text-white sm:px-8 lg:py-32">
+    <div class="pointer-events-none absolute -right-24 top-0 size-80 rounded-full bg-[#2c8f94]/30 blur-3xl"></div>
+    <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+      <div class="reveal relative min-h-[560px]">
+        <div class="absolute left-0 top-0 h-[78%] w-[82%] overflow-hidden rounded-[10rem_10rem_2rem_2rem]">
+          <img src="images/interior.jpg" alt="Interior de una cabaña Caballieri" class="object-cover" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        </div>
+        <div class="absolute bottom-0 right-0 h-[45%] w-[54%] overflow-hidden rounded-[2rem] border-8 border-[#102b52]">
+          <img src="images/night.jpg" alt="Noche estrellada en Cabañas Caballieri" class="object-cover" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        </div>
+        <div class="absolute bottom-10 left-5 rounded-2xl bg-[#e4aa36] px-5 py-4 text-[#102b52] shadow-xl">
+          <p class="text-xs font-bold uppercase tracking-[0.2em]">Desde 1995</p>
+          <p class="mt-1 font-display text-2xl">Una historia ligada al Valle</p>
+        </div>
+      </div>
+      <div class="reveal lg:pl-10">
+        <p class="eyebrow text-[#f4c464]">Nuestra historia</p>
+        <h2 class="font-display text-5xl leading-tight tracking-[-0.035em] sm:text-6xl">Un oasis construido paso a paso.</h2>
+        <div class="mt-7 space-y-5 text-lg leading-8 text-white/72">
+          <p>En 1995, Claudia Caballieri y Richard Rose, arquitecto norteamericano, dejaron atrás el ruido de la ciudad para vivir en Pisco Elqui. El sol, la tranquilidad y la belleza del Valle hicieron el resto.</p>
+          <p>Su primera obra fue recuperar una casona de más de cien años, que hoy recibe a cada huésped. Luego llegó una piscina revestida completamente con mosaicos de vidrio azul cobalto, pensada para reflejar las estrellas y abrirse hacia el paisaje a través de su cascada.</p>
+          <p>Alrededor crecieron palmeras, hibiscos, buganvilias y cientos de plantas. Después vinieron las cabañas: espacios distintos entre sí, creados con materiales locales, paciencia y una atención poco común por los detalles.</p>
+        </div>
+        <blockquote class="mt-8 border-l-2 border-[#f4c464] pl-5 font-display text-2xl leading-9 text-white">“Un mundo aparte, donde el tiempo se detiene y solo hay espacio para el silencio, la paz y la belleza.”
+          <footer class="mt-3 font-sans text-xs font-bold uppercase tracking-[0.18em] text-[#f4c464]">Claudia Caballieri</footer>
+        </blockquote>
+        <a href="historia.html" class="mt-8 inline-flex items-center justify-center gap-2 text-sm font-semibold transition-all h-12 rounded-full border border-white/25 bg-white/10 px-7 text-white backdrop-blur hover:bg-white hover:text-[#102b52]">
+          Leer la historia completa
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal mx-auto mt-16 grid max-w-7xl gap-px overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+      <article class="bg-[#102b52] p-7">
+        <p class="font-display text-3xl text-[#f4c464]">1995</p>
+        <p class="mt-2 text-sm leading-6 text-white/65">Llegada a Pisco Elqui</p>
+      </article>
+      <article class="bg-[#102b52] p-7">
+        <p class="font-display text-3xl text-[#f4c464]">Primer paso</p>
+        <p class="mt-2 text-sm leading-6 text-white/65">Restauración de la casona centenaria</p>
+      </article>
+      <article class="bg-[#102b52] p-7">
+        <p class="font-display text-3xl text-[#f4c464]">2000–2009</p>
+        <p class="mt-2 text-sm leading-6 text-white/65">Diseño y construcción de Cuarzo</p>
+      </article>
+      <article class="bg-[#102b52] p-7">
+        <p class="font-display text-3xl text-[#f4c464]">Hoy</p>
+        <p class="mt-2 text-sm leading-6 text-white/65">Cinco cabañas y un departamento con identidad propia</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= VIDEO ================= -->
+  <section id="video" class="bg-[#0d2544] px-5 py-20 sm:px-8 lg:py-24">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal mx-auto mb-10 max-w-3xl text-center">
+        <p class="eyebrow text-[#f4c464]">En movimiento</p>
+        <h2 class="font-display text-4xl leading-tight text-white sm:text-5xl">Un recorrido por Caballieri.</h2>
+      </div>
+      <!-- Contenedor responsivo 16:9 con el video de Vimeo -->
+      <div class="reveal relative w-full overflow-hidden rounded-[2rem] shadow-[0_30px_80px_rgba(0,0,0,0.4)]" style="padding-top:56.25%">
+        <iframe src="https://player.vimeo.com/video/308768932?title=0&byline=0&portrait=0" class="absolute inset-0 h-full w-full" style="border:0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Cabañas Caballieri · Pisco Elqui"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICIOS ================= -->
+  <section id="servicios" class="px-5 py-20 sm:px-8 lg:py-24">
+    <div class="mx-auto max-w-7xl">
+      <div class="mx-auto max-w-3xl text-center reveal">
+        <p class="eyebrow">Todo lo necesario</p>
+        <h2 class="section-title">Comodidad sin romper la calma del lugar.</h2>
+      </div>
+
+      <!-- Servicios compactos: ícono pequeño + texto en línea -->
+      <div class="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3" data-stagger>
+        <div class="lift reveal flex items-center gap-4 rounded-2xl border border-[#102b52]/10 bg-white px-5 py-4 shadow-[0_6px_20px_rgba(18,39,63,0.05)] hover:border-[#2b9298]/40 hover:shadow-[0_14px_34px_rgba(18,39,63,0.1)]">
+          <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-[#102b52] text-[#f4c464]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M2 12q2.5 2 5 0t5 0 5 0 5 0"></path><path d="M2 19q2.5 2 5 0t5 0 5 0 5 0"></path><path d="M2 5q2.5 2 5 0t5 0 5 0 5 0"></path></svg>
+          </span>
+          <div>
+            <h3 class="font-semibold text-[#102b52]">Piscina</h3>
+            <p class="text-sm leading-6 text-[#5a6978]">Rodeada de jardines y montaña.</p>
+          </div>
+        </div>
+        <div class="lift reveal flex items-center gap-4 rounded-2xl border border-[#102b52]/10 bg-white px-5 py-4 shadow-[0_6px_20px_rgba(18,39,63,0.05)] hover:border-[#2b9298]/40 hover:shadow-[0_14px_34px_rgba(18,39,63,0.1)]">
+          <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-[#102b52] text-[#f4c464]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M12 20h.01"></path><path d="M2 8.82a15 15 0 0 1 20 0"></path><path d="M5 12.859a10 10 0 0 1 14 0"></path><path d="M8.5 16.429a5 5 0 0 1 7 0"></path></svg>
+          </span>
+          <div>
+            <h3 class="font-semibold text-[#102b52]">Wi-Fi</h3>
+            <p class="text-sm leading-6 text-[#5a6978]">Conectividad en todo el complejo.</p>
+          </div>
+        </div>
+        <div class="lift reveal flex items-center gap-4 rounded-2xl border border-[#102b52]/10 bg-white px-5 py-4 shadow-[0_6px_20px_rgba(18,39,63,0.05)] hover:border-[#2b9298]/40 hover:shadow-[0_14px_34px_rgba(18,39,63,0.1)]">
+          <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-[#102b52] text-[#f4c464]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="m10 20-1.25-2.5L6 18"></path><path d="M10 4 8.75 6.5 6 6"></path><path d="m14 20 1.25-2.5L18 18"></path><path d="m14 4 1.25 2.5L18 6"></path><path d="m17 21-3-6h-4"></path><path d="m17 3-3 6 1.5 3"></path><path d="M2 12h6.5L10 9"></path><path d="m20 10-1.5 2 1.5 2"></path><path d="M22 12h-6.5L14 15"></path><path d="m4 10 1.5 2L4 14"></path><path d="m7 21 3-6-1.5-3"></path><path d="m7 3 3 6h4"></path></svg>
+          </span>
+          <div>
+            <h3 class="font-semibold text-[#102b52]">Climatización</h3>
+            <p class="text-sm leading-6 text-[#5a6978]">Aire acondicionado y calefacción.</p>
+          </div>
+        </div>
+        <div class="lift reveal flex items-center gap-4 rounded-2xl border border-[#102b52]/10 bg-white px-5 py-4 shadow-[0_6px_20px_rgba(18,39,63,0.05)] hover:border-[#2b9298]/40 hover:shadow-[0_14px_34px_rgba(18,39,63,0.1)]">
+          <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-[#102b52] text-[#f4c464]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+          </span>
+          <div>
+            <h3 class="font-semibold text-[#102b52]">Energía solar</h3>
+            <p class="text-sm leading-6 text-[#5a6978]">Coherente con el entorno del Valle.</p>
+          </div>
+        </div>
+        <div class="lift reveal flex items-center gap-4 rounded-2xl border border-[#102b52]/10 bg-white px-5 py-4 shadow-[0_6px_20px_rgba(18,39,63,0.05)] hover:border-[#2b9298]/40 hover:shadow-[0_14px_34px_rgba(18,39,63,0.1)]">
+          <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-[#102b52] text-[#f4c464]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><circle cx="18.5" cy="17.5" r="3.5"></circle><circle cx="5.5" cy="17.5" r="3.5"></circle><circle cx="15" cy="5" r="1"></circle><path d="M12 17.5V14l-3-3 4-3 2 3h2"></path></svg>
+          </span>
+          <div>
+            <h3 class="font-semibold text-[#102b52]">Bicicletas</h3>
+            <p class="text-sm leading-6 text-[#5a6978]">Para recorrer los alrededores.</p>
+          </div>
+        </div>
+        <div class="lift reveal flex items-center gap-4 rounded-2xl border border-[#102b52]/10 bg-white px-5 py-4 shadow-[0_6px_20px_rgba(18,39,63,0.05)] hover:border-[#2b9298]/40 hover:shadow-[0_14px_34px_rgba(18,39,63,0.1)]">
+          <span class="grid size-10 shrink-0 place-items-center rounded-xl bg-[#102b52] text-[#f4c464]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg>
+          </span>
+          <div>
+            <h3 class="font-semibold text-[#102b52]">Estacionamiento</h3>
+            <p class="text-sm leading-6 text-[#5a6978]">Privado, incluido en la estadía.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Extras en una sola línea de etiquetas -->
+      <div class="reveal mt-6 flex flex-wrap items-center justify-center gap-2 text-sm text-[#526273]">
+        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5">Cocina equipada</span>
+        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5">Parrilla</span>
+        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5">Ropa de cama</span>
+        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5">Toallas</span>
+        <span class="rounded-full bg-[#102b52]/5 px-4 py-1.5">TV</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EL ENTORNO / VALLE DE ELQUI ================= -->
+  <section id="entorno" class="relative overflow-hidden bg-[#0f2747] px-5 py-20 text-white sm:px-8 lg:py-24">
+    <div class="pointer-events-none absolute -left-24 bottom-0 size-96 rounded-full bg-[#e1a737]/15 blur-3xl"></div>
+    <div class="pointer-events-none absolute -right-16 top-10 size-72 rounded-full bg-[#2b9298]/25 blur-3xl"></div>
+    <div class="relative mx-auto max-w-7xl">
+      <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+        <div class="reveal">
+          <p class="eyebrow text-[#f4c464]">El entorno</p>
+          <h2 class="font-display text-5xl leading-tight tracking-[-0.035em] sm:text-6xl">Un valle para explorar sin apuro.</h2>
+        </div>
+        <p class="reveal max-w-xl text-lg leading-8 text-white/72 lg:justify-self-end">A 1.300 m de altura entre la Cordillera de los Andes y a unos 100 km de La Serena, Pisco Elqui reúne el cielo más limpio del mundo, pisqueras históricas y la huella de Gabriela Mistral.</p>
+      </div>
+
+      <div class="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-stagger>
+        <article class="lift reveal rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur hover:border-[#f4c464]/50 hover:bg-white/10">
+          <div class="grid size-11 place-items-center rounded-2xl bg-[#f4c464] text-[#102b52]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+          </div>
+          <h3 class="mt-5 font-display text-2xl">Astroturismo</h3>
+          <p class="mt-2 leading-7 text-white/65">Los cielos más claros del planeta. Reserva un tour o visita en los observatorios cercanos.</p>
+        </article>
+        <article class="lift reveal rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur hover:border-[#f4c464]/50 hover:bg-white/10">
+          <div class="grid size-11 place-items-center rounded-2xl bg-[#f4c464] text-[#102b52]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M8 22h8"></path><path d="M7 10h3m4 0h3"></path><path d="M12 15v7"></path><path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-1-6H8c-.5 2-1 4-1 6a5 5 0 0 0 5 5Z"></path></svg>
+          </div>
+          <h3 class="mt-5 font-display text-2xl">Ruta del pisco</h3>
+          <p class="mt-2 leading-7 text-white/65">Visita la Pisquera Mistral en Pisco Elqui o la histórica Los Nichos, a 2 km hacia Horcón.</p>
+        </article>
+        <article class="lift reveal rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur hover:border-[#f4c464]/50 hover:bg-white/10">
+          <div class="grid size-11 place-items-center rounded-2xl bg-[#f4c464] text-[#102b52]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="m8 3 4 8 5-5 5 15H2L8 3z"></path></svg>
+          </div>
+          <h3 class="mt-5 font-display text-2xl">Senderos y cerros</h3>
+          <p class="mt-2 leading-7 text-white/65">Caminatas por la montaña y paisajes que abren el valle hacia Horcón y Alcohuaz.</p>
+        </article>
+        <article class="lift reveal rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur hover:border-[#f4c464]/50 hover:bg-white/10">
+          <div class="grid size-11 place-items-center rounded-2xl bg-[#f4c464] text-[#102b52]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><circle cx="18.5" cy="17.5" r="3.5"></circle><circle cx="5.5" cy="17.5" r="3.5"></circle><circle cx="15" cy="5" r="1"></circle><path d="M12 17.5V14l-3-3 4-3 2 3h2"></path></svg>
+          </div>
+          <h3 class="mt-5 font-display text-2xl">A caballo o en bici</h3>
+          <p class="mt-2 leading-7 text-white/65">Recorre la naturaleza del valle cabalgando o pedaleando entre viñas y jardines.</p>
+        </article>
+        <article class="lift reveal rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur hover:border-[#f4c464]/50 hover:bg-white/10">
+          <div class="grid size-11 place-items-center rounded-2xl bg-[#f4c464] text-[#102b52]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+          </div>
+          <h3 class="mt-5 font-display text-2xl">Gabriela Mistral</h3>
+          <p class="mt-2 leading-7 text-white/65">En Montegrande, la tumba y el museo de la poetisa chilena y Premio Nobel.</p>
+        </article>
+        <article class="lift reveal rounded-[1.5rem] border border-white/10 bg-white/5 p-6 backdrop-blur hover:border-[#f4c464]/50 hover:bg-white/10">
+          <div class="grid size-11 place-items-center rounded-2xl bg-[#f4c464] text-[#102b52]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M12 2v7.31"></path><path d="M14 9.3V1.99"></path><path d="M8.5 2h7"></path><path d="M14 9.3a6.5 6.5 0 1 1-4 0"></path><path d="M5.52 16h12.96"></path></svg>
+          </div>
+          <h3 class="mt-5 font-display text-2xl">Gastronomía y noche</h3>
+          <p class="mt-2 leading-7 text-white/65">Cocina típica del valle, pubs y música en vivo con bandas locales e invitados.</p>
+        </article>
+      </div>
+
+      <div class="reveal mt-10 flex flex-wrap gap-3">
+        <a href="entorno.html" class="inline-flex items-center justify-center gap-2 text-sm font-semibold transition-all h-12 rounded-full bg-[#e3aa36] px-7 text-[#112b4f] hover:bg-white">
+          Explorar el Valle de Elqui
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+        <a href="como-llegar.html" class="inline-flex items-center justify-center gap-2 text-sm font-semibold transition-all h-12 rounded-full border border-white/25 bg-white/10 px-7 text-white backdrop-blur hover:bg-white hover:text-[#102b52]">
+          Cómo llegar
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TARIFAS ================= -->
+  <section id="tarifas" class="px-5 py-20 sm:px-8 lg:py-24">
+    <div class="mx-auto max-w-7xl">
+      <div class="grid items-end gap-8 lg:grid-cols-[1fr_auto] reveal">
+        <div>
+          <p class="eyebrow">Tarifas y condiciones</p>
+          <h2 class="section-title">Información clara antes de reservar.</h2>
+        </div>
+        <a href="#reservar" class="inline-flex w-fit shrink-0 items-center justify-center gap-2 justify-self-start text-sm font-medium whitespace-nowrap transition-all h-12 rounded-full bg-[#c64e2a] px-6 text-white hover:bg-[#102b52]">
+          Consultar fechas
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+
+      <div class="mt-10 grid gap-4 lg:grid-cols-2" data-stagger>
+        <!-- Temporada baja -->
+        <article class="lift reveal group relative overflow-hidden rounded-[1.75rem] border border-[#102b52]/10 bg-white p-8 shadow-[0_10px_30px_rgba(18,39,63,0.06)] hover:shadow-[0_20px_50px_rgba(18,39,63,0.12)] sm:p-9">
+          <div class="flex items-center justify-between">
+            <p class="text-sm font-bold uppercase tracking-[0.18em] text-[#718091]">Temporada baja</p>
+            <span class="rounded-full bg-[#2b9298]/12 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-[#1f7a80]">Abr – Nov</span>
+          </div>
+          <p class="mt-4 font-display text-5xl text-[#102b52]">Desde <span class="text-[#c64e2a]">$70.000</span></p>
+          <p class="mt-2 text-sm text-[#5a6978]">Por noche · 2 personas · impuestos incluidos</p>
+          <p class="mt-5 border-t border-[#102b52]/10 pt-4 text-sm leading-6 text-[#526273]">Consulta por promociones y estadías largas.</p>
+        </article>
+
+        <!-- Temporada alta (destacada) -->
+        <article class="lift reveal group relative overflow-hidden rounded-[1.75rem] bg-[#e1a737] p-8 text-[#102b52] shadow-[0_16px_40px_rgba(225,167,55,0.35)] sm:p-9">
+          <div class="pointer-events-none absolute -right-10 -top-10 size-40 rounded-full bg-white/25 blur-2xl"></div>
+          <div class="relative flex items-center justify-between">
+            <p class="text-sm font-bold uppercase tracking-[0.18em]">Temporada alta</p>
+            <span class="rounded-full bg-[#102b52] px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-white">Más solicitada</span>
+          </div>
+          <p class="relative mt-4 font-display text-5xl">Desde $80.000</p>
+          <p class="relative mt-2 text-sm text-[#102b52]/70">Por noche · 2 personas · impuestos incluidos</p>
+          <p class="relative mt-5 border-t border-[#102b52]/20 pt-4 text-sm leading-6 text-[#102b52]/75">15 de diciembre al 15 de abril y fechas especiales.</p>
+        </article>
+      </div>
+
+      <!-- Condiciones en línea, compactas -->
+      <div class="reveal mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 rounded-2xl border border-[#102b52]/10 bg-white px-6 py-4 text-sm text-[#526273]">
+        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg> Estadía mínima 2 noches</span>
+        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg> Máximo 2 huéspedes por unidad</span>
+        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> El valor final depende de la unidad y la temporada</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INSTAGRAM ================= -->
+  <section class="bg-white px-5 py-24 sm:px-8 lg:py-32">
+    <div class="mx-auto max-w-7xl">
+      <div class="reveal flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+        <div>
+          <p class="eyebrow">Síguenos</p>
+          <h2 class="section-title">El Valle, en tiempo real.</h2>
+        </div>
+        <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" class="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all border h-9 w-fit rounded-full border-[#102b52]/20 px-5 text-[#102b52] hover:bg-[#102b52]/5">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+          @cabanascaballieri
+        </a>
+      </div>
+      <div class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4" data-stagger>
+        <a href="galeria.html" class="reveal group relative overflow-hidden rounded-[1.5rem]">
+          <div class="relative aspect-square">
+            <img src="images/galeria/piscina-01.jpg" alt="Piscina de mosaico azul cobalto" loading="lazy" class="object-cover transition duration-700 group-hover:scale-105" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#102b52]/60 via-transparent to-transparent opacity-70"></div>
+          </div>
+        </a>
+        <a href="galeria.html" class="reveal group relative overflow-hidden rounded-[1.5rem] sm:-translate-y-5">
+          <div class="relative aspect-square">
+            <img src="images/galeria/jardin-04.jpg" alt="Jardines del complejo" loading="lazy" class="object-cover transition duration-700 group-hover:scale-105" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#102b52]/60 via-transparent to-transparent opacity-70"></div>
+          </div>
+        </a>
+        <a href="galeria.html" class="reveal group relative overflow-hidden rounded-[1.5rem]">
+          <div class="relative aspect-square">
+            <img src="images/galeria/noche-04.jpg" alt="Vía Láctea sobre Pisco Elqui" loading="lazy" class="object-cover transition duration-700 group-hover:scale-105" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#102b52]/60 via-transparent to-transparent opacity-70"></div>
+          </div>
+        </a>
+        <a href="galeria.html" class="reveal group relative overflow-hidden rounded-[1.5rem] sm:-translate-y-5">
+          <div class="relative aspect-square">
+            <img src="images/galeria/estatua-03.jpg" alt="Escultura del jardín" loading="lazy" class="object-cover transition duration-700 group-hover:scale-105" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#102b52]/60 via-transparent to-transparent opacity-70"></div>
+          </div>
+        </a>
+      </div>
+
+      <div class="reveal mt-8">
+        <a href="galeria.html" class="inline-flex items-center justify-center gap-2 text-sm font-semibold transition-all h-12 rounded-full bg-[#102b52] px-7 text-white hover:bg-[#c64e2a]">
+          Ver galería completa
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESERVAR ================= -->
+  <section id="reservar" class="relative bg-[#0d2544] px-5 py-24 text-white sm:px-8 lg:py-32">
+    <div class="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_10%,#2b9298_0,transparent_30%),radial-gradient(circle_at_90%_90%,#e1a737_0,transparent_28%)]"></div>
+    <div class="relative mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+      <div class="reveal">
+        <p class="eyebrow text-[#f4c464]">Consulta tu estadía</p>
+        <h2 class="font-display text-5xl leading-tight sm:text-6xl">Tu descanso comienza con una fecha.</h2>
+        <p class="mt-6 max-w-lg text-lg leading-8 text-white/70">Completa la consulta y te llevaremos directamente a WhatsApp con los datos de tu viaje.</p>
+        <div class="mt-9 space-y-4 text-sm text-white/72">
+          <a class="flex items-center gap-3 hover:text-white" href="https://wa.me/56996414055" target="_blank" rel="noreferrer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-[#f4c464]" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+            +56 9 9641 4055
+          </a>
+          <a class="flex items-center gap-3 hover:text-white" href="mailto:ccaballieri@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-[#f4c464]" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+            ccaballieri@gmail.com
+          </a>
+          <p class="flex items-center gap-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-[#f4c464]" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            Sector La Ladera, Pisco Elqui
+          </p>
+        </div>
+      </div>
+      <div class="reveal rounded-[2rem] bg-white p-6 text-[#102b52] shadow-2xl sm:p-9">
+        <form class="grid gap-5 sm:grid-cols-2" data-reserva>
+          <label class="block">
+            <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+              Llegada
+            </span>
+            <input data-llegada aria-label="Fecha de llegada" type="date" class="h-12 w-full rounded-xl border border-[#102b52]/15 bg-[#f8f6f1] px-3 text-base text-[#102b52] outline-none transition focus:border-[#2b9298] focus:ring-2 focus:ring-[#2b9298]/15">
+          </label>
+          <label class="block">
+            <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
+              Salida
+            </span>
+            <input data-salida aria-label="Fecha de salida" type="date" class="h-12 w-full rounded-xl border border-[#102b52]/15 bg-[#f8f6f1] px-3 text-base text-[#102b52] outline-none transition focus:border-[#2b9298] focus:ring-2 focus:ring-[#2b9298]/15">
+          </label>
+          <div>
+            <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+              Huéspedes
+            </span>
+            <select data-huespedes class="field" aria-label="Cantidad de huéspedes">
+              <option value="1">1 huésped</option>
+              <option value="2" selected>2 huéspedes</option>
+            </select>
+          </div>
+          <div>
+            <span class="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">Espacio</span>
+            <select data-espacio class="field" aria-label="Cabaña o departamento">
+              <option value="Cualquiera" selected>Cualquiera</option>
+              <option value="Cuarzo">Cuarzo</option>
+              <option value="Aire">Aire</option>
+              <option value="Fuego">Fuego</option>
+              <option value="Cobre">Cobre</option>
+              <option value="Agua">Agua</option>
+              <option value="Piedra">Piedra</option>
+            </select>
+          </div>
+          <div class="sm:col-span-2">
+            <button class="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all h-12 w-full rounded-xl bg-[#c64e2a] px-6 text-white hover:bg-[#102b52]" type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+              Consultar por WhatsApp
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CLIMA EN TIEMPO REAL ================= -->
+  <!-- Datos en vivo desde Open-Meteo (sin API key). Coordenadas de Pisco Elqui. -->
+  <section id="clima" class="bg-[#0b1f39] px-5 py-16 text-white sm:px-8">
+    <div class="mx-auto max-w-7xl">
+      <div class="reveal mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <p class="eyebrow text-[#f4c464]">El tiempo hoy</p>
+          <h2 class="font-display text-4xl leading-tight sm:text-5xl">Clima en Pisco Elqui</h2>
+        </div>
+        <p class="text-sm text-white/55">Actualizado en tiempo real · Valle de Elqui, Chile</p>
+      </div>
+
+      <div id="weather" class="reveal grid gap-4 lg:grid-cols-[1.1fr_1.5fr]">
+        <!-- Estado actual -->
+        <div class="rounded-[1.75rem] border border-white/10 bg-white/5 p-7 backdrop-blur">
+          <div class="flex items-center justify-between">
+            <p class="text-sm font-bold uppercase tracking-[0.16em] text-white/60">Ahora</p>
+            <span id="wx-emoji" class="text-4xl">⛅</span>
+          </div>
+          <p class="mt-4 font-display text-6xl leading-none"><span id="wx-temp">—</span>°</p>
+          <p id="wx-desc" class="mt-2 text-lg text-white/75">Cargando…</p>
+          <div class="mt-6 grid grid-cols-2 gap-4 border-t border-white/10 pt-5 text-sm text-white/70">
+            <p class="flex items-center gap-2">Sensación <span id="wx-feel" class="font-semibold text-white">—°</span></p>
+            <p class="flex items-center gap-2">Humedad <span id="wx-hum" class="font-semibold text-white">—%</span></p>
+            <p class="flex items-center gap-2">Viento <span id="wx-wind" class="font-semibold text-white">— km/h</span></p>
+            <p class="flex items-center gap-2">UV <span id="wx-uv" class="font-semibold text-white">—</span></p>
+          </div>
+        </div>
+        <!-- Pronóstico 3 días -->
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div id="wx-d0" class="flex flex-col justify-between rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
+            <p class="text-sm font-bold uppercase tracking-[0.14em] text-[#f4c464]">—</p>
+            <span class="my-3 text-4xl">⛅</span>
+            <p class="text-white/75"><span class="wx-max font-display text-2xl text-white">—°</span> <span class="wx-min text-white/50">—°</span></p>
+          </div>
+          <div id="wx-d1" class="flex flex-col justify-between rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
+            <p class="text-sm font-bold uppercase tracking-[0.14em] text-[#f4c464]">—</p>
+            <span class="my-3 text-4xl">⛅</span>
+            <p class="text-white/75"><span class="wx-max font-display text-2xl text-white">—°</span> <span class="wx-min text-white/50">—°</span></p>
+          </div>
+          <div id="wx-d2" class="flex flex-col justify-between rounded-[1.75rem] border border-white/10 bg-white/5 p-6 backdrop-blur">
+            <p class="text-sm font-bold uppercase tracking-[0.14em] text-[#f4c464]">—</p>
+            <span class="my-3 text-4xl">⛅</span>
+            <p class="text-white/75"><span class="wx-max font-display text-2xl text-white">—°</span> <span class="wx-min text-white/50">—°</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer id="contacto" class="bg-[#081b32] px-5 py-12 text-white/68 sm:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 border-b border-white/10 pb-10 lg:flex-row lg:items-center">
+      <img src="images/caballieri-logo.png" alt="Cabañas Caballieri" width="360" height="180" class="h-20 w-auto rounded-xl bg-white object-contain p-1">
+      <div class="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold">
+        <a class="hover:text-white" href="#cabana">Cabañas</a>
+        <a class="hover:text-white" href="#servicios">Servicios</a>
+        <a class="hover:text-white" href="galeria.html">Galería</a>
+        <a class="hover:text-white" href="#tarifas">Tarifas</a>
+        <a class="hover:text-white" href="https://www.caballieri.cl/index.php/contacto.html" target="_blank" rel="noreferrer">Formulario oficial</a>
+      </div>
+      <div class="flex gap-3">
+        <a class="grid size-11 place-items-center rounded-full border border-white/15 hover:border-white hover:text-white" href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+        </a>
+        <a class="grid size-11 place-items-center rounded-full border border-white/15 hover:border-white hover:text-white" href="https://wa.me/56996414055" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+        </a>
+        <a class="grid size-11 place-items-center rounded-full border border-white/15 hover:border-white hover:text-white" href="mailto:ccaballieri@gmail.com" aria-label="Correo electrónico">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+        </a>
+      </div>
+    </div>
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 pt-7 text-xs sm:flex-row">
+      <p>© 2026 Cabañas Caballieri · Pisco Elqui, Chile</p>
+      <p>Estadía mínima: 2 noches · Máximo 2 huéspedes por unidad</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/56996414055" target="_blank" rel="noreferrer" class="wa-float fixed bottom-5 right-5 z-40 grid size-14 place-items-center rounded-full bg-[#25d366] text-white shadow-[0_12px_35px_rgba(37,211,102,0.38)] transition hover:scale-105" aria-label="Consultar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+  </a>
+</main>
+
+<!-- ================= SCRIPT ================= -->
+<!-- Al enviar cualquiera de los formularios de consulta, arma el mensaje y abre WhatsApp -->
+<script>
+  // Número de WhatsApp del negocio (formato internacional, sin +)
+  const WHATSAPP = "56996414055";
+
+  // Fecha mínima = hoy, para los selectores de fecha
+  const hoy = new Date().toISOString().split("T")[0];
+  document.querySelectorAll('input[type="date"]').forEach(function (i) { i.min = hoy; });
+
+  document.querySelectorAll("form[data-reserva]").forEach(function (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const llegada   = form.querySelector("[data-llegada]")?.value || "por definir";
+      const salida    = form.querySelector("[data-salida]")?.value || "por definir";
+      const huespedes = form.querySelector("[data-huespedes]")?.value || "2";
+      const espacio   = form.querySelector("[data-espacio]")?.value || "Cualquiera";
+
+      const msg =
+        "Hola Cabañas Caballieri, quiero consultar disponibilidad.%0A" +
+        "• Llegada: " + llegada + "%0A" +
+        "• Salida: " + salida + "%0A" +
+        "• Huéspedes: " + huespedes + "%0A" +
+        "• Espacio: " + espacio;
+
+      window.open("https://wa.me/" + WHATSAPP + "?text=" + msg, "_blank");
+    });
+  });
+
+  // ===== Animaciones de aparición al hacer scroll =====
+  // Escalona los elementos dentro de un contenedor [data-stagger]
+  document.querySelectorAll("[data-stagger]").forEach(function (group) {
+    group.querySelectorAll(".reveal").forEach(function (el, i) {
+      el.style.transitionDelay = (i * 75) + "ms";
+    });
+  });
+
+  const io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+
+  document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
+
+  // ===== Header: sombra/fondo al hacer scroll =====
+  const header = document.getElementById("site-header");
+  const onScroll = function () {
+    if (window.scrollY > 20) header.classList.add("scrolled");
+    else header.classList.remove("scrolled");
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+
+  // ===== Clima en tiempo real (Open-Meteo, sin API key) =====
+  // Coordenadas de Pisco Elqui, Valle de Elqui.
+  (function () {
+    const LAT = -30.1236, LON = -70.4956;
+    const url = "https://api.open-meteo.com/v1/forecast"
+      + "?latitude=" + LAT + "&longitude=" + LON
+      + "&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m"
+      + "&daily=weather_code,temperature_2m_max,temperature_2m_min,uv_index_max"
+      + "&timezone=America%2FSantiago&forecast_days=3";
+
+    // Mapa de códigos WMO -> { emoji, texto }
+    const WMO = {
+      0:["☀️","Despejado"],1:["🌤️","Mayormente despejado"],2:["⛅","Parcialmente nublado"],3:["☁️","Nublado"],
+      45:["🌫️","Neblina"],48:["🌫️","Neblina con escarcha"],
+      51:["🌦️","Llovizna ligera"],53:["🌦️","Llovizna"],55:["🌦️","Llovizna intensa"],
+      61:["🌧️","Lluvia ligera"],63:["🌧️","Lluvia"],65:["🌧️","Lluvia fuerte"],
+      71:["🌨️","Nieve ligera"],73:["🌨️","Nieve"],75:["❄️","Nieve intensa"],
+      80:["🌦️","Chubascos"],81:["🌧️","Chubascos"],82:["⛈️","Chubascos fuertes"],
+      95:["⛈️","Tormenta"],96:["⛈️","Tormenta con granizo"],99:["⛈️","Tormenta fuerte"]
+    };
+    const info = (c) => WMO[c] || ["🌡️","—"];
+    const dayName = (iso) => {
+      const d = ["Dom","Lun","Mar","Mié","Jue","Vie","Sáb"];
+      return d[new Date(iso + "T12:00:00").getDay()];
+    };
+
+    fetch(url).then(r => r.json()).then(function (data) {
+      const c = data.current, day = data.daily;
+      const [emoji, desc] = info(c.weather_code);
+      document.getElementById("wx-emoji").textContent = emoji;
+      document.getElementById("wx-temp").textContent = Math.round(c.temperature_2m);
+      document.getElementById("wx-desc").textContent = desc;
+      document.getElementById("wx-feel").textContent = Math.round(c.apparent_temperature) + "°";
+      document.getElementById("wx-hum").textContent = c.relative_humidity_2m + "%";
+      document.getElementById("wx-wind").textContent = Math.round(c.wind_speed_10m) + " km/h";
+      document.getElementById("wx-uv").textContent = day.uv_index_max[0] != null ? Math.round(day.uv_index_max[0]) : "—";
+
+      for (let i = 0; i < 3; i++) {
+        const card = document.getElementById("wx-d" + i);
+        if (!card) continue;
+        const [de] = info(day.weather_code[i]);
+        card.querySelector("p").textContent = i === 0 ? "Hoy" : dayName(day.time[i]);
+        card.querySelector("span").textContent = de;
+        card.querySelector(".wx-max").textContent = Math.round(day.temperature_2m_max[i]) + "°";
+        card.querySelector(".wx-min").textContent = Math.round(day.temperature_2m_min[i]) + "°";
+      }
+    }).catch(function () {
+      document.getElementById("wx-desc").textContent = "No se pudo cargar el clima ahora.";
+    });
+  })();
+</script>
+</body>
+</html>

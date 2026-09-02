@@ -1,0 +1,82 @@
+/* ===================================================================
+   Cabañas Caballieri — estilos compartidos por todas las páginas
+   =================================================================== */
+
+/* Fuentes del sistema (pila serif Iowan/Palatino para títulos) */
+body{
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #f6f2ea;
+  color: #142840;
+}
+.font-display,
+.section-title{
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+}
+
+/* Rótulo pequeño en mayúsculas (naranja) */
+.eyebrow{
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: #c64e2a;
+  margin-bottom: 1rem;
+  font-size: .78rem;
+  font-weight: 800;
+}
+/* Título grande de sección */
+.section-title{
+  letter-spacing: -.04em;
+  color: #102b52;
+  font-size: clamp(2.65rem, 5vw, 4.6rem);
+  line-height: 1.04;
+}
+/* Altura personalizada usada en varios botones */
+.h-13{ height: 3.25rem; }
+
+::selection{ color: #102b52; background: #e3aa36; }
+html{ scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce){ html{ scroll-behavior: auto; } }
+
+/* Selects nativos con el estilo de las cajas del formulario */
+select.field{
+  height: 3rem; width: 100%; border-radius: .75rem;
+  border: 1px solid rgba(16,43,82,.15); background: #f8f6f1;
+  padding: 0 .75rem; font-size: 1rem; color: #102b52; outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23667687' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='m6 9 6 6 6-6'/></svg>");
+  background-repeat: no-repeat; background-position: right .6rem center; background-size: 1.1rem;
+}
+select.field:focus{ border-color:#2b9298; box-shadow: 0 0 0 2px rgba(43,146,152,.15); }
+
+/* ===== Animaciones de aparición al hacer scroll ===== */
+.reveal{
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .7s cubic-bezier(.22,.61,.36,1), transform .7s cubic-bezier(.22,.61,.36,1);
+  will-change: opacity, transform;
+}
+.reveal.is-visible{ opacity: 1; transform: none; }
+
+/* ===== Header con transición al hacer scroll ===== */
+#site-header .bar{ transition: box-shadow .4s ease, background .4s ease, padding .3s ease; }
+#site-header.scrolled .bar{ background: rgba(255,255,255,.98); box-shadow: 0 10px 30px rgba(18,39,63,.14); }
+
+/* ===== Botón flotante de WhatsApp con pulso ===== */
+@keyframes waPulse{
+  0%   { box-shadow: 0 12px 35px rgba(37,211,102,.38), 0 0 0 0 rgba(37,211,102,.45); }
+  70%  { box-shadow: 0 12px 35px rgba(37,211,102,.38), 0 0 0 18px rgba(37,211,102,0); }
+  100% { box-shadow: 0 12px 35px rgba(37,211,102,.38), 0 0 0 0 rgba(37,211,102,0); }
+}
+.wa-float{ animation: waPulse 2.6s ease-out infinite; }
+
+/* ===== Realce sutil en tarjetas ===== */
+.lift{ transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
+.lift:hover{ transform: translateY(-4px); }
+
+/* Ken Burns muy sutil sobre la imagen del hero */
+@keyframes kenburns{ from{ transform: scale(1); } to{ transform: scale(1.08); } }
+.kenburns{ animation: kenburns 18s ease-out forwards; }
+
+@media (prefers-reduced-motion: reduce){
+  .reveal{ opacity:1 !important; transform:none !important; transition:none; }
+  .wa-float, .kenburns{ animation: none; }
+}

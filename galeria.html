@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galería | Cabañas Caballieri</title>
+  <meta name="description" content="Galería de fotos de Cabañas Caballieri en Pisco Elqui: piscina, jardines, noches estrelladas y detalles del lugar.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/site.css">
+  <style>
+    /* Cuadrícula tipo masonry con columnas */
+    .masonry{ column-gap: 1rem; }
+    .masonry > figure{ break-inside: avoid; margin-bottom: 1rem; }
+    @media (min-width:640px){ .masonry{ columns: 2; } }
+    @media (min-width:1024px){ .masonry{ columns: 3; } }
+    /* Lightbox */
+    #lightbox{ transition: opacity .25s ease; }
+    #lightbox.hidden{ opacity:0; pointer-events:none; }
+  </style>
+</head>
+<body class="antialiased">
+<main class="min-h-screen overflow-hidden bg-[#f6f2ea] text-[#142840]">
+
+  <!-- ===== HEADER (compartido) ===== -->
+  <header id="site-header" class="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-5">
+    <div class="bar mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-white/70 bg-white/92 px-4 py-2 shadow-[0_16px_50px_rgba(18,39,63,0.12)] backdrop-blur-xl sm:px-6">
+      <a href="index.html" aria-label="Cabañas Caballieri, inicio" class="shrink-0">
+        <img src="images/caballieri-logo.png" alt="Cabañas Caballieri" width="360" height="180" class="h-12 w-auto object-contain sm:h-14">
+      </a>
+      <nav aria-label="Navegación principal" class="hidden items-center gap-5 text-sm font-semibold text-[#243d58] lg:flex">
+        <a class="transition hover:text-[#c64e2a]" href="cabanas.html">Cabañas</a>
+        <a class="transition hover:text-[#c64e2a]" href="historia.html">Historia</a>
+        <a class="transition hover:text-[#c64e2a]" href="index.html#servicios">Servicios</a>
+        <a class="transition hover:text-[#c64e2a]" href="entorno.html">Entorno</a>
+        <a class="transition hover:text-[#c64e2a]" href="como-llegar.html">Cómo llegar</a>
+        <a class="transition hover:text-[#c64e2a]" href="galeria.html">Galería</a>
+        <a class="transition hover:text-[#c64e2a]" href="index.html#tarifas">Tarifas</a>
+        <a class="transition hover:text-[#c64e2a]" href="index.html#reservar">Contacto</a>
+      </nav>
+      <div class="flex shrink-0 items-center gap-2">
+        <a href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram" class="grid size-11 place-items-center rounded-full border border-[#102b52]/15 text-[#102b52] transition hover:border-transparent hover:bg-gradient-to-tr hover:from-[#f4c464] hover:to-[#c64e2a] hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+        </a>
+        <a href="index.html#reservar" class="inline-flex items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all h-11 rounded-full bg-[#102b52] px-5 text-white hover:bg-[#c64e2a]">
+          Consultar <span class="hidden sm:inline">disponibilidad</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== ENCABEZADO ===== -->
+  <section class="px-5 pt-32 pb-8 sm:px-8 lg:pt-40">
+    <div class="mx-auto max-w-7xl">
+      <a href="index.html" class="mb-6 inline-flex items-center gap-2 text-sm font-semibold text-[#526273] transition hover:text-[#c64e2a]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="m12 19-7-7 7-7"></path><path d="M19 12H5"></path></svg>
+        Volver al inicio
+      </a>
+      <p class="eyebrow">Galería</p>
+      <h1 class="section-title max-w-4xl">Fotos e impresiones de nuestro lugar.</h1>
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-[#526273]">La piscina de mosaico azul cobalto, los jardines, las noches estrelladas del Valle de Elqui y los detalles que hacen único a cada rincón.</p>
+
+      <!-- Filtros -->
+      <div id="filters" class="mt-8 flex flex-wrap gap-2">
+        <button data-filter="todas" class="filter-btn rounded-full bg-[#102b52] px-5 py-2 text-sm font-semibold text-white transition">Todas</button>
+        <button data-filter="piscina" class="filter-btn rounded-full border border-[#102b52]/15 bg-white px-5 py-2 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52]/5">Piscina</button>
+        <button data-filter="jardines" class="filter-btn rounded-full border border-[#102b52]/15 bg-white px-5 py-2 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52]/5">Jardines</button>
+        <button data-filter="noche" class="filter-btn rounded-full border border-[#102b52]/15 bg-white px-5 py-2 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52]/5">Noche</button>
+        <button data-filter="lugar" class="filter-btn rounded-full border border-[#102b52]/15 bg-white px-5 py-2 text-sm font-semibold text-[#102b52] transition hover:bg-[#102b52]/5">Detalles</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CUADRÍCULA ===== -->
+  <section class="px-5 pb-20 sm:px-8">
+    <div id="grid" class="masonry mx-auto max-w-7xl"></div>
+  </section>
+
+  <!-- ===== VISOR (LIGHTBOX) ===== -->
+  <div id="lightbox" class="hidden fixed inset-0 z-[60] flex items-center justify-center bg-black/85 p-4" role="dialog" aria-modal="true" aria-label="Visor de imágenes">
+    <button id="lb-close" aria-label="Cerrar" class="absolute right-4 top-4 grid size-12 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+    </button>
+    <button id="lb-prev" aria-label="Anterior" class="absolute left-4 grid size-12 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20 sm:left-8">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6"><path d="m15 18-6-6 6-6"></path></svg>
+    </button>
+    <button id="lb-next" aria-label="Siguiente" class="absolute right-4 grid size-12 place-items-center rounded-full bg-white/10 text-white transition hover:bg-white/20 sm:right-8">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6"><path d="m9 18 6-6-6-6"></path></svg>
+    </button>
+    <figure class="max-h-[86vh] max-w-5xl">
+      <img id="lb-img" src="" alt="" class="mx-auto max-h-[80vh] w-auto rounded-2xl object-contain shadow-2xl">
+      <figcaption id="lb-cap" class="mt-3 text-center text-sm text-white/80"></figcaption>
+    </figure>
+  </div>
+
+  <!-- ===== FOOTER (compartido) ===== -->
+  <footer class="bg-[#081b32] px-5 py-12 text-white/68 sm:px-8">
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 border-b border-white/10 pb-10 lg:flex-row lg:items-center">
+      <img src="images/caballieri-logo.png" alt="Cabañas Caballieri" width="360" height="180" class="h-20 w-auto rounded-xl bg-white object-contain p-1">
+      <div class="flex flex-wrap gap-x-7 gap-y-3 text-sm font-semibold">
+        <a class="hover:text-white" href="cabanas.html">Cabañas</a>
+        <a class="hover:text-white" href="historia.html">Historia</a>
+        <a class="hover:text-white" href="entorno.html">Entorno</a>
+        <a class="hover:text-white" href="como-llegar.html">Cómo llegar</a>
+        <a class="hover:text-white" href="galeria.html">Galería</a>
+      </div>
+      <div class="flex gap-3">
+        <a class="grid size-11 place-items-center rounded-full border border-white/15 hover:border-white hover:text-white" href="https://www.instagram.com/cabanascaballieri/" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+        </a>
+        <a class="grid size-11 place-items-center rounded-full border border-white/15 hover:border-white hover:text-white" href="https://wa.me/56996414055" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+        </a>
+        <a class="grid size-11 place-items-center rounded-full border border-white/15 hover:border-white hover:text-white" href="mailto:ccaballieri@gmail.com" aria-label="Correo electrónico">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg>
+        </a>
+      </div>
+    </div>
+    <div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 pt-7 text-xs sm:flex-row">
+      <p>© 2026 Cabañas Caballieri · Pisco Elqui, Chile</p>
+      <p>Estadía mínima: 2 noches · Máximo 2 huéspedes por unidad</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/56996414055" target="_blank" rel="noreferrer" class="wa-float fixed bottom-5 right-5 z-40 grid size-14 place-items-center rounded-full bg-[#25d366] text-white shadow-[0_12px_35px_rgba(37,211,102,0.38)] transition hover:scale-105" aria-label="Consultar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-6" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
+  </a>
+</main>
+
+<script src="assets/site.js"></script>
+<script>
+  // ===== Datos de la galería (edita esta lista para agregar/quitar fotos) =====
+  const PHOTOS = [
+    { f: "piscina-01",  cat: "piscina",  alt: "Piscina de mosaico azul cobalto" },
+    { f: "piscina-02",  cat: "piscina",  alt: "Piscina y jardines" },
+    { f: "piscina-03",  cat: "piscina",  alt: "Piscina con vista al valle" },
+    { f: "tina",        cat: "piscina",  alt: "Tina exterior" },
+    { f: "jardin-01",   cat: "jardines", alt: "Jardines del complejo" },
+    { f: "jardin-02",   cat: "jardines", alt: "Jardines y palmeras" },
+    { f: "jardin-03",   cat: "jardines", alt: "Sendero entre jardines" },
+    { f: "jardin-04",   cat: "jardines", alt: "Vegetación del oasis" },
+    { f: "jardin-05",   cat: "jardines", alt: "Jardines de Caballieri" },
+    { f: "flor-01",     cat: "jardines", alt: "Flores del jardín" },
+    { f: "flor-02",     cat: "jardines", alt: "Buganvilias" },
+    { f: "flor-03",     cat: "jardines", alt: "Hibiscos en flor" },
+    { f: "sol",         cat: "jardines", alt: "Día soleado en el valle" },
+    { f: "noche-01",    cat: "noche",    alt: "Noche estrellada" },
+    { f: "noche-02",    cat: "noche",    alt: "Cielo nocturno del Valle de Elqui" },
+    { f: "noche-03",    cat: "noche",    alt: "Cabañas de noche" },
+    { f: "noche-04",    cat: "noche",    alt: "Vía Láctea sobre Pisco Elqui" },
+    { f: "noche-05",    cat: "noche",    alt: "Noche en Caballieri" },
+    { f: "linterna",    cat: "noche",    alt: "Detalle iluminado de noche" },
+    { f: "entrada",     cat: "lugar",    alt: "Entrada al complejo" },
+    { f: "entrada-02",  cat: "lugar",    alt: "Acceso a las cabañas" },
+    { f: "pasillo",     cat: "lugar",    alt: "Pasillo interior" },
+    { f: "desayuno",    cat: "lugar",    alt: "Desayuno" },
+    { f: "relief",      cat: "lugar",    alt: "Relieve decorativo" },
+    { f: "estatua-01",  cat: "lugar",    alt: "Escultura del jardín" },
+    { f: "estatua-02",  cat: "lugar",    alt: "Escultura del jardín" },
+    { f: "estatua-03",  cat: "lugar",    alt: "Escultura del jardín" },
+    { f: "estatua-04",  cat: "lugar",    alt: "Escultura del jardín" },
+    { f: "estatua-05",  cat: "lugar",    alt: "Escultura del jardín" },
+    { f: "estatua-06",  cat: "lugar",    alt: "Escultura del jardín" }
+  ];
+  const SRC = (p) => "images/galeria/" + p.f + ".jpg";
+
+  const grid = document.getElementById("grid");
+  let current = 0, visible = [];
+
+  function render(filter) {
+    grid.innerHTML = "";
+    visible = PHOTOS.filter(p => filter === "todas" || p.cat === filter);
+    visible.forEach((p, i) => {
+      const fig = document.createElement("figure");
+      fig.className = "reveal lift group relative cursor-pointer overflow-hidden rounded-2xl border border-[#15314f]/10 bg-white shadow-[0_8px_24px_rgba(18,39,63,0.07)]";
+      fig.innerHTML =
+        '<img src="' + SRC(p) + '" alt="' + p.alt + '" loading="lazy" class="w-full object-cover transition duration-500 group-hover:scale-105">' +
+        '<figcaption class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/55 to-transparent p-4 text-sm font-medium text-white opacity-0 transition group-hover:opacity-100">' + p.alt + '</figcaption>';
+      fig.addEventListener("click", () => openLightbox(i));
+      grid.appendChild(fig);
+      requestAnimationFrame(() => fig.classList.add("is-visible"));
+    });
+  }
+
+  // Filtros
+  document.querySelectorAll(".filter-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".filter-btn").forEach(b => {
+        b.classList.remove("bg-[#102b52]", "text-white");
+        b.classList.add("border", "border-[#102b52]/15", "bg-white", "text-[#102b52]");
+      });
+      btn.classList.add("bg-[#102b52]", "text-white");
+      btn.classList.remove("border", "border-[#102b52]/15", "bg-white", "text-[#102b52]");
+      render(btn.dataset.filter);
+    });
+  });
+
+  // Lightbox
+  const lb = document.getElementById("lightbox");
+  const lbImg = document.getElementById("lb-img");
+  const lbCap = document.getElementById("lb-cap");
+  function openLightbox(i) { current = i; update(); lb.classList.remove("hidden"); document.body.style.overflow = "hidden"; }
+  function closeLightbox() { lb.classList.add("hidden"); document.body.style.overflow = ""; }
+  function update() { const p = visible[current]; lbImg.src = SRC(p); lbImg.alt = p.alt; lbCap.textContent = p.alt; }
+  function next() { current = (current + 1) % visible.length; update(); }
+  function prev() { current = (current - 1 + visible.length) % visible.length; update(); }
+
+  document.getElementById("lb-close").addEventListener("click", closeLightbox);
+  document.getElementById("lb-next").addEventListener("click", next);
+  document.getElementById("lb-prev").addEventListener("click", prev);
+  lb.addEventListener("click", (e) => { if (e.target === lb) closeLightbox(); });
+  document.addEventListener("keydown", (e) => {
+    if (lb.classList.contains("hidden")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowRight") next();
+    if (e.key === "ArrowLeft") prev();
+  });
+
+  render("todas");
+</script>
+</body>
+</html>

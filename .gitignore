@@ -1,0 +1,12 @@
+# Dependencias
+node_modules/
+
+# Empaquetados / respaldos
+*.zip
+
+# Vercel
+.vercel
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
