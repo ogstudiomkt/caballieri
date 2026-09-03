@@ -67,7 +67,7 @@
       "nav.galeria": "Galería", "nav.tour360": "Recorrido 360°", "nav.tarifas": "Tarifas", "nav.contacto": "Contacto",
       "btn.consultar": "Consultar", "btn.disp": "disponibilidad", "btn.consultarDisp": "Consultar disponibilidad",
       "common.volver": "Volver al inicio", "common.tempAlta": "Temporada alta", "common.tempBaja": "Temporada baja",
-      "foot.min": "Estadía mínima: 2 noches · Máximo 2 huéspedes por unidad"
+      "foot.min": "Estadía mínima: 2 noches · Máximo 2 huéspedes por unidad", "foot.copyright": "© 2026 Cabañas Caballieri · Pisco Elqui, Chile"
     },
     en: {
       "nav.inicio": "Home", "nav.cabanas": "Cabins", "nav.historia": "Story",
@@ -75,7 +75,7 @@
       "nav.galeria": "Gallery", "nav.tour360": "360° Tour", "nav.tarifas": "Rates", "nav.contacto": "Contact",
       "btn.consultar": "Check", "btn.disp": "availability", "btn.consultarDisp": "Check availability",
       "common.volver": "Back to home", "common.tempAlta": "High season", "common.tempBaja": "Low season",
-      "foot.min": "Minimum stay: 2 nights · Max 2 guests per unit"
+      "foot.min": "Minimum stay: 2 nights · Max 2 guests per unit", "foot.copyright": "© 2026 Cabañas Caballieri · Pisco Elqui, Chile"
     },
     de: {
       "nav.inicio": "Start", "nav.cabanas": "Hütten", "nav.historia": "Geschichte",
@@ -83,7 +83,7 @@
       "nav.galeria": "Galerie", "nav.tour360": "360°-Rundgang", "nav.tarifas": "Preise", "nav.contacto": "Kontakt",
       "btn.consultar": "Anfragen", "btn.disp": "Verfügbarkeit", "btn.consultarDisp": "Verfügbarkeit anfragen",
       "common.volver": "Zurück zur Startseite", "common.tempAlta": "Hochsaison", "common.tempBaja": "Nebensaison",
-      "foot.min": "Mindestaufenthalt: 2 Nächte · Max. 2 Gäste pro Einheit"
+      "foot.min": "Mindestaufenthalt: 2 Nächte · Max. 2 Gäste pro Einheit", "foot.copyright": "© 2026 Cabañas Caballieri · Pisco Elqui, Chile"
     }
   };
 
