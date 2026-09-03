@@ -957,15 +957,28 @@
     });
   })();
 
-  // ===== Carrusel de reseñas (auto-rotación) =====
-  // 👉 Reemplaza estos ejemplos por tus comentarios reales de Booking.
+  // ===== Carrusel de reseñas (auto-rotación, multi-idioma) =====
+  // Cada reseña tiene su versión es / en / de. El autor no se traduce.
   (function () {
     const REVIEWS = [
-      { t: "Un lugar hermoso, todo muy bien pensado y donde cada detalle importa. Nos quedamos en la cabaña Agua y el depto Piedra, ambos muy cómodos y con vistas increíbles al Valle. Desayuno muy rico y contundente. Muy buena atención de Claudia, Cata y todo el personal. Volvería sin dudas.", a: "Bárbara Carmi · Google" },
-      { t: "Muy buen trato, comunicación y disposición. El lugar es muy bello y tranquilo, con espacios para descansar y desconectarse. La cabaña era muy cómoda, bien equipada y decorada. Cerca hay lugares para comer y destilerías para tours, a los que se puede llegar a pie.", a: "Valery Becker · Google" },
-      { t: "¡Maravilloso lugar! Quedé encantada. Me alojé en la cabaña Aire y es un sueño; la atención de todos y de la dueña fue muy amable y preocupada. Higiene impecable, cabaña totalmente equipada, vistas increíbles desde las terrazas y acceso gratuito a las bicis. 100% recomendado.", a: "Catalina Tolosa · Google" },
-      { t: "Nos sentimos increíblemente cómodos. Claudia y su equipo cumplieron todos nuestros deseos y crearon un ambiente relajado. El lugar está lleno de pequeñas sorpresas de diseño. Nuestra Cabaña Cuarzo fue excepcional: acostados en la cama se podía ver el cielo estrellado.", a: "Markus Müller · Google" }
+      { a: "Bárbara Carmi · Google", t: {
+        es: "Un lugar hermoso, todo muy bien pensado y donde cada detalle importa. Nos quedamos en la cabaña Agua y el depto Piedra, ambos muy cómodos y con vistas increíbles al Valle. Desayuno muy rico y contundente. Muy buena atención de Claudia, Cata y todo el personal. Volvería sin dudas.",
+        en: "A beautiful place, thoughtfully designed and where every detail matters. We stayed in the Agua cabin and the Piedra apartment, both very comfortable and with incredible views of the Valley. A delicious and hearty breakfast. Wonderful care from Claudia, Cata and all the staff. I would definitely come back.",
+        de: "Ein wunderschöner Ort, durchdacht gestaltet, an dem jedes Detail zählt. Wir wohnten in der Hütte Agua und im Apartment Piedra, beide sehr komfortabel und mit unglaublichem Blick auf das Tal. Ein köstliches und reichhaltiges Frühstück. Sehr herzliche Betreuung durch Claudia, Cata und das gesamte Team. Ich würde ohne Zweifel wiederkommen." } },
+      { a: "Valery Becker · Google", t: {
+        es: "Muy buen trato, comunicación y disposición. El lugar es muy bello y tranquilo, con espacios para descansar y desconectarse. La cabaña era muy cómoda, bien equipada y decorada. Cerca hay lugares para comer y destilerías para tours, a los que se puede llegar a pie.",
+        en: "Very good treatment, communication and willingness to help. The place is very beautiful and quiet, with spaces to rest and disconnect. The cabin was very comfortable, well equipped and decorated. Nearby there are places to eat and distilleries for tours, all within walking distance.",
+        de: "Sehr freundlicher Umgang, gute Kommunikation und Hilfsbereitschaft. Der Ort ist sehr schön und ruhig, mit Plätzen zum Ausruhen und Abschalten. Die Hütte war sehr komfortabel, gut ausgestattet und dekoriert. In der Nähe gibt es Lokale zum Essen und Brennereien für Touren, alle zu Fuß erreichbar." } },
+      { a: "Catalina Tolosa · Google", t: {
+        es: "¡Maravilloso lugar! Quedé encantada. Me alojé en la cabaña Aire y es un sueño; la atención de todos y de la dueña fue muy amable y preocupada. Higiene impecable, cabaña totalmente equipada, vistas increíbles desde las terrazas y acceso gratuito a las bicis. 100% recomendado.",
+        en: "Wonderful place! I was delighted. I stayed in the Aire cabin and it's a dream; the care from everyone and from the owner was very kind and attentive. Impeccable hygiene, a fully equipped cabin, incredible views from the terraces and free access to the bikes. 100% recommended.",
+        de: "Wunderbarer Ort! Ich war begeistert. Ich wohnte in der Hütte Aire und sie ist ein Traum; die Betreuung durch alle und die Besitzerin war sehr freundlich und aufmerksam. Tadellose Sauberkeit, eine voll ausgestattete Hütte, unglaubliche Ausblicke von den Terrassen und kostenloser Zugang zu den Fahrrädern. 100% empfehlenswert." } },
+      { a: "Markus Müller · Google", t: {
+        es: "Nos sentimos increíblemente cómodos. Claudia y su equipo cumplieron todos nuestros deseos y crearon un ambiente relajado. El lugar está lleno de pequeñas sorpresas de diseño. Nuestra Cabaña Cuarzo fue excepcional: acostados en la cama se podía ver el cielo estrellado.",
+        en: "We felt incredibly comfortable. Claudia and her team fulfilled all our wishes and created a relaxed atmosphere. The place is full of small design surprises. Our Cuarzo cabin was exceptional: lying in bed you could see the starry sky.",
+        de: "Wir haben uns unglaublich wohlgefühlt. Claudia und ihr Team erfüllten all unsere Wünsche und schufen eine entspannte Atmosphäre. Der Ort ist voller kleiner Design-Überraschungen. Unsere Hütte Cuarzo war außergewöhnlich: im Bett liegend konnte man den Sternenhimmel sehen." } }
     ];
+    const curLang = function () { try { return localStorage.getItem("lang") || "es"; } catch (e) { return "es"; } };
     const text = document.getElementById("rev-text");
     const author = document.getElementById("rev-author");
     const dots = document.getElementById("rev-dots");
@@ -981,7 +994,8 @@
     function render() {
       quote.style.opacity = 0;
       setTimeout(function () {
-        text.textContent = "“" + REVIEWS[idx].t + "”";
+        const tr = REVIEWS[idx].t;
+        text.textContent = "“" + (tr[curLang()] || tr.es) + "”";
         author.textContent = REVIEWS[idx].a;
         Array.prototype.forEach.call(dots.children, function (d, i) {
           d.className = "h-2.5 rounded-full transition-all " + (i === idx ? "w-6 bg-[#c64e2a]" : "w-2.5 bg-[#102b52]/20");
@@ -991,6 +1005,8 @@
     }
     function go(i) { idx = (i + REVIEWS.length) % REVIEWS.length; render(); }
     function reset() { clearInterval(timer); timer = setInterval(function () { go(idx + 1); }, 6000); }
+    // Actualiza la reseña visible al cambiar de idioma
+    window.addEventListener("langchange", render);
     render(); reset();
   })();
 </script>

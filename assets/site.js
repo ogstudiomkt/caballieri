@@ -104,6 +104,8 @@
     document.querySelectorAll("[data-lang]").forEach(function (b) {
       b.classList.toggle("lang-active", b.getAttribute("data-lang") === lang);
     });
+    window.__lang = lang;
+    try { window.dispatchEvent(new CustomEvent("langchange", { detail: lang })); } catch (e) {}
   }
 
   var saved = "es";
