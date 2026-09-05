@@ -17,7 +17,7 @@
 
   <!-- ================= HEADER ================= -->
   <header id="site-header" class="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-5">
-    <div class="bar mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-white/70 bg-white/92 px-4 py-2 shadow-[0_16px_50px_rgba(18,39,63,0.12)] backdrop-blur-xl sm:px-6">
+    <div class="bar mx-auto flex max-w-7xl items-center justify-between rounded-2xl border border-white/70 bg-white px-4 py-2 shadow-[0_10px_30px_rgba(18,39,63,0.14)] sm:px-6">
       <a href="#inicio" aria-label="Cabañas Caballieri, inicio" class="shrink-0">
         <img src="images/caballieri-logo.png" alt="Cabañas Caballieri" width="360" height="180" class="h-12 w-auto object-contain sm:h-14">
       </a>
@@ -79,19 +79,18 @@
   </div>
 
 
-  <!-- ================= HERO ================= -->
-  <section id="inicio" class="relative flex min-h-[520px] items-end pt-24 sm:min-h-[600px] lg:min-h-[680px]">
-    <img src="images/hero.jpg" alt="Cabañas de piedra integradas a la ladera de Pisco Elqui" class="object-cover" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center bottom">
-    <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,30,55,0.9)_0%,rgba(8,30,55,0.5)_47%,rgba(8,30,55,0.08)_78%),linear-gradient(0deg,rgba(8,30,55,0.8)_0%,transparent_45%)]"></div>
-    <div class="relative z-10 mx-auto w-full max-w-7xl px-5 pb-12 sm:px-8 sm:pb-16 lg:pb-24">
-      <div class="max-w-3xl text-white">
+  <!-- ================= HERO (texto separado de la imagen) ================= -->
+  <section id="inicio" class="bg-[#0d2745]">
+    <div class="mx-auto grid max-w-7xl lg:grid-cols-2 lg:items-stretch">
+      <!-- Bloque de texto -->
+      <div class="order-2 flex flex-col justify-center px-6 pb-14 pt-10 text-white sm:px-10 lg:order-1 lg:px-14 lg:pb-20 lg:pt-28">
         <p class="mb-6 flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.28em] text-[#f4c464]">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
           <span data-i18n="hero.loc">Pisco Elqui · Valle de Elqui</span>
         </p>
-        <h1 class="font-display text-5xl leading-[0.98] tracking-[-0.04em] sm:text-7xl lg:text-[5.8rem]" data-i18n="hero.h1">Seis espacios. Seis formas de vivir el Valle.</h1>
-        <p class="mt-7 max-w-2xl text-lg leading-8 text-white/85 sm:text-xl" data-i18n="hero.sub">Cinco cabañas y un departamento, distintos entre sí, construidos con materiales locales y rodeados de jardines, piscina y cielos abiertos.</p>
-        <div class="mt-9 flex flex-wrap gap-3">
+        <h1 class="font-display text-4xl leading-[1.02] tracking-[-0.03em] sm:text-6xl lg:text-[4.2rem]" data-i18n="hero.h1">Seis espacios. Seis formas de vivir el Valle.</h1>
+        <p class="mt-6 max-w-xl text-lg leading-8 text-white/85 sm:text-xl" data-i18n="hero.sub">Cinco cabañas y un departamento, distintos entre sí, construidos con materiales locales y rodeados de jardines, piscina y cielos abiertos.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
           <a href="#cabana" class="inline-flex shrink-0 items-center justify-center gap-2 text-sm font-medium whitespace-nowrap transition-all h-13 rounded-full bg-[#e3aa36] px-7 text-[#112b4f] hover:bg-white">
             <span data-i18n="hero.cta1">Conocer los espacios</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
@@ -100,6 +99,13 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z"></path><circle cx="12" cy="13" r="3"></circle></svg>
             <span data-i18n="hero.cta2">Ver Instagram</span>
           </a>
+        </div>
+      </div>
+      <!-- Imagen principal (aparte) con logo centrado encima -->
+      <div class="relative order-1 min-h-[320px] sm:min-h-[440px] lg:order-2 lg:min-h-[600px]">
+        <img src="images/hero.jpg" alt="Valle de Elqui al atardecer con la piscina de Cabañas Caballieri" class="absolute inset-0 h-full w-full object-cover" style="object-position:center bottom">
+        <div class="absolute inset-0 grid place-items-center p-6">
+          <img src="images/logo-blanco.png" alt="Cabañas Caballieri" class="w-56 max-w-[65%] drop-shadow-[0_6px_22px_rgba(0,0,0,0.5)] sm:w-72 lg:w-80">
         </div>
       </div>
     </div>
