@@ -156,9 +156,9 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
               <span data-i18n="f.consultarwa">Consultar por WhatsApp</span>
             </button>
-            <a href="https://www.booking.com/hotel/cl/cabanas-caballieri.es.html?aid=356980" target="_blank" rel="noreferrer" class="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#003580] px-6 text-sm font-semibold text-white transition hover:bg-[#0071c2]">
+            <a href="https://cabanas-caballieri.com-book.direct/room-type/23779?checkin=2026-09-13&checkout=2026-09-15&totalAdults=2&totalChildren=0&totalInfants=0" target="_blank" rel="noreferrer" class="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#003580] px-6 text-sm font-semibold text-white transition hover:bg-[#0071c2]">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
-              <span data-i18n="rsv.booking">Ver disponibilidad en Booking</span>
+              <span data-i18n="rsv.booking">Ver disponibilidad en Paxer</span>
             </a>
           </div>
         </form>
@@ -179,10 +179,10 @@
       <div class="mt-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3" data-stagger>
         <!-- Tarjeta de cabaña (repetible) -->
         <article class="reveal group relative overflow-hidden rounded-[1.75rem] border border-[#15314f]/10 bg-white p-7 shadow-[0_10px_35px_rgba(18,39,63,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(18,39,63,0.13)]">
-          <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#e8a9a0"></div>
+          <div class="absolute right-0 top-0 h-32 w-32 translate-x-10 -translate-y-10 rounded-full opacity-20 transition group-hover:scale-125" style="background-color:#eec7c0"></div>
           <div class="relative">
             <div class="mb-12 flex items-center justify-between">
-              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#e8a9a0" data-i18n="common.cabana">Cabaña</span>
+              <span class="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white" style="background-color:#eec7c0" data-i18n="common.cabana">Cabaña</span>
               <span class="font-display text-4xl text-[#102b52]/15">01</span>
             </div>
             <h3 class="font-display text-4xl text-[#102b52]">Cuarzo</h3>
@@ -312,16 +312,19 @@
   <section id="experiencia" class="relative bg-[#102b52] px-5 py-24 text-white sm:px-8 lg:py-32">
     <div class="pointer-events-none absolute -right-24 top-0 size-80 rounded-full bg-[#2c8f94]/30 blur-3xl"></div>
     <div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-      <div class="reveal relative min-h-[560px]">
-        <div class="absolute left-0 top-0 h-[78%] w-[82%] overflow-hidden rounded-[10rem_10rem_2rem_2rem]">
-          <img src="images/interior.jpg" alt="Interior de una cabaña Caballieri" class="object-cover" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
-        </div>
-        <div class="absolute bottom-0 right-0 h-[45%] w-[54%] overflow-hidden rounded-[2rem] border-8 border-[#102b52]">
-          <img src="images/galeria/jardin-05.jpg" alt="Jardines de Cabañas Caballieri" class="object-cover" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
-        </div>
-        <div class="absolute bottom-10 left-5 rounded-2xl bg-[#e4aa36] px-5 py-4 text-[#102b52] shadow-xl">
-          <p class="text-xs font-bold uppercase tracking-[0.2em]" data-i18n="hh.badge1995">Desde 1995</p>
-          <p class="mt-1 font-display text-2xl" data-i18n="hh.badgeTitle">Una historia ligada al Valle</p>
+      <div class="reveal">
+        <div class="relative overflow-hidden rounded-3xl shadow-xl" data-hist-carousel>
+          <div class="hist-track flex transition-transform duration-700 ease-out">
+            <img src="images/interior.jpg" alt="Interior de una cabaña Caballieri" class="hist-slide h-72 w-full shrink-0 object-cover sm:h-96 lg:h-[30rem]">
+            <img src="images/galeria/jardin-05.jpg" alt="Jardines de Cabañas Caballieri" class="hist-slide h-72 w-full shrink-0 object-cover sm:h-96 lg:h-[30rem]">
+          </div>
+          <button type="button" class="hist-prev absolute left-3 top-1/2 grid size-10 -translate-y-1/2 place-items-center rounded-full bg-white/85 text-[#102b52] shadow-lg backdrop-blur transition hover:bg-white" aria-label="Imagen anterior">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+          </button>
+          <button type="button" class="hist-next absolute right-3 top-1/2 grid size-10 -translate-y-1/2 place-items-center rounded-full bg-white/85 text-[#102b52] shadow-lg backdrop-blur transition hover:bg-white" aria-label="Imagen siguiente">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+          </button>
+          <div class="hist-dots absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2"></div>
         </div>
       </div>
       <div class="reveal lg:pl-10">
@@ -330,7 +333,7 @@
         <div class="mt-7 space-y-5 text-lg leading-8 text-white/72">
           <p data-i18n="hhp1">En 1995, Claudia Caballieri y Richard Rose, arquitecto norteamericano, dejaron atrás el ruido de la ciudad para vivir en Pisco Elqui. El sol, la tranquilidad y la belleza del Valle hicieron el resto.</p>
           <p data-i18n="hhp2">Su primera obra fue recuperar una casona de más de cien años, que hoy recibe a cada huésped. Luego llegó una piscina revestida completamente con mosaicos de vidrio azul cobalto, pensada para reflejar las estrellas y abrirse hacia el paisaje a través de su cascada.</p>
-          <p data-i18n="hhp3">Alrededor crecieron palmeras, hibiscos, buganvilias y cientos de plantas. Después vinieron las cabañas: espacios distintos entre sí, creados con materiales locales, paciencia y una atención poco común por los detalles.</p>
+          <p data-i18n="hhp3">Rodeada de palmeras, hibiscos, buganvilias y cientos de plantas y árboles, creamos poco a poco un pequeño oasis. Luego decidimos compartir nuestro paraíso con amigos y familia, y empezamos con las cabañas Cobre y Piedra. Después continuamos con Agua y, más tarde, con la cabaña Cuarzo, construida completamente con muros de cuarzo blanco y rosado. Finalmente llegaron Aire y Fuego, completando los seis espacios.</p>
         </div>
         <blockquote class="mt-8 border-l-2 border-[#f4c464] pl-5 font-display text-2xl leading-9 text-white"><span data-i18n="hhquote">“Un mundo aparte, donde el tiempo se detiene y solo hay espacio para el silencio, la paz y la belleza.”</span>
           <footer class="mt-3 font-sans text-xs font-bold uppercase tracking-[0.18em] text-[#f4c464]">Claudia Caballieri</footer>
@@ -361,6 +364,37 @@
       </article>
     </div>
   </section>
+
+  <script>
+    (function () {
+      var root = document.querySelector('[data-hist-carousel]');
+      if (!root) return;
+      var track = root.querySelector('.hist-track');
+      var slides = root.querySelectorAll('.hist-slide');
+      var dotsWrap = root.querySelector('.hist-dots');
+      var i = 0, n = slides.length, timer;
+      for (var d = 0; d < n; d++) {
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'size-2.5 rounded-full bg-white/50 transition';
+        b.setAttribute('aria-label', 'Ir a la imagen ' + (d + 1));
+        (function (idx) { b.addEventListener('click', function () { go(idx); reset(); }); })(d);
+        dotsWrap.appendChild(b);
+      }
+      var dots = dotsWrap.querySelectorAll('button');
+      function render() {
+        track.style.transform = 'translateX(-' + (i * 100) + '%)';
+        dots.forEach(function (dot, idx) {
+          dot.className = 'size-2.5 rounded-full transition ' + (idx === i ? 'bg-white' : 'bg-white/50');
+        });
+      }
+      function go(x) { i = (x + n) % n; render(); }
+      function reset() { clearInterval(timer); timer = setInterval(function () { go(i + 1); }, 4500); }
+      root.querySelector('.hist-prev').addEventListener('click', function () { go(i - 1); reset(); });
+      root.querySelector('.hist-next').addEventListener('click', function () { go(i + 1); reset(); });
+      render(); reset();
+    })();
+  </script>
 
   <!-- ================= VIDEO ================= -->
   <section id="video" class="bg-[#0d2544] px-5 py-20 sm:px-8 lg:py-24">
@@ -678,7 +712,7 @@
       <div class="reveal">
         <p class="eyebrow text-[#f4c464]" data-i18n="rsv.eyebrow">Consulta tu estadía</p>
         <h2 class="font-display text-5xl leading-tight sm:text-6xl" data-i18n="rsv.title">Tu descanso comienza con una fecha.</h2>
-        <p class="mt-6 max-w-lg text-lg leading-8 text-white/70" data-i18n="rsv.sub">Escríbenos por WhatsApp para una atención directa, o revisa disponibilidad y reserva al instante en Booking.</p>
+        <p class="mt-6 max-w-lg text-lg leading-8 text-white/70" data-i18n="rsv.sub">Escríbenos por WhatsApp para una atención directa, o revisa disponibilidad y reserva al instante en Paxer.</p>
         <div class="mt-9 space-y-4 text-sm text-white/72">
           <a class="flex items-center gap-3 hover:text-white" href="https://wa.me/56996414055" target="_blank" rel="noreferrer">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-5 text-[#f4c464]" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
@@ -703,9 +737,9 @@
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
               <span data-i18n="f.consultarwa">Consultar por WhatsApp</span>
             </a>
-            <a href="https://www.booking.com/hotel/cl/cabanas-caballieri.es.html?aid=356980" target="_blank" rel="noreferrer" class="inline-flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-[#003580] px-6 text-sm font-semibold text-white transition hover:bg-[#0071c2]">
+            <a href="https://cabanas-caballieri.com-book.direct/room-type/23779?checkin=2026-09-13&checkout=2026-09-15&totalAdults=2&totalChildren=0&totalInfants=0" target="_blank" rel="noreferrer" class="inline-flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-[#003580] px-6 text-sm font-semibold text-white transition hover:bg-[#0071c2]">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg>
-              <span data-i18n="rsv.booking">Ver disponibilidad en Booking</span>
+              <span data-i18n="rsv.booking">Ver disponibilidad en Paxer</span>
             </a>
           </div>
         </div>
@@ -1013,7 +1047,7 @@
       "tar.eyebrow":"Tarifas y condiciones","tar.title":"Información clara antes de reservar.","tar.consultar":"Consultar fechas",
       "gal.eyebrow":"Síguenos","gal.title":"El Valle, en tiempo real.","gal.ver":"Ver galería completa",
       "res.eyebrow":"Lo que dicen nuestros huéspedes","res.title":"Reseñas.","res.count":"+250 comentarios","res.ver":"Ver reseñas en Google",
-      "rsv.eyebrow":"Consulta tu estadía","rsv.title":"Tu descanso comienza con una fecha.","rsv.sub":"Escríbenos por WhatsApp para una atención directa, o revisa disponibilidad y reserva al instante en Booking.","rsv.booking":"Ver disponibilidad en Booking","rsv.cardlabel":"Reserva tu estadía",
+      "rsv.eyebrow":"Consulta tu estadía","rsv.title":"Tu descanso comienza con una fecha.","rsv.sub":"Escríbenos por WhatsApp para una atención directa, o revisa disponibilidad y reserva al instante en Paxer.","rsv.booking":"Ver disponibilidad en Paxer","rsv.cardlabel":"Reserva tu estadía",
       "ct.eyebrow":"Escríbenos","ct.title":"¿Consulta, sugerencia o reclamo?","ct.sub":"Cuéntanos lo que necesites y te responderemos a la brevedad.",
       "ct.motivo":"Motivo","ct.nombre":"Nombre","ct.contacto":"Email o teléfono","ct.mensaje":"Mensaje","ct.wa":"Enviar por WhatsApp","ct.mail":"Enviar por correo",
       "clima.hoy":"Hoy en Pisco Elqui","common.tempBaja":"Temporada baja","common.tempAlta":"Temporada alta",
@@ -1029,7 +1063,7 @@
       "ct.o1":"Consulta","ct.o2":"Sugerencia","ct.o3":"Reclamo","ct.o4":"Otro",
       "hhp1":"En 1995, Claudia Caballieri y Richard Rose, arquitecto norteamericano, dejaron atrás el ruido de la ciudad para vivir en Pisco Elqui. El sol, la tranquilidad y la belleza del Valle hicieron el resto.",
       "hhp2":"Su primera obra fue recuperar una casona de más de cien años, que hoy recibe a cada huésped. Luego llegó una piscina revestida completamente con mosaicos de vidrio azul cobalto, pensada para reflejar las estrellas y abrirse hacia el paisaje a través de su cascada.",
-      "hhp3":"Alrededor crecieron palmeras, hibiscos, buganvilias y cientos de plantas. Después vinieron las cabañas: espacios distintos entre sí, creados con materiales locales, paciencia y una atención poco común por los detalles.",
+      "hhp3":"Rodeada de palmeras, hibiscos, buganvilias y cientos de plantas y árboles, creamos poco a poco un pequeño oasis. Luego decidimos compartir nuestro paraíso con amigos y familia, y empezamos con las cabañas Cobre y Piedra. Después continuamos con Agua y, más tarde, con la cabaña Cuarzo, construida completamente con muros de cuarzo blanco y rosado. Finalmente llegaron Aire y Fuego, completando los seis espacios.",
       "hhquote":"“Un mundo aparte, donde el tiempo se detiene y solo hay espacio para el silencio, la paz y la belleza.”",
       "hh.tlPrimer":"Primer paso","hh.tlHoy":"Hoy","hh.tld1":"Llegada a Pisco Elqui","hh.tld2":"Restauración de la casona centenaria","hh.tld3":"Diseño y construcción de Cuarzo","hh.tld4":"Cinco cabañas y un departamento con identidad propia",
       "he.t1":"Astroturismo","he.t2":"Ruta del pisco","he.t3":"Senderos y cerros","he.t4":"A caballo o en bici","he.t5":"Gabriela Mistral","he.t6":"Gastronomía y noche",
@@ -1056,7 +1090,7 @@
       "tar.eyebrow":"Rates and conditions","tar.title":"Clear info before you book.","tar.consultar":"Check dates",
       "gal.eyebrow":"Follow us","gal.title":"The Valley, in real time.","gal.ver":"See full gallery",
       "res.eyebrow":"What our guests say","res.title":"Reviews.","res.count":"+250 reviews","res.ver":"See reviews on Google",
-      "rsv.eyebrow":"Plan your stay","rsv.title":"Your rest begins with a date.","rsv.sub":"Message us on WhatsApp for direct assistance, or check availability and book instantly on Booking.","rsv.booking":"Check availability on Booking","rsv.cardlabel":"Book your stay",
+      "rsv.eyebrow":"Plan your stay","rsv.title":"Your rest begins with a date.","rsv.sub":"Message us on WhatsApp for direct assistance, or check availability and book instantly on Paxer.","rsv.booking":"Check availability on Paxer","rsv.cardlabel":"Book your stay",
       "ct.eyebrow":"Write to us","ct.title":"Question, suggestion or complaint?","ct.sub":"Tell us what you need and we'll reply shortly.",
       "ct.motivo":"Reason","ct.nombre":"Name","ct.contacto":"Email or phone","ct.mensaje":"Message","ct.wa":"Send via WhatsApp","ct.mail":"Send by email",
       "clima.hoy":"Today in Pisco Elqui","common.tempBaja":"Low season","common.tempAlta":"High season",
@@ -1072,7 +1106,7 @@
       "ct.o1":"Enquiry","ct.o2":"Suggestion","ct.o3":"Complaint","ct.o4":"Other",
       "hhp1":"In 1995, Claudia Caballieri and Richard Rose, a North American architect, left the noise of the city behind to live in Pisco Elqui. The sun, the calm and the beauty of the Valley did the rest.",
       "hhp2":"Their first project was to restore a more than one-hundred-year-old country house, which today welcomes every guest. Then came a pool lined entirely with cobalt-blue glass mosaic, designed to reflect the stars and open onto the landscape through its waterfall.",
-      "hhp3":"Around it grew palms, hibiscus, bougainvillea and hundreds of plants. Then came the cabins: spaces different from one another, created with local materials, patience and an uncommon attention to detail.",
+      "hhp3":"Surrounded by palms, hibiscus, bougainvillea and hundreds of plants and trees, little by little we created a small oasis. Then we decided to share our paradise with friends and family, and started with the Cobre and Piedra cabins. Next came Agua and, later, the Cuarzo cabin, built entirely with white and pink quartz walls. Finally came Aire and Fuego, completing the six spaces.",
       "hhquote":"“A world apart, where time stops and there is only room for silence, peace and beauty.”",
       "hh.tlPrimer":"First step","hh.tlHoy":"Today","hh.tld1":"Arrival in Pisco Elqui","hh.tld2":"Restoration of the century-old house","hh.tld3":"Design and construction of Cuarzo","hh.tld4":"Five cabins and one apartment with their own identity",
       "he.t1":"Astro-tourism","he.t2":"The pisco route","he.t3":"Trails and hills","he.t4":"On horseback or by bike","he.t5":"Gabriela Mistral","he.t6":"Food and nightlife",
@@ -1099,7 +1133,7 @@
       "tar.eyebrow":"Preise und Bedingungen","tar.title":"Klare Infos vor der Buchung.","tar.consultar":"Termine anfragen",
       "gal.eyebrow":"Folge uns","gal.title":"Das Tal, in Echtzeit.","gal.ver":"Ganze Galerie ansehen",
       "res.eyebrow":"Was unsere Gäste sagen","res.title":"Bewertungen.","res.count":"+250 Bewertungen","res.ver":"Bewertungen auf Google ansehen",
-      "rsv.eyebrow":"Plane deinen Aufenthalt","rsv.title":"Deine Erholung beginnt mit einem Datum.","rsv.sub":"Schreib uns per WhatsApp für direkte Betreuung, oder prüfe die Verfügbarkeit und buche sofort auf Booking.","rsv.booking":"Verfügbarkeit auf Booking prüfen","rsv.cardlabel":"Buche deinen Aufenthalt",
+      "rsv.eyebrow":"Plane deinen Aufenthalt","rsv.title":"Deine Erholung beginnt mit einem Datum.","rsv.sub":"Schreib uns per WhatsApp für direkte Betreuung, oder prüfe die Verfügbarkeit und buche sofort auf Paxer.","rsv.booking":"Verfügbarkeit auf Paxer prüfen","rsv.cardlabel":"Buche deinen Aufenthalt",
       "ct.eyebrow":"Schreib uns","ct.title":"Frage, Vorschlag oder Beschwerde?","ct.sub":"Sag uns, was du brauchst, wir antworten in Kürze.",
       "ct.motivo":"Anliegen","ct.nombre":"Name","ct.contacto":"E-Mail oder Telefon","ct.mensaje":"Nachricht","ct.wa":"Per WhatsApp senden","ct.mail":"Per E-Mail senden",
       "clima.hoy":"Heute in Pisco Elqui","common.tempBaja":"Nebensaison","common.tempAlta":"Hochsaison",
@@ -1115,7 +1149,7 @@
       "ct.o1":"Anfrage","ct.o2":"Vorschlag","ct.o3":"Beschwerde","ct.o4":"Sonstiges",
       "hhp1":"1995 ließen Claudia Caballieri und Richard Rose, ein nordamerikanischer Architekt, den Lärm der Stadt hinter sich, um in Pisco Elqui zu leben. Die Sonne, die Ruhe und die Schönheit des Tals taten den Rest.",
       "hhp2":"Ihr erstes Projekt war die Restaurierung eines über hundert Jahre alten Landhauses, das heute jeden Gast empfängt. Dann kam ein Pool, komplett mit kobaltblauem Glasmosaik verkleidet, um die Sterne zu spiegeln und sich über seinen Wasserfall zur Landschaft zu öffnen.",
-      "hhp3":"Ringsum wuchsen Palmen, Hibiskus, Bougainvillea und Hunderte von Pflanzen. Dann kamen die Hütten: voneinander verschiedene Räume, geschaffen mit lokalen Materialien, Geduld und einer seltenen Liebe zum Detail.",
+      "hhp3":"Umgeben von Palmen, Hibiskus, Bougainvillea und Hunderten von Pflanzen und Bäumen schufen wir nach und nach eine kleine Oase. Dann beschlossen wir, unser Paradies mit Freunden und Familie zu teilen, und begannen mit den Hütten Cobre und Piedra. Danach folgte Agua und später die Hütte Cuarzo, komplett aus weißen und rosafarbenen Quarzmauern erbaut. Schließlich kamen Aire und Fuego hinzu und vervollständigten die sechs Räume.",
       "hhquote":"„Eine Welt für sich, in der die Zeit stillsteht und nur Raum für Stille, Frieden und Schönheit ist.“",
       "hh.tlPrimer":"Erster Schritt","hh.tlHoy":"Heute","hh.tld1":"Ankunft in Pisco Elqui","hh.tld2":"Restaurierung des hundertjährigen Landhauses","hh.tld3":"Entwurf und Bau von Cuarzo","hh.tld4":"Fünf Hütten und ein Apartment mit eigener Identität",
       "he.t1":"Astrotourismus","he.t2":"Die Pisco-Route","he.t3":"Wege und Berge","he.t4":"Zu Pferd oder mit dem Rad","he.t5":"Gabriela Mistral","he.t6":"Gastronomie und Nachtleben",
