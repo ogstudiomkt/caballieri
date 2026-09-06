@@ -102,12 +102,19 @@
         </blockquote>
       </div>
 
-      <div class="reveal relative min-h-[420px]">
-        <div class="absolute left-0 top-0 h-[70%] w-[80%] overflow-hidden rounded-[8rem_8rem_2rem_2rem] shadow-xl">
-          <img src="images/night.jpg" alt="Noche estrellada en Cabañas Caballieri" class="object-cover" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
-        </div>
-        <div class="absolute bottom-0 right-0 h-[46%] w-[56%] overflow-hidden rounded-[2rem] border-8 border-[#f6f2ea] shadow-xl">
-          <img src="images/hero.jpg" alt="Jardines y arquitectura de Caballieri" class="object-cover" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+      <div class="reveal">
+        <div class="relative overflow-hidden rounded-3xl shadow-xl" data-hist-carousel>
+          <div class="hist-track flex transition-transform duration-700 ease-out">
+            <img src="images/night.jpg" alt="Noche estrellada en Cabañas Caballieri" class="hist-slide h-72 w-full shrink-0 object-cover sm:h-96 lg:h-[30rem]">
+            <img src="images/hero.jpg" alt="El Valle de Elqui al atardecer" class="hist-slide h-72 w-full shrink-0 object-cover sm:h-96 lg:h-[30rem]">
+          </div>
+          <button type="button" class="hist-prev absolute left-3 top-1/2 grid size-10 -translate-y-1/2 place-items-center rounded-full bg-white/85 text-[#102b52] shadow-lg backdrop-blur transition hover:bg-white" aria-label="Imagen anterior">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg>
+          </button>
+          <button type="button" class="hist-next absolute right-3 top-1/2 grid size-10 -translate-y-1/2 place-items-center rounded-full bg-white/85 text-[#102b52] shadow-lg backdrop-blur transition hover:bg-white" aria-label="Imagen siguiente">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="size-5" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+          </button>
+          <div class="hist-dots absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2"></div>
         </div>
       </div>
     </div>
@@ -209,5 +216,35 @@
   };
 </script>
 <script src="assets/site.js"></script>
+<script>
+  (function () {
+    var root = document.querySelector('[data-hist-carousel]');
+    if (!root) return;
+    var track = root.querySelector('.hist-track');
+    var slides = root.querySelectorAll('.hist-slide');
+    var dotsWrap = root.querySelector('.hist-dots');
+    var i = 0, n = slides.length, timer;
+    for (var d = 0; d < n; d++) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'size-2.5 rounded-full bg-white/50 transition';
+      b.setAttribute('aria-label', 'Ir a la imagen ' + (d + 1));
+      (function (idx) { b.addEventListener('click', function () { go(idx); reset(); }); })(d);
+      dotsWrap.appendChild(b);
+    }
+    var dots = dotsWrap.querySelectorAll('button');
+    function render() {
+      track.style.transform = 'translateX(-' + (i * 100) + '%)';
+      dots.forEach(function (dot, idx) {
+        dot.className = 'size-2.5 rounded-full transition ' + (idx === i ? 'bg-white' : 'bg-white/50');
+      });
+    }
+    function go(x) { i = (x + n) % n; render(); }
+    function reset() { clearInterval(timer); timer = setInterval(function () { go(i + 1); }, 4500); }
+    root.querySelector('.hist-prev').addEventListener('click', function () { go(i - 1); reset(); });
+    root.querySelector('.hist-next').addEventListener('click', function () { go(i + 1); reset(); });
+    render(); reset();
+  })();
+</script>
 </body>
 </html>
