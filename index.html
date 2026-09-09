@@ -130,16 +130,6 @@
             <input data-salida aria-label="Fecha de salida" type="date" class="h-12 w-full rounded-xl border border-[#102b52]/15 bg-[#f8f6f1] px-3 text-base text-[#102b52] outline-none transition focus:border-[#2b9298] focus:ring-2 focus:ring-[#2b9298]/15">
           </label>
           <div>
-            <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
-              <span data-i18n="f.huespedes">Huéspedes</span>
-            </span>
-            <select data-huespedes class="field" aria-label="Cantidad de huéspedes">
-              <option value="1" data-i18n="f.g1">1 huésped</option>
-              <option value="2" selected data-i18n="f.g2">2 huéspedes</option>
-            </select>
-          </div>
-          <div>
             <span class="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#667687]" data-i18n="f.espacio">Espacio</span>
             <select data-espacio class="field" aria-label="Cabaña o departamento">
               <option value="Cualquiera" selected data-i18n="f.cualquiera">Cualquiera</option>
@@ -149,6 +139,16 @@
               <option value="Cobre">Cobre</option>
               <option value="Agua">Agua</option>
               <option value="Piedra">Piedra</option>
+            </select>
+          </div>
+          <div>
+            <span class="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#667687]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg>
+              <span data-i18n="f.huespedes">Huéspedes</span>
+            </span>
+            <select data-huespedes class="field" aria-label="Cantidad de huéspedes">
+              <option value="1" data-i18n="f.g1">1 huésped</option>
+              <option value="2" selected data-i18n="f.g2">2 huéspedes</option>
             </select>
           </div>
           <div class="grid gap-3 sm:col-span-2 sm:grid-cols-3 lg:col-span-4">
@@ -618,7 +618,7 @@
       <!-- Condiciones en línea, compactas -->
       <div class="reveal mt-6 flex flex-wrap items-center gap-x-6 gap-y-2 rounded-2xl border border-[#102b52]/10 bg-white px-6 py-4 text-sm text-[#526273]">
         <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M8 2v3"></path><path d="M16 2v3"></path><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18"></path></svg> <span data-i18n="th.c1">Estadía mínima 2 noches</span></span>
-        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg> <span data-i18n="th.c2">Máximo 2 huéspedes por unidad</span></span>
+        <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg> <span data-i18n="th.c2">Capacidad de 2 a 4 personas según la cabaña</span></span>
         <span class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4 text-[#2b9298]" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg> <span data-i18n="th.c3">El valor final depende de la unidad y la temporada</span></span>
       </div>
     </div>
@@ -863,7 +863,7 @@
     </div>
     <div class="mx-auto flex max-w-7xl flex-col justify-between gap-3 pt-7 text-xs sm:flex-row">
       <p data-i18n="foot.copyright">© 2026 Cabañas Caballieri · Pisco Elqui, Chile</p>
-      <p data-i18n="foot.min">Estadía mínima: 2 noches · Máximo 2 huéspedes por unidad</p>
+      <p data-i18n="foot.min">Estadía mínima: 2 noches · Capacidad de 2 a 4 personas según la cabaña</p>
     </div>
   </footer>
 
@@ -901,6 +901,39 @@
       window.open("https://wa.me/" + WHATSAPP + "?text=" + msg, "_blank");
     });
   });
+
+  // ===== Huéspedes disponibles según el espacio seleccionado =====
+  (function () {
+    // Capacidad máxima de personas por espacio
+    var CAP = { Cualquiera: 4, Cuarzo: 2, Aire: 2, Fuego: 2, Cobre: 4, Agua: 3, Piedra: 2 };
+    var GLABEL = {
+      es: function (n) { return n + (n === 1 ? " huésped" : " huéspedes"); },
+      en: function (n) { return n + (n === 1 ? " guest" : " guests"); },
+      de: function (n) { return n + (n === 1 ? " Gast" : " Gäste"); }
+    };
+    function lang() { try { return localStorage.getItem("lang") || "es"; } catch (e) { return "es"; } }
+    document.querySelectorAll("form[data-reserva]").forEach(function (form) {
+      var esp = form.querySelector("[data-espacio]");
+      var gue = form.querySelector("[data-huespedes]");
+      if (!esp || !gue) return;
+      function fill() {
+        var max = CAP[esp.value] != null ? CAP[esp.value] : 4;
+        var prev = parseInt(gue.value, 10) || 2;
+        var fmt = GLABEL[lang()] || GLABEL.es;
+        gue.innerHTML = "";
+        for (var n = 1; n <= max; n++) {
+          var o = document.createElement("option");
+          o.value = n;
+          o.textContent = fmt(n);
+          gue.appendChild(o);
+        }
+        gue.value = Math.min(prev, max);
+      }
+      esp.addEventListener("change", fill);
+      window.addEventListener("langchange", fill);
+      fill();
+    });
+  })();
 
   // ===== Animaciones de aparición al hacer scroll =====
   // Escalona los elementos dentro de un contenedor [data-stagger]
@@ -1063,7 +1096,7 @@
       "sv.d1":"Rodeada de jardines y montaña.","sv.d2":"Conectividad en todo el complejo.","sv.d3":"Aire acondicionado y calefacción.","sv.d4":"Coherente con el entorno del Valle.","sv.d5":"Para recorrer los alrededores.","sv.d6":"Privado, incluido en la estadía.",
       "sv.x1":"Cocina equipada","sv.x2":"Parrilla","sv.x3":"Ropa de cama","sv.x4":"Toallas","sv.x5":"TV",
       "th.badgeBaja":"Abr – Nov","th.badgeAlta":"Más solicitada","th.per":"Por noche · 2 personas · impuestos incluidos","th.bajaDesc":"Consulta por promociones y estadías largas.","th.altaDesc":"15 de diciembre al 15 de abril y fechas especiales.",
-      "th.c1":"Estadía mínima 2 noches","th.c2":"Máximo 2 huéspedes por unidad","th.c3":"El valor final depende de la unidad y la temporada",
+      "th.c1":"Estadía mínima 2 noches","th.c2":"Capacidad de 2 a 4 personas según la cabaña","th.c3":"El valor final depende de la unidad y la temporada",
       "common.cabana":"Cabaña","common.departamento":"Departamento","common.desde":"Desde",
       "hh.badge1995":"Desde 1995","hh.badgeTitle":"Una historia ligada al Valle",
       "clima.hum":"Humedad","clima.wind":"Viento",
@@ -1106,7 +1139,7 @@
       "sv.d1":"Surrounded by gardens and mountains.","sv.d2":"Connectivity throughout the property.","sv.d3":"Air conditioning and heating.","sv.d4":"In tune with the valley's environment.","sv.d5":"To explore the surroundings.","sv.d6":"Private, included in the stay.",
       "sv.x1":"Equipped kitchen","sv.x2":"Grill","sv.x3":"Bed linen","sv.x4":"Towels","sv.x5":"TV",
       "th.badgeBaja":"Apr – Nov","th.badgeAlta":"Most requested","th.per":"Per night · 2 people · taxes included","th.bajaDesc":"Ask about promotions and long stays.","th.altaDesc":"15 December to 15 April and special dates.",
-      "th.c1":"Minimum stay 2 nights","th.c2":"Maximum 2 guests per unit","th.c3":"The final price depends on the unit and the season",
+      "th.c1":"Minimum stay 2 nights","th.c2":"Capacity 2 to 4 guests depending on the cabin","th.c3":"The final price depends on the unit and the season",
       "common.cabana":"Cabin","common.departamento":"Apartment","common.desde":"From",
       "hh.badge1995":"Since 1995","hh.badgeTitle":"A story tied to the Valley",
       "clima.hum":"Humidity","clima.wind":"Wind",
@@ -1149,7 +1182,7 @@
       "sv.d1":"Umgeben von Gärten und Bergen.","sv.d2":"Konnektivität auf dem gesamten Gelände.","sv.d3":"Klimaanlage und Heizung.","sv.d4":"Im Einklang mit der Umgebung des Tals.","sv.d5":"Um die Umgebung zu erkunden.","sv.d6":"Privat, im Aufenthalt inbegriffen.",
       "sv.x1":"Ausgestattete Küche","sv.x2":"Grill","sv.x3":"Bettwäsche","sv.x4":"Handtücher","sv.x5":"TV",
       "th.badgeBaja":"Apr – Nov","th.badgeAlta":"Am gefragtesten","th.per":"Pro Nacht · 2 Personen · inkl. Steuern","th.bajaDesc":"Frag nach Aktionen und Langzeitaufenthalten.","th.altaDesc":"15. Dezember bis 15. April und besondere Termine.",
-      "th.c1":"Mindestaufenthalt 2 Nächte","th.c2":"Maximal 2 Gäste pro Einheit","th.c3":"Der Endpreis hängt von der Einheit und der Saison ab",
+      "th.c1":"Mindestaufenthalt 2 Nächte","th.c2":"Kapazität 2 bis 4 Gäste je nach Hütte","th.c3":"Der Endpreis hängt von der Einheit und der Saison ab",
       "common.cabana":"Hütte","common.departamento":"Apartment","common.desde":"Ab",
       "hh.badge1995":"Seit 1995","hh.badgeTitle":"Eine mit dem Tal verbundene Geschichte",
       "clima.hum":"Luftfeuchtigkeit","clima.wind":"Wind",
