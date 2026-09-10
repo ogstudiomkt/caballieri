@@ -48,9 +48,10 @@ select.field{
 select.field:focus{ border-color:#2b9298; box-shadow: 0 0 0 2px rgba(43,146,152,.15); }
 
 /* ===== Campos del formulario de contacto ===== */
-.ct-lbl{ margin-bottom:.5rem; display:block; font-size:.75rem; font-weight:700; text-transform:uppercase; letter-spacing:.16em; color:#667687; }
-.ct-inp{ height:3rem; width:100%; border-radius:.75rem; border:1px solid rgba(16,43,82,.15); background:#fff; padding:0 .75rem; font-size:1rem; color:#102b52; outline:none; transition:border-color .2s, box-shadow .2s; }
+.ct-lbl{ margin-bottom:.3rem; display:block; font-size:.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.14em; color:#667687; }
+.ct-inp{ height:2.75rem; width:100%; border-radius:.75rem; border:1px solid rgba(16,43,82,.15); background:#fff; padding:0 .75rem; font-size:1rem; color:#102b52; outline:none; transition:border-color .2s, box-shadow .2s; }
 .ct-inp:focus{ border-color:#2b9298; box-shadow:0 0 0 2px rgba(43,146,152,.15); }
+form[data-contacto] select.field{ height:2.75rem; }
 
 /* ===== Animaciones de aparición al hacer scroll ===== */
 .reveal{
