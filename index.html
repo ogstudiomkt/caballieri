@@ -743,7 +743,7 @@
         <div class="p-5 sm:p-6">
           <p class="text-center text-xs font-semibold uppercase tracking-[0.18em] text-[#667687]" data-i18n="rsv.cardlabel">Reserva tu estadía</p>
           <div class="mt-4 grid gap-2.5">
-            <a href="https://wa.me/56996414055?text=Hola%20Caballieri%2C%20quiero%20consultar%20disponibilidad." target="_blank" rel="noreferrer" class="inline-flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-[#c64e2a] px-6 text-sm font-semibold text-white transition hover:bg-[#102b52]">
+            <a href="https://wa.me/56996414055?text=Hola%20Caba%C3%B1as%20Caballieri%20%F0%9F%91%8B%0A%0AMotivo%3A%20%0ANombre%20y%20apellido%3A%20%0ACorreo%3A%20%0ATel%C3%A9fono%3A%20%0ACaba%C3%B1a%3A%20%0AFecha%20de%20ingreso%3A%20%0AFecha%20de%20salida%3A%20%0AAdultos%3A%20%0ANi%C3%B1os%3A%20%0AEdad%20de%20los%20ni%C3%B1os%3A%20%0A%0AMensaje%3A" target="_blank" rel="noreferrer" class="inline-flex h-11 w-full items-center justify-center gap-2 rounded-xl bg-[#c64e2a] px-6 text-sm font-semibold text-white transition hover:bg-[#102b52]">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="size-4" aria-hidden="true"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"></path></svg>
               <span data-i18n="f.consultarwa">Consultar por WhatsApp</span>
             </a>
@@ -934,19 +934,32 @@
   document.querySelectorAll("form[data-reserva]").forEach(function (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
-      const llegada   = form.querySelector("[data-llegada]")?.value || "por definir";
-      const salida    = form.querySelector("[data-salida]")?.value || "por definir";
-      const huespedes = form.querySelector("[data-huespedes]")?.value || "2";
-      const espacio   = form.querySelector("[data-espacio]")?.value || "Cualquiera";
+      var val = function (sel) { var el = form.querySelector(sel); return el ? String(el.value).trim() : ""; };
+      var fdate = function (iso) { if (!iso) return ""; var p = iso.split("-"); return p.length === 3 ? p[2] + "/" + p[1] + "/" + p[0] : iso; };
+      var llegada = fdate(val("[data-llegada]"));
+      var salida = fdate(val("[data-salida]"));
+      var huespedes = val("[data-huespedes]");
+      var espacio = val("[data-espacio]");
+      if (espacio === "Cualquiera") espacio = "";
 
-      const msg =
-        "Hola Cabañas Caballieri, quiero consultar disponibilidad.%0A" +
-        "• Llegada: " + llegada + "%0A" +
-        "• Salida: " + salida + "%0A" +
-        "• Huéspedes: " + huespedes + "%0A" +
-        "• Espacio: " + espacio;
+      var lines = [
+        "Hola Cabañas Caballieri 👋",
+        "",
+        "Motivo: ",
+        "Nombre y apellido: ",
+        "Correo: ",
+        "Teléfono: ",
+        "Cabaña: " + espacio,
+        "Fecha de ingreso: " + llegada,
+        "Fecha de salida: " + salida,
+        "Adultos: " + huespedes,
+        "Niños: ",
+        "Edad de los niños: ",
+        "",
+        "Mensaje:"
+      ];
 
-      window.open("https://wa.me/" + WHATSAPP + "?text=" + msg, "_blank");
+      window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(lines.join("\n")), "_blank");
     });
   });
 
@@ -994,6 +1007,7 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var v = function (sel) { var el = form.querySelector(sel); return el ? String(el.value).trim() : ""; };
+      var fdate = function (iso) { if (!iso) return ""; var p = iso.split("-"); return p.length === 3 ? p[2] + "/" + p[1] + "/" + p[0] : iso; };
       var motivo = v("[data-c-motivo]");
       var nombre = v("[data-c-nombre]");
       var hayNinos = v("[data-c-ninos]");
@@ -1003,8 +1017,8 @@
         "Correo: " + v("[data-c-correo]"),
         "Teléfono: " + v("[data-c-tel]"),
         "Cabaña: " + v("[data-c-cabana]"),
-        "Fecha de ingreso: " + v("[data-c-ingreso]"),
-        "Fecha de salida: " + v("[data-c-salida]"),
+        "Fecha de ingreso: " + fdate(v("[data-c-ingreso]")),
+        "Fecha de salida: " + fdate(v("[data-c-salida]")),
         "Adultos: " + v("[data-c-adultos]"),
         "Niños: " + hayNinos
       ];
